@@ -560,9 +560,13 @@ function displayRecipes(recipes) {
 
         card.className = "recipe-card";
 
-        card.innerHTML =
+       card.innerHTML =
 
-            "<div class='recipe-card-content'>" +
+    "<div class='recipe-card-image'>" +
+    recipe.title.charAt(0) +
+    "</div>" +
+
+    "<div class='recipe-card-content'>" +
 
             "<span class='recipe-category'>" +
             recipe.category.toUpperCase() +
