@@ -494,3 +494,38 @@ footer {
     }
 
 }
+/* =========================
+   RECIPE DETAILS
+========================= */
+
+.recipe-result h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #172033;
+}
+
+.recipe-result h4 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #16a085;
+    font-size: 18px;
+}
+
+.recipe-result ul,
+.recipe-result ol {
+    padding-left: 25px;
+    color: #526174;
+}
+
+.recipe-result li {
+    margin-bottom: 10px;
+}
+
+.recipe-result ul li::marker {
+    color: #16a085;
+}
+
+.recipe-result ol li::marker {
+    color: #3498db;
+    font-weight: bold;
+}
