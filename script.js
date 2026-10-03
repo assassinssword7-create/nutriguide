@@ -2,7 +2,10 @@
 // NUTRIGUIDE
 // =========================
 
+
+// =========================
 // VITAMIN INFORMATION
+// =========================
 
 const vitaminInfo = {
 
@@ -39,8 +42,6 @@ const vitaminInfo = {
 };
 
 
-// SHOW VITAMIN INFORMATION
-
 function showVitamin(vitamin) {
 
     const info = vitaminInfo[vitamin];
@@ -54,10 +55,13 @@ function showVitamin(vitamin) {
         "\n\n" +
         info.text
     );
+
 }
 
 
+// =========================
 // FOOD INFORMATION
+// =========================
 
 const foodInfo = {
 
@@ -80,10 +84,9 @@ const foodInfo = {
     salmon: "Salmon provides protein and is a source of vitamin D and vitamin B12.",
 
     yogurt: "Yogurt provides protein and calcium and may also contain vitamin B12."
+
 };
 
-
-// SEARCH FOOD
 
 function searchFood() {
 
@@ -120,10 +123,13 @@ function searchFood() {
     result.innerHTML =
         "<h3>Food not found</h3>" +
         "<p>Try searching for eggs, spinach, milk, oranges, almonds, banana, broccoli, salmon or yogurt.</p>";
+
 }
 
 
+// =========================
 // NUTRIGUIDE AI
+// =========================
 
 function askNutriGuide() {
 
@@ -142,7 +148,6 @@ function askNutriGuide() {
 
         return;
     }
-
 
     let answer = "";
 
@@ -219,31 +224,12 @@ function askNutriGuide() {
 
 
     response.innerHTML = answer;
+
 }
 
 
-// ENTER KEY FOR FOOD SEARCH
-
-document
-    .getElementById("foodSearch")
-    .addEventListener("keydown", function(event) {
-
-        if (event.key === "Enter") {
-
-            searchFood();
-
-        }
-
-    });
-
-
-// PAGE LOADED
-
-console.log(
-    "NutriGuide loaded successfully."
-);
 // =========================
-// RECIPE GALLERY
+// RECIPE DATABASE
 // =========================
 
 const recipeData = [
@@ -257,16 +243,14 @@ const recipeData = [
         ingredients: [
             "2 eggs",
             "1–2 slices of bread",
-            "A handful of spinach",
+            "Spinach",
             "1 small tomato",
-            "A little olive oil",
-            "A pinch of salt and pepper"
+            "A little olive oil"
         ],
         steps: [
-            "Wash and chop the spinach and tomato.",
-            "Heat a pan with a little olive oil.",
-            "Cook the spinach and tomato for a few minutes.",
-            "Add the eggs and gently scramble everything together.",
+            "Wash and chop the vegetables.",
+            "Cook the spinach and tomato in a pan.",
+            "Add the eggs and scramble gently.",
             "Toast the bread.",
             "Serve the eggs over the toast."
         ]
@@ -283,15 +267,13 @@ const recipeData = [
             "Cooked chicken",
             "Cucumber",
             "Tomato",
-            "Carrot",
-            "A little yogurt or lemon dressing"
+            "Carrot"
         ],
         steps: [
-            "Place the cooked rice in a bowl.",
+            "Place the rice in a bowl.",
             "Add the cooked chicken.",
-            "Chop the vegetables.",
-            "Add the vegetables to the bowl.",
-            "Add a small amount of yogurt or lemon dressing.",
+            "Add the chopped vegetables.",
+            "Add a little yogurt or lemon dressing.",
             "Mix and serve."
         ]
     },
@@ -304,19 +286,17 @@ const recipeData = [
         difficulty: "Easy",
         ingredients: [
             "Pasta",
-            "1 tomato",
-            "1 bell pepper",
-            "A handful of spinach",
-            "A little olive oil",
+            "Tomato",
+            "Bell pepper",
+            "Spinach",
             "A little cheese"
         ],
         steps: [
             "Cook the pasta according to the package instructions.",
             "Chop the vegetables.",
-            "Heat a pan with a little olive oil.",
-            "Cook the vegetables until softened.",
-            "Add the cooked pasta and mix.",
-            "Top with a little cheese and serve."
+            "Cook the vegetables in a pan.",
+            "Add the pasta.",
+            "Mix and serve."
         ]
     },
 
@@ -328,16 +308,14 @@ const recipeData = [
         difficulty: "Very Easy",
         ingredients: [
             "Plain yogurt",
-            "1 banana",
+            "Banana",
             "Strawberries",
-            "A small handful of oats",
-            "Nuts or seeds, if desired"
+            "Oats"
         ],
         steps: [
             "Add yogurt to a bowl.",
             "Slice the fruit.",
             "Add the fruit and oats.",
-            "Add nuts or seeds if desired.",
             "Mix and enjoy."
         ]
     },
@@ -356,13 +334,12 @@ const recipeData = [
             "A little milk"
         ],
         steps: [
-            "Mash the banana in a bowl.",
+            "Mash the banana.",
             "Add the egg and mix.",
             "Add flour and baking powder.",
-            "Add a little milk and mix into a batter.",
-            "Heat a pan.",
-            "Cook small pancakes on both sides until done.",
-            "Serve with sliced fruit."
+            "Add a little milk and mix.",
+            "Cook small pancakes in a pan on both sides.",
+            "Serve with fruit."
         ]
     },
 
@@ -385,8 +362,8 @@ const recipeData = [
             "Add the cooked chicken.",
             "Add lettuce, tomato and cucumber.",
             "Add a little yogurt dressing.",
-            "Fold the sides of the tortilla.",
-            "Roll the wrap tightly and serve."
+            "Fold and roll the wrap.",
+            "Serve."
         ]
     },
 
@@ -407,7 +384,7 @@ const recipeData = [
         steps: [
             "Chop the vegetables.",
             "Heat a pan with a little oil.",
-            "Cook the vegetables until slightly soft.",
+            "Cook the vegetables.",
             "Add the cooked rice.",
             "Mix everything together.",
             "Cook for a few more minutes and serve."
@@ -425,14 +402,14 @@ const recipeData = [
             "Cheese",
             "Tomato slices",
             "Lettuce",
-            "A little butter or spread"
+            "A little spread"
         ],
         steps: [
-            "Spread a small amount of butter or spread on the bread.",
+            "Spread a little spread on the bread.",
             "Add cheese.",
             "Add tomato and lettuce.",
             "Place the second slice of bread on top.",
-            "Cut the sandwich and serve."
+            "Cut and serve."
         ]
     },
 
@@ -452,8 +429,8 @@ const recipeData = [
         ],
         steps: [
             "Wash and chop the vegetables.",
-            "Add the vegetables and broth to a pot.",
-            "Bring the mixture to a gentle boil.",
+            "Add vegetables and broth to a pot.",
+            "Bring to a gentle boil.",
             "Cook until the vegetables are tender.",
             "Add the cooked chicken.",
             "Heat through and serve."
@@ -475,9 +452,9 @@ const recipeData = [
         ],
         steps: [
             "Toast the bread.",
-            "Mash the avocado in a bowl.",
+            "Mash the avocado.",
             "Add a little lemon juice.",
-            "Spread the avocado over the toast.",
+            "Spread avocado over the toast.",
             "Add tomato slices.",
             "Season lightly and serve."
         ]
@@ -497,7 +474,7 @@ const recipeData = [
             "A little cheese"
         ],
         steps: [
-            "Cook the pasta according to the package instructions.",
+            "Cook the pasta.",
             "Chop the tomatoes.",
             "Cook the tomatoes with a little olive oil.",
             "Add the cooked pasta.",
@@ -518,7 +495,15 @@ const recipeData = [
             "1 banana",
             "Cinnamon",
             "A few nuts or seeds"
-         ]
+        ],
+        steps: [
+            "Add oats and milk to a bowl or saucepan.",
+            "Prepare according to the oats package instructions.",
+            "Slice the banana.",
+            "Add banana and cinnamon.",
+            "Top with nuts or seeds if desired.",
+            "Serve."
+        ]
     },
 
     {
@@ -536,7 +521,7 @@ const recipeData = [
         ],
         steps: [
             "Add oats and milk to a saucepan.",
-            "Cook according to the oats package instructions.",
+            "Prepare according to the oats package instructions.",
             "Chop the apple.",
             "Add the apple and cinnamon.",
             "Top with nuts and serve."
@@ -559,7 +544,7 @@ const recipeData = [
         steps: [
             "Prepare the cooked rice.",
             "Slice the vegetables.",
-            "Place the rice on a plate.",
+            "Place rice on a plate.",
             "Add the cooked chicken.",
             "Add the vegetables and serve."
         ]
@@ -581,7 +566,7 @@ const recipeData = [
         ],
         steps: [
             "Warm the tortillas.",
-            "Slice or shred the cooked chicken.",
+            "Slice the cooked chicken.",
             "Chop the vegetables.",
             "Add chicken and vegetables to each tortilla.",
             "Add a little cheese and sauce.",
@@ -653,7 +638,7 @@ const recipeData = [
             "Cut the fruits into small pieces.",
             "Place everything in a bowl.",
             "Mix gently.",
-            "Serve chilled if desired."
+            "Serve."
         ]
     },
 
@@ -723,7 +708,7 @@ const recipeData = [
             "Add a little olive oil.",
             "Roast until tender.",
             "Let them cool slightly.",
-            "Serve as a bowl."
+            "Serve."
         ]
     },
 
@@ -899,7 +884,7 @@ const recipeData = [
             "Cinnamon"
         ],
         steps: [
-            "Blend or crush the oats into a coarse flour.",
+            "Crush the oats into a coarse flour.",
             "Grate the apple.",
             "Mix oats, apple, egg, milk and cinnamon.",
             "Heat a pan.",
@@ -928,17 +913,6 @@ const recipeData = [
             "Add broccoli, carrot and corn.",
             "Add a little yogurt dressing.",
             "Mix and serve."
-        ]
-    }
-
-];
-        steps: [
-            "Add oats and milk to a bowl or saucepan.",
-            "Cook or prepare according to the oats package instructions.",
-            "Slice the banana.",
-            "Add banana and cinnamon.",
-            "Top with nuts or seeds if desired.",
-            "Serve."
         ]
     }
 
@@ -973,13 +947,15 @@ function displayRecipes(recipes) {
 
         card.className = "recipe-card";
 
-       card.innerHTML =
+        const emoji = recipe.title.split(" ")[0];
 
-    "<div class='recipe-card-image'>" +
-recipe.title.split(" ")[0] +
-"</div>" +
+        card.innerHTML =
 
-    "<div class='recipe-card-content'>" +
+            "<div class='recipe-card-image'>" +
+            emoji +
+            "</div>" +
+
+            "<div class='recipe-card-content'>" +
 
             "<span class='recipe-category'>" +
             recipe.category.toUpperCase() +
@@ -1029,9 +1005,14 @@ function openRecipe(id) {
 
     const details = document.getElementById("recipeDetails");
 
+    if (!gallery || !details) {
+        return;
+    }
+
     gallery.style.display = "none";
 
     details.style.display = "block";
+
 
     let ingredientsHTML = "<ul>";
 
@@ -1088,6 +1069,7 @@ function openRecipe(id) {
 
         "</div>";
 
+
     details.scrollIntoView({
         behavior: "smooth"
     });
@@ -1104,6 +1086,10 @@ function backToRecipes() {
     const gallery = document.getElementById("recipeGallery");
 
     const details = document.getElementById("recipeDetails");
+
+    if (!gallery || !details) {
+        return;
+    }
 
     details.style.display = "none";
 
@@ -1146,34 +1132,80 @@ function filterRecipes(category) {
 // SEARCH RECIPES
 // =========================
 
-const recipeSearch = document.getElementById("recipeSearch");
+const recipeSearch =
+    document.getElementById("recipeSearch");
 
 if (recipeSearch) {
 
-    recipeSearch.addEventListener("input", function() {
+    recipeSearch.addEventListener(
+        "input",
+        function() {
 
-        const searchTerm =
-            recipeSearch.value.toLowerCase().trim();
+            const searchTerm =
+                recipeSearch.value
+                    .toLowerCase()
+                    .trim();
 
-        const filtered = recipeData.filter(function(recipe) {
+            const filtered =
+                recipeData.filter(function(recipe) {
 
-            return (
-                recipe.title.toLowerCase().includes(searchTerm) ||
-                recipe.category.toLowerCase().includes(searchTerm) ||
-                recipe.ingredients.some(function(ingredient) {
+                    return (
 
-                    return ingredient
-                        .toLowerCase()
-                        .includes(searchTerm);
+                        recipe.title
+                            .toLowerCase()
+                            .includes(searchTerm)
 
-                })
-            );
+                        ||
 
-        });
+                        recipe.category
+                            .toLowerCase()
+                            .includes(searchTerm)
 
-        displayRecipes(filtered);
+                        ||
 
-    });
+                        recipe.ingredients.some(
+                            function(ingredient) {
+
+                                return ingredient
+                                    .toLowerCase()
+                                    .includes(searchTerm);
+
+                            }
+                        )
+
+                    );
+
+                });
+
+            displayRecipes(filtered);
+
+        }
+    );
+
+}
+
+
+// =========================
+// FOOD SEARCH ENTER KEY
+// =========================
+
+const foodSearch =
+    document.getElementById("foodSearch");
+
+if (foodSearch) {
+
+    foodSearch.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Enter") {
+
+                searchFood();
+
+            }
+
+        }
+    );
 
 }
 
@@ -1184,6 +1216,7 @@ if (recipeSearch) {
 
 displayRecipes(recipeData);
 
+
 console.log(
-    "NutriGuide Recipe Gallery loaded successfully."
+    "NutriGuide loaded successfully with 30 recipes."
 );
