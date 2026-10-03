@@ -243,13 +243,17 @@ console.log(
     "NutriGuide loaded successfully."
 );
 // =========================
-// MEAL RECIPE GENERATOR
+// RECIPE GALLERY
 // =========================
 
-const recipes = {
+const recipeData = [
 
-    breakfast: {
+    {
+        id: 1,
         title: "🥚 Veggie Egg Toast",
+        category: "breakfast",
+        time: "15 min",
+        difficulty: "Easy",
         ingredients: [
             "2 eggs",
             "1–2 slices of bread",
@@ -259,16 +263,21 @@ const recipes = {
             "A pinch of salt and pepper"
         ],
         steps: [
-            "Wash and chop the vegetables.",
-            "Cook the spinach and tomato in a pan with a little oil.",
+            "Wash and chop the spinach and tomato.",
+            "Heat a pan with a little olive oil.",
+            "Cook the spinach and tomato for a few minutes.",
             "Add the eggs and gently scramble everything together.",
             "Toast the bread.",
             "Serve the eggs over the toast."
         ]
     },
 
-    lunch: {
+    {
+        id: 2,
         title: "🥗 Chicken & Rice Bowl",
+        category: "lunch",
+        time: "25 min",
+        difficulty: "Easy",
         ingredients: [
             "Cooked rice",
             "Cooked chicken",
@@ -280,36 +289,46 @@ const recipes = {
         steps: [
             "Place the cooked rice in a bowl.",
             "Add the cooked chicken.",
-            "Chop the vegetables and add them.",
+            "Chop the vegetables.",
+            "Add the vegetables to the bowl.",
             "Add a small amount of yogurt or lemon dressing.",
             "Mix and serve."
         ]
     },
 
-    dinner: {
+    {
+        id: 3,
         title: "🍝 Easy Veggie Pasta",
+        category: "dinner",
+        time: "25 min",
+        difficulty: "Easy",
         ingredients: [
             "Pasta",
-            "Tomato",
-            "Bell pepper",
-            "Spinach",
-            "Olive oil",
+            "1 tomato",
+            "1 bell pepper",
+            "A handful of spinach",
+            "A little olive oil",
             "A little cheese"
         ],
         steps: [
             "Cook the pasta according to the package instructions.",
             "Chop the vegetables.",
-            "Cook the vegetables in a pan with a little oil.",
+            "Heat a pan with a little olive oil.",
+            "Cook the vegetables until softened.",
             "Add the cooked pasta and mix.",
             "Top with a little cheese and serve."
         ]
     },
 
-    snack: {
+    {
+        id: 4,
         title: "🍓 Yogurt Fruit Bowl",
+        category: "snacks",
+        time: "5 min",
+        difficulty: "Very Easy",
         ingredients: [
             "Plain yogurt",
-            "Banana",
+            "1 banana",
             "Strawberries",
             "A small handful of oats",
             "Nuts or seeds, if desired"
@@ -321,26 +340,288 @@ const recipes = {
             "Add nuts or seeds if desired.",
             "Mix and enjoy."
         ]
+    },
+
+    {
+        id: 5,
+        title: "🥞 Banana Pancakes",
+        category: "breakfast",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "1 ripe banana",
+            "1 egg",
+            "1/2 cup flour",
+            "1/2 teaspoon baking powder",
+            "A little milk"
+        ],
+        steps: [
+            "Mash the banana in a bowl.",
+            "Add the egg and mix.",
+            "Add flour and baking powder.",
+            "Add a little milk and mix into a batter.",
+            "Heat a pan.",
+            "Cook small pancakes on both sides until done.",
+            "Serve with sliced fruit."
+        ]
+    },
+
+    {
+        id: 6,
+        title: "🌯 Chicken Wrap",
+        category: "lunch",
+        time: "15 min",
+        difficulty: "Easy",
+        ingredients: [
+            "1 tortilla wrap",
+            "Cooked chicken",
+            "Lettuce",
+            "Tomato",
+            "Cucumber",
+            "Yogurt dressing"
+        ],
+        steps: [
+            "Place the tortilla on a clean surface.",
+            "Add the cooked chicken.",
+            "Add lettuce, tomato and cucumber.",
+            "Add a little yogurt dressing.",
+            "Fold the sides of the tortilla.",
+            "Roll the wrap tightly and serve."
+        ]
+    },
+
+    {
+        id: 7,
+        title: "🍚 Vegetable Fried Rice",
+        category: "vegetarian",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Cooked rice",
+            "Carrot",
+            "Peas",
+            "Bell pepper",
+            "Spring onion",
+            "A little cooking oil"
+        ],
+        steps: [
+            "Chop the vegetables.",
+            "Heat a pan with a little oil.",
+            "Cook the vegetables until slightly soft.",
+            "Add the cooked rice.",
+            "Mix everything together.",
+            "Cook for a few more minutes and serve."
+        ]
+    },
+
+    {
+        id: 8,
+        title: "🥪 Cheese & Tomato Sandwich",
+        category: "snacks",
+        time: "5 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "2 slices of bread",
+            "Cheese",
+            "Tomato slices",
+            "Lettuce",
+            "A little butter or spread"
+        ],
+        steps: [
+            "Spread a small amount of butter or spread on the bread.",
+            "Add cheese.",
+            "Add tomato and lettuce.",
+            "Place the second slice of bread on top.",
+            "Cut the sandwich and serve."
+        ]
+    },
+
+    {
+        id: 9,
+        title: "🍲 Chicken Vegetable Soup",
+        category: "dinner",
+        time: "35 min",
+        difficulty: "Medium",
+        ingredients: [
+            "Cooked chicken",
+            "Carrot",
+            "Potato",
+            "Peas",
+            "Onion",
+            "Water or broth"
+        ],
+        steps: [
+            "Wash and chop the vegetables.",
+            "Add the vegetables and broth to a pot.",
+            "Bring the mixture to a gentle boil.",
+            "Cook until the vegetables are tender.",
+            "Add the cooked chicken.",
+            "Heat through and serve."
+        ]
+    },
+
+    {
+        id: 10,
+        title: "🥑 Avocado Toast",
+        category: "breakfast",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "1–2 slices of bread",
+            "1 ripe avocado",
+            "Tomato slices",
+            "A little lemon juice",
+            "A pinch of salt and pepper"
+        ],
+        steps: [
+            "Toast the bread.",
+            "Mash the avocado in a bowl.",
+            "Add a little lemon juice.",
+            "Spread the avocado over the toast.",
+            "Add tomato slices.",
+            "Season lightly and serve."
+        ]
+    },
+
+    {
+        id: 11,
+        title: "🍅 Tomato Pasta",
+        category: "vegetarian",
+        time: "25 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Pasta",
+            "Tomatoes",
+            "Garlic",
+            "Olive oil",
+            "A little cheese"
+        ],
+        steps: [
+            "Cook the pasta according to the package instructions.",
+            "Chop the tomatoes.",
+            "Cook the tomatoes with a little olive oil.",
+            "Add the cooked pasta.",
+            "Mix everything together.",
+            "Add a little cheese and serve."
+        ]
+    },
+
+    {
+        id: 12,
+        title: "🍌 Banana Oat Bowl",
+        category: "breakfast",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Oats",
+            "Milk",
+            "1 banana",
+            "Cinnamon",
+            "A few nuts or seeds"
+        ],
+        steps: [
+            "Add oats and milk to a bowl or saucepan.",
+            "Cook or prepare according to the oats package instructions.",
+            "Slice the banana.",
+            "Add banana and cinnamon.",
+            "Top with nuts or seeds if desired.",
+            "Serve."
+        ]
     }
 
-};
+];
 
 
-function showRecipe(mealType) {
+// =========================
+// DISPLAY RECIPES
+// =========================
 
-    const recipe = recipes[mealType];
+function displayRecipes(recipes) {
+
+    const gallery = document.getElementById("recipeGallery");
+
+    if (!gallery) {
+        return;
+    }
+
+    gallery.innerHTML = "";
+
+    if (recipes.length === 0) {
+
+        gallery.innerHTML =
+            "<p>No recipes found. Try another search.</p>";
+
+        return;
+    }
+
+    recipes.forEach(function(recipe) {
+
+        const card = document.createElement("div");
+
+        card.className = "recipe-card";
+
+        card.innerHTML =
+
+            "<div class='recipe-card-content'>" +
+
+            "<span class='recipe-category'>" +
+            recipe.category.toUpperCase() +
+            "</span>" +
+
+            "<h3>" +
+            recipe.title +
+            "</h3>" +
+
+            "<div class='recipe-meta'>" +
+            "<span>⏱ " + recipe.time + "</span>" +
+            "<span>⭐ " + recipe.difficulty + "</span>" +
+            "</div>" +
+
+            "<button onclick='openRecipe(" +
+            recipe.id +
+            ")'>" +
+            "View Recipe →" +
+            "</button>" +
+
+            "</div>";
+
+        gallery.appendChild(card);
+
+    });
+
+}
+
+
+// =========================
+// OPEN RECIPE
+// =========================
+
+function openRecipe(id) {
+
+    const recipe = recipeData.find(function(item) {
+
+        return item.id === id;
+
+    });
 
     if (!recipe) {
         return;
     }
 
-    const result = document.getElementById("recipeResult");
+    const gallery = document.getElementById("recipeGallery");
+
+    const details = document.getElementById("recipeDetails");
+
+    gallery.style.display = "none";
+
+    details.style.display = "block";
 
     let ingredientsHTML = "<ul>";
 
     recipe.ingredients.forEach(function(item) {
 
-        ingredientsHTML += "<li>" + item + "</li>";
+        ingredientsHTML +=
+            "<li>" + item + "</li>";
 
     });
 
@@ -351,25 +632,141 @@ function showRecipe(mealType) {
 
     recipe.steps.forEach(function(step) {
 
-        stepsHTML += "<li>" + step + "</li>";
+        stepsHTML +=
+            "<li>" + step + "</li>";
 
     });
 
     stepsHTML += "</ol>";
 
 
-    result.innerHTML =
+    details.innerHTML =
 
-        "<h3>" +
+        "<button class='back-button' onclick='backToRecipes()'>" +
+        "← Back to Recipes" +
+        "</button>" +
+
+        "<div class='recipe-detail-card'>" +
+
+        "<span class='recipe-category'>" +
+        recipe.category.toUpperCase() +
+        "</span>" +
+
+        "<h2>" +
         recipe.title +
-        "</h3>" +
+        "</h2>" +
 
-        "<h4>Ingredients</h4>" +
+        "<div class='recipe-meta'>" +
+        "<span>⏱ " + recipe.time + "</span>" +
+        "<span>⭐ " + recipe.difficulty + "</span>" +
+        "</div>" +
+
+        "<h3>Ingredients</h3>" +
 
         ingredientsHTML +
 
-        "<h4>How to make it</h4>" +
+        "<h3>How to Make It</h3>" +
 
-        stepsHTML;
+        stepsHTML +
+
+        "</div>";
+
+    details.scrollIntoView({
+        behavior: "smooth"
+    });
 
 }
+
+
+// =========================
+// BACK TO RECIPES
+// =========================
+
+function backToRecipes() {
+
+    const gallery = document.getElementById("recipeGallery");
+
+    const details = document.getElementById("recipeDetails");
+
+    details.style.display = "none";
+
+    gallery.style.display = "grid";
+
+    document
+        .getElementById("meals")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+// =========================
+// FILTER RECIPES
+// =========================
+
+function filterRecipes(category) {
+
+    if (category === "all") {
+
+        displayRecipes(recipeData);
+
+        return;
+    }
+
+    const filtered = recipeData.filter(function(recipe) {
+
+        return recipe.category === category;
+
+    });
+
+    displayRecipes(filtered);
+
+}
+
+
+// =========================
+// SEARCH RECIPES
+// =========================
+
+const recipeSearch = document.getElementById("recipeSearch");
+
+if (recipeSearch) {
+
+    recipeSearch.addEventListener("input", function() {
+
+        const searchTerm =
+            recipeSearch.value.toLowerCase().trim();
+
+        const filtered = recipeData.filter(function(recipe) {
+
+            return (
+                recipe.title.toLowerCase().includes(searchTerm) ||
+                recipe.category.toLowerCase().includes(searchTerm) ||
+                recipe.ingredients.some(function(ingredient) {
+
+                    return ingredient
+                        .toLowerCase()
+                        .includes(searchTerm);
+
+                })
+            );
+
+        });
+
+        displayRecipes(filtered);
+
+    });
+
+}
+
+
+// =========================
+// INITIAL LOAD
+// =========================
+
+displayRecipes(recipeData);
+
+console.log(
+    "NutriGuide Recipe Gallery loaded successfully."
+);
