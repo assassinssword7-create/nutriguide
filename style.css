@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #071313;
+    color: #f4ffff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 19, 19, 0.92);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(94, 255, 210, 0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #5effd2;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #b8cccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #5effd2;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(94, 255, 210, 0.15), transparent 40%);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow,
+.section-label {
+    color: #5effd2;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #5effd2;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: auto;
+    color: #9eb2b2;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+
+.button,
+.food-search button,
+.vitamin-card button {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button.primary {
+    background: #5effd2;
+    color: #061313;
+}
+
+.button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(94, 255, 210, 0.2);
+}
+
+.button.secondary {
+    border: 1px solid rgba(94, 255, 210, 0.4);
+    color: #5effd2;
+    background: transparent;
+}
+
+.button.secondary:hover {
+    background: rgba(94, 255, 210, 0.08);
+}
+
+/* EXPLORER */
+
+.explorer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.explorer-card,
+.vitamin-card {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(94, 255, 210, 0.12);
+    border-radius: 18px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.explorer-card:hover,
+.vitamin-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(94, 255, 210, 0.4);
+}
+
+.explorer-card span {
+    color: #5effd2;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.explorer-card h2 {
+    margin: 15px 0;
+}
+
+.explorer-card p,
+.vitamin-card p {
+    color: #94aaaa;
+}
+
+.explorer-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #5effd2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* SECTIONS */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 20px;
+}
+
+.section h2,
+.ai-section h2 {
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+/* VITAMINS */
+
+.vitamin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.vitamin-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(94, 255, 210, 0.1);
+    color: #5effd2;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.vitamin-card h3 {
+    margin-bottom: 10px;
+}
+
+.vitamin-card button {
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid rgba(94, 255, 210, 0.3);
+    color: #5effd2;
+}
+
+.vitamin-card button:hover {
+    background: rgba(94, 255, 210, 0.1);
+}
+
+/* FOOD */
+
+.food-section {
+    background: rgba(255, 255, 255, 0.015);
+    border-radius: 30px;
+}
+
+.food-search {
+    display: flex;
+    gap: 10px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.food-search input {
+    flex: 1;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(94, 255, 210, 0.2);
+    background: #0c2020;
+    color: white;
+    outline: none;
+}
+
+.food-search input:focus {
+    border-color: #5effd2;
+}
+
+.food-search button {
+    background: #5effd2;
+    color: #061313;
+}
+
+.food-result {
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.035);
+    color: #a8baba;
+}
+
+/* AI GUIDE */
+
+.ai-section {
+    padding: 120px 20px;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(94, 255, 210, 0.08), transparent 45%);
+}
+
+.ai-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.ai-description {
+    color: #9eb2b2;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.ai-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ai-box textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(94, 255, 210, 0.2);
+    background: #0c2020;
+    color: white;
+    font-family: inherit;
+    outline: none;
+}
+
+.ai-box textarea:focus {
+    border-color: #5effd2;
+}
+
+.ai-box .button {
+    align-self: flex-start;
+}
+
+.ai-response {
+    margin-top: 25px;
+    padding: 25px;
+    min-height: 80px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.035);
+    color: #b7c7c7;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #718080;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(94, 255, 210, 0.1);
+    color: #718080;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .explorer,
+    .vitamin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .food-search {
+        flex-direction: column;
+    }
+
+    .food-search button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .nav-links {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+}
