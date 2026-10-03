@@ -518,7 +518,417 @@ const recipeData = [
             "1 banana",
             "Cinnamon",
             "A few nuts or seeds"
+            {
+        id: 13,
+        title: "🍎 Apple Cinnamon Oats",
+        category: "breakfast",
+        time: "10 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Oats",
+            "Milk",
+            "1 apple",
+            "Cinnamon",
+            "A small handful of nuts"
         ],
+        steps: [
+            "Add oats and milk to a saucepan.",
+            "Cook according to the oats package instructions.",
+            "Chop the apple.",
+            "Add the apple and cinnamon.",
+            "Top with nuts and serve."
+        ]
+    },
+
+    {
+        id: 14,
+        title: "🍗 Chicken Rice Plate",
+        category: "lunch",
+        time: "30 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Cooked chicken",
+            "Cooked rice",
+            "Cucumber",
+            "Tomato",
+            "Carrot"
+        ],
+        steps: [
+            "Prepare the cooked rice.",
+            "Slice the vegetables.",
+            "Place the rice on a plate.",
+            "Add the cooked chicken.",
+            "Add the vegetables and serve."
+        ]
+    },
+
+    {
+        id: 15,
+        title: "🌮 Chicken Tacos",
+        category: "lunch",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Tortillas",
+            "Cooked chicken",
+            "Lettuce",
+            "Tomato",
+            "Cheese",
+            "Yogurt or mild sauce"
+        ],
+        steps: [
+            "Warm the tortillas.",
+            "Slice or shred the cooked chicken.",
+            "Chop the vegetables.",
+            "Add chicken and vegetables to each tortilla.",
+            "Add a little cheese and sauce.",
+            "Fold and serve."
+        ]
+    },
+
+    {
+        id: 16,
+        title: "🥔 Baked Potato Bowl",
+        category: "vegetarian",
+        time: "35 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Potatoes",
+            "Yogurt",
+            "Sweet corn",
+            "Cucumber",
+            "Cheese"
+        ],
+        steps: [
+            "Wash the potatoes.",
+            "Bake until tender.",
+            "Cut the potatoes open.",
+            "Add yogurt and vegetables.",
+            "Top with a little cheese.",
+            "Serve."
+        ]
+    },
+
+    {
+        id: 17,
+        title: "🍜 Vegetable Noodles",
+        category: "dinner",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Noodles",
+            "Carrot",
+            "Bell pepper",
+            "Cabbage",
+            "Spring onion"
+        ],
+        steps: [
+            "Cook the noodles according to the package instructions.",
+            "Chop the vegetables.",
+            "Cook the vegetables in a pan.",
+            "Add the noodles.",
+            "Mix everything together.",
+            "Serve warm."
+        ]
+    },
+
+    {
+        id: 18,
+        title: "🍉 Fruit Salad",
+        category: "snacks",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Watermelon",
+            "Apple",
+            "Banana",
+            "Orange",
+            "Strawberries"
+        ],
+        steps: [
+            "Wash the fruits.",
+            "Cut the fruits into small pieces.",
+            "Place everything in a bowl.",
+            "Mix gently.",
+            "Serve chilled if desired."
+        ]
+    },
+
+    {
+        id: 19,
+        title: "🥣 Berry Yogurt Bowl",
+        category: "breakfast",
+        time: "5 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Plain yogurt",
+            "Strawberries",
+            "Blueberries",
+            "Oats",
+            "Banana"
+        ],
+        steps: [
+            "Add yogurt to a bowl.",
+            "Wash the berries.",
+            "Slice the banana.",
+            "Add the fruits and oats.",
+            "Mix and serve."
+        ]
+    },
+
+    {
+        id: 20,
+        title: "🍛 Simple Chicken Curry",
+        category: "dinner",
+        time: "40 min",
+        difficulty: "Medium",
+        ingredients: [
+            "Cooked chicken",
+            "Tomato",
+            "Onion",
+            "Plain yogurt",
+            "Mild curry spices",
+            "A little cooking oil"
+        ],
+        steps: [
+            "Chop the onion and tomato.",
+            "Cook the onion in a little oil.",
+            "Add the tomato and mild spices.",
+            "Add the cooked chicken.",
+            "Stir in a little yogurt.",
+            "Cook gently until heated through.",
+            "Serve with rice."
+        ]
+    },
+
+    {
+        id: 21,
+        title: "🥕 Roasted Vegetable Bowl",
+        category: "vegetarian",
+        time: "35 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Carrot",
+            "Potato",
+            "Bell pepper",
+            "Broccoli",
+            "Olive oil"
+        ],
+        steps: [
+            "Wash and chop the vegetables.",
+            "Place them on a baking tray.",
+            "Add a little olive oil.",
+            "Roast until tender.",
+            "Let them cool slightly.",
+            "Serve as a bowl."
+        ]
+    },
+
+    {
+        id: 22,
+        title: "🍳 Vegetable Omelette",
+        category: "breakfast",
+        time: "15 min",
+        difficulty: "Easy",
+        ingredients: [
+            "2 eggs",
+            "Tomato",
+            "Bell pepper",
+            "Spinach",
+            "A little cheese"
+        ],
+        steps: [
+            "Chop the vegetables.",
+            "Beat the eggs in a bowl.",
+            "Cook the vegetables briefly in a pan.",
+            "Pour in the eggs.",
+            "Cook until set.",
+            "Add a little cheese and fold."
+        ]
+    },
+
+    {
+        id: 23,
+        title: "🥙 Hummus Veggie Wrap",
+        category: "vegetarian",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Flatbread or tortilla",
+            "Hummus",
+            "Cucumber",
+            "Tomato",
+            "Lettuce",
+            "Carrot"
+        ],
+        steps: [
+            "Spread hummus over the flatbread.",
+            "Chop the vegetables.",
+            "Add the vegetables.",
+            "Roll the wrap.",
+            "Cut in half and serve."
+        ]
+    },
+
+    {
+        id: 24,
+        title: "🍲 Lentil Soup",
+        category: "vegetarian",
+        time: "40 min",
+        difficulty: "Medium",
+        ingredients: [
+            "Lentils",
+            "Carrot",
+            "Onion",
+            "Tomato",
+            "Water or broth"
+        ],
+        steps: [
+            "Wash the lentils.",
+            "Chop the vegetables.",
+            "Add everything to a pot with water or broth.",
+            "Bring to a gentle boil.",
+            "Cook until the lentils are tender.",
+            "Serve warm."
+        ]
+    },
+
+    {
+        id: 25,
+        title: "🥪 Chicken Cheese Toast",
+        category: "snacks",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Bread",
+            "Cooked chicken",
+            "Cheese",
+            "Tomato",
+            "Lettuce"
+        ],
+        steps: [
+            "Place chicken and cheese between two slices of bread.",
+            "Toast until the bread is crisp and the cheese melts.",
+            "Add tomato and lettuce.",
+            "Cut and serve."
+        ]
+    },
+
+    {
+        id: 26,
+        title: "🍚 Egg Fried Rice",
+        category: "lunch",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Cooked rice",
+            "2 eggs",
+            "Carrot",
+            "Peas",
+            "Spring onion"
+        ],
+        steps: [
+            "Chop the vegetables.",
+            "Cook the vegetables in a pan.",
+            "Add the eggs and scramble.",
+            "Add the cooked rice.",
+            "Mix everything together.",
+            "Cook for a few minutes and serve."
+        ]
+    },
+
+    {
+        id: 27,
+        title: "🥗 Chickpea Salad",
+        category: "vegetarian",
+        time: "10 min",
+        difficulty: "Very Easy",
+        ingredients: [
+            "Cooked chickpeas",
+            "Cucumber",
+            "Tomato",
+            "Lettuce",
+            "Lemon juice"
+        ],
+        steps: [
+            "Wash and chop the vegetables.",
+            "Add chickpeas to a bowl.",
+            "Add the vegetables.",
+            "Add a little lemon juice.",
+            "Mix and serve."
+        ]
+    },
+
+    {
+        id: 28,
+        title: "🍝 Chicken Pasta",
+        category: "dinner",
+        time: "30 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Pasta",
+            "Cooked chicken",
+            "Tomato",
+            "Spinach",
+            "A little cheese"
+        ],
+        steps: [
+            "Cook the pasta according to the package instructions.",
+            "Chop the chicken and vegetables.",
+            "Cook the vegetables in a pan.",
+            "Add the cooked chicken.",
+            "Add the pasta and mix.",
+            "Top with a little cheese."
+        ]
+    },
+
+    {
+        id: 29,
+        title: "🥞 Apple Oat Pancakes",
+        category: "breakfast",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Oats",
+            "1 apple",
+            "1 egg",
+            "Milk",
+            "Cinnamon"
+        ],
+        steps: [
+            "Blend or crush the oats into a coarse flour.",
+            "Grate the apple.",
+            "Mix oats, apple, egg, milk and cinnamon.",
+            "Heat a pan.",
+            "Cook small pancakes on both sides.",
+            "Serve with fruit."
+        ]
+    },
+
+    {
+        id: 30,
+        title: "🥦 Broccoli Rice Bowl",
+        category: "vegetarian",
+        time: "20 min",
+        difficulty: "Easy",
+        ingredients: [
+            "Cooked rice",
+            "Broccoli",
+            "Carrot",
+            "Corn",
+            "A little yogurt dressing"
+        ],
+        steps: [
+            "Steam or cook the broccoli until tender.",
+            "Chop the carrot.",
+            "Add rice to a bowl.",
+            "Add broccoli, carrot and corn.",
+            "Add a little yogurt dressing.",
+            "Mix and serve."
+        ]
+    }
+
+];
         steps: [
             "Add oats and milk to a bowl or saucepan.",
             "Cook or prepare according to the oats package instructions.",
