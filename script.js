@@ -954,83 +954,45 @@ function renderVisibleRecipes() {
 
         gallery.innerHTML =
             "<p>No recipes found. Try another search.</p>";
-
-        if (loadMoreButton) {
-            loadMoreButton.style.display = "none";
-        }
-
-        return;
-    }
-
-    const recipesToShow =
-        currentRecipeList.slice(
-            0,
-            visibleRecipeCount
-        );
+const showLessButton =
+    document.getElementById("showLessButton");
 
 
-    recipesToShow.forEach(function(recipe) {
+if (loadMoreButton) {
 
-        const card =
-            document.createElement("div");
+    if (
+        visibleRecipeCount >=
+        currentRecipeList.length
+    ) {
 
-        card.className = "recipe-card";
+        loadMoreButton.style.display =
+            "none";
 
-        const emoji =
-            recipe.title.split(" ")[0];
+    } else {
 
-        card.innerHTML =
-
-            "<div class='recipe-card-image'>" +
-            emoji +
-            "</div>" +
-
-            "<div class='recipe-card-content'>" +
-
-            "<span class='recipe-category'>" +
-            recipe.category.toUpperCase() +
-            "</span>" +
-
-            "<h3>" +
-            recipe.title +
-            "</h3>" +
-
-            "<div class='recipe-meta'>" +
-            "<span>⏱ " + recipe.time + "</span>" +
-            "<span>⭐ " + recipe.difficulty + "</span>" +
-            "</div>" +
-
-            "<button onclick='openRecipe(" +
-            recipe.id +
-            ")'>" +
-            "View Recipe →" +
-            "</button>" +
-
-            "</div>";
-
-        gallery.appendChild(card);
-
-    });
-
-
-    if (loadMoreButton) {
-
-        if (
-            visibleRecipeCount >=
-            currentRecipeList.length
-        ) {
-
-            loadMoreButton.style.display =
-                "none";
-
-        } else {
-
-            loadMoreButton.style.display =
-                "block";
-
-        }
+        loadMoreButton.style.display =
+            "block";
 
     }
+
+}
+
+
+if (showLessButton) {
+
+    if (visibleRecipeCount > recipesPerLoad) {
+
+        showLessButton.style.display =
+            "block";
+
+    } else {
+
+        showLessButton.style.display =
+            "none";
+
+    }
+
+}
 
 }
 
