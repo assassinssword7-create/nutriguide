@@ -603,12 +603,11 @@ footer {
     transform: translateY(-7px);
     box-shadow: 0 18px 40px rgba(44, 62, 80, 0.12);
 }
-.recipe-card::before {
-    content: "🍽️";
+.recipe-card-image {
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
     font-size: 65px;
     background: linear-gradient(135deg, #eafff8, #eef8ff);
     border-bottom: 1px solid #e3ebf3;
