@@ -419,3 +419,78 @@ footer {
         width: 100%;
     }
 }
+/* =========================
+   MEAL IDEAS
+========================= */
+
+.meals-section {
+    background: linear-gradient(135deg, #fff4e6, #f0f9ff);
+    border-radius: 35px;
+    margin-bottom: 60px;
+}
+
+.meal-intro {
+    max-width: 650px;
+    color: #68778a;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.meal-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.meal-buttons button {
+    border: 2px solid #e4edf5;
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #263445;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meal-buttons button:hover {
+    transform: translateY(-5px);
+    border-color: #16a085;
+    color: #16a085;
+    box-shadow: 0 10px 25px rgba(22, 160, 133, 0.12);
+}
+
+.recipe-result {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    border: 1px solid #e4edf5;
+    box-shadow: 0 12px 35px rgba(44, 62, 80, 0.06);
+}
+
+.recipe-result h3 {
+    margin-bottom: 10px;
+    color: #172033;
+}
+
+.recipe-result p {
+    color: #68778a;
+}
+
+@media (max-width: 800px) {
+
+    .meal-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .meal-buttons {
+        grid-template-columns: 1fr;
+    }
+
+}
