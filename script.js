@@ -563,8 +563,8 @@ function displayRecipes(recipes) {
        card.innerHTML =
 
     "<div class='recipe-card-image'>" +
-    recipe.title.charAt(0) +
-    "</div>" +
+recipe.title.split(" ")[0] +
+"</div>" +
 
     "<div class='recipe-card-content'>" +
 
