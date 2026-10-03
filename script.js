@@ -927,12 +927,14 @@ let currentRecipeList = recipeData;
 let visibleRecipeCount = 20;
 const recipesPerLoad = 20;
 
+
 function displayRecipes(recipes) {
 
     currentRecipeList = recipes;
     visibleRecipeCount = 20;
 
     renderVisibleRecipes();
+
 }
 
 
@@ -944,55 +946,127 @@ function renderVisibleRecipes() {
     const loadMoreButton =
         document.getElementById("loadMoreButton");
 
+    const showLessButton =
+        document.getElementById("showLessButton");
+
+
     if (!gallery) {
         return;
     }
 
+
     gallery.innerHTML = "";
+
 
     if (currentRecipeList.length === 0) {
 
         gallery.innerHTML =
             "<p>No recipes found. Try another search.</p>";
-const showLessButton =
-    document.getElementById("showLessButton");
+
+        if (loadMoreButton) {
+            loadMoreButton.style.display = "none";
+        }
+
+        if (showLessButton) {
+            showLessButton.style.display = "none";
+        }
+
+        return;
+    }
 
 
-if (loadMoreButton) {
+    const recipesToShow =
+        currentRecipeList.slice(
+            0,
+            visibleRecipeCount
+        );
 
-    if (
-        visibleRecipeCount >=
-        currentRecipeList.length
-    ) {
 
-        loadMoreButton.style.display =
-            "none";
+    recipesToShow.forEach(function(recipe) {
 
-    } else {
+        const card =
+            document.createElement("div");
 
-        loadMoreButton.style.display =
-            "block";
+        card.className = "recipe-card";
+
+
+        const emoji =
+            recipe.title.split(" ")[0];
+
+
+        card.innerHTML =
+
+            "<div class='recipe-card-image'>" +
+            emoji +
+            "</div>" +
+
+            "<div class='recipe-card-content'>" +
+
+            "<span class='recipe-category'>" +
+            recipe.category.toUpperCase() +
+            "</span>" +
+
+            "<h3>" +
+            recipe.title +
+            "</h3>" +
+
+            "<div class='recipe-meta'>" +
+            "<span>⏱ " + recipe.time + "</span>" +
+            "<span>⭐ " + recipe.difficulty + "</span>" +
+            "</div>" +
+
+            "<button onclick='openRecipe(" +
+            recipe.id +
+            ")'>" +
+            "View Recipe →" +
+            "</button>" +
+
+            "</div>";
+
+
+        gallery.appendChild(card);
+
+    });
+
+
+    if (loadMoreButton) {
+
+        if (
+            visibleRecipeCount >=
+            currentRecipeList.length
+        ) {
+
+            loadMoreButton.style.display =
+                "none";
+
+        } else {
+
+            loadMoreButton.style.display =
+                "block";
+
+        }
 
     }
 
-}
 
+    if (showLessButton) {
 
-if (showLessButton) {
+        if (
+            visibleRecipeCount >
+            recipesPerLoad
+        ) {
 
-    if (visibleRecipeCount > recipesPerLoad) {
+            showLessButton.style.display =
+                "block";
 
-        showLessButton.style.display =
-            "block";
+        } else {
 
-    } else {
+            showLessButton.style.display =
+                "none";
 
-        showLessButton.style.display =
-            "none";
+        }
 
     }
-
-}
 
 }
 
