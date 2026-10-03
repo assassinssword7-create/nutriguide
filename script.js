@@ -1072,7 +1072,7 @@ const recipeData = [
             "Add a little yogurt dressing.",
             "Mix and serve."
         ]
-    }
+    },
 {
     id: 31,
     title: "🍓 Strawberry Oat Bowl",
