@@ -751,3 +751,8 @@ footer {
     }
 
 }
+.meals-section h2 {
+    color: #172033;
+    font-weight: 900;
+    text-shadow: 0 2px 8px rgba(23, 32, 51, 0.08);
+}
