@@ -923,9 +923,26 @@ const recipeData = [
 // DISPLAY RECIPES
 // =========================
 
+let currentRecipeList = recipeData;
+let visibleRecipeCount = 20;
+const recipesPerLoad = 20;
+
 function displayRecipes(recipes) {
 
-    const gallery = document.getElementById("recipeGallery");
+    currentRecipeList = recipes;
+    visibleRecipeCount = 20;
+
+    renderVisibleRecipes();
+}
+
+
+function renderVisibleRecipes() {
+
+    const gallery =
+        document.getElementById("recipeGallery");
+
+    const loadMoreButton =
+        document.getElementById("loadMoreButton");
 
     if (!gallery) {
         return;
@@ -933,21 +950,34 @@ function displayRecipes(recipes) {
 
     gallery.innerHTML = "";
 
-    if (recipes.length === 0) {
+    if (currentRecipeList.length === 0) {
 
         gallery.innerHTML =
             "<p>No recipes found. Try another search.</p>";
 
+        if (loadMoreButton) {
+            loadMoreButton.style.display = "none";
+        }
+
         return;
     }
 
-    recipes.forEach(function(recipe) {
+    const recipesToShow =
+        currentRecipeList.slice(
+            0,
+            visibleRecipeCount
+        );
 
-        const card = document.createElement("div");
+
+    recipesToShow.forEach(function(recipe) {
+
+        const card =
+            document.createElement("div");
 
         card.className = "recipe-card";
 
-        const emoji = recipe.title.split(" ")[0];
+        const emoji =
+            recipe.title.split(" ")[0];
 
         card.innerHTML =
 
@@ -981,6 +1011,37 @@ function displayRecipes(recipes) {
         gallery.appendChild(card);
 
     });
+
+
+    if (loadMoreButton) {
+
+        if (
+            visibleRecipeCount >=
+            currentRecipeList.length
+        ) {
+
+            loadMoreButton.style.display =
+                "none";
+
+        } else {
+
+            loadMoreButton.style.display =
+                "block";
+
+        }
+
+    }
+
+}
+
+
+function loadMoreRecipes() {
+
+    visibleRecipeCount += recipesPerLoad;
+
+    renderVisibleRecipes();
+
+}
 
 }
 
