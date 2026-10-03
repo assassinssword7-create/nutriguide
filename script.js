@@ -518,7 +518,10 @@ const recipeData = [
             "1 banana",
             "Cinnamon",
             "A few nuts or seeds"
-            {
+         ]
+    },
+
+    {
         id: 13,
         title: "🍎 Apple Cinnamon Oats",
         category: "breakfast",
