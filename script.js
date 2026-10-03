@@ -1043,7 +1043,6 @@ function loadMoreRecipes() {
 
 }
 
-}
 
 
 // =========================
