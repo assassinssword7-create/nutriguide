@@ -1042,7 +1042,17 @@ function loadMoreRecipes() {
     renderVisibleRecipes();
 
 }
+function showLessRecipes() {
 
+    visibleRecipeCount -= recipesPerLoad;
+
+    if (visibleRecipeCount < recipesPerLoad) {
+        visibleRecipeCount = recipesPerLoad;
+    }
+
+    renderVisibleRecipes();
+
+}
 
 
 // =========================
