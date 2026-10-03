@@ -242,3 +242,134 @@ document
 console.log(
     "NutriGuide loaded successfully."
 );
+// =========================
+// MEAL RECIPE GENERATOR
+// =========================
+
+const recipes = {
+
+    breakfast: {
+        title: "🥚 Veggie Egg Toast",
+        ingredients: [
+            "2 eggs",
+            "1–2 slices of bread",
+            "A handful of spinach",
+            "1 small tomato",
+            "A little olive oil",
+            "A pinch of salt and pepper"
+        ],
+        steps: [
+            "Wash and chop the vegetables.",
+            "Cook the spinach and tomato in a pan with a little oil.",
+            "Add the eggs and gently scramble everything together.",
+            "Toast the bread.",
+            "Serve the eggs over the toast."
+        ]
+    },
+
+    lunch: {
+        title: "🥗 Chicken & Rice Bowl",
+        ingredients: [
+            "Cooked rice",
+            "Cooked chicken",
+            "Cucumber",
+            "Tomato",
+            "Carrot",
+            "A little yogurt or lemon dressing"
+        ],
+        steps: [
+            "Place the cooked rice in a bowl.",
+            "Add the cooked chicken.",
+            "Chop the vegetables and add them.",
+            "Add a small amount of yogurt or lemon dressing.",
+            "Mix and serve."
+        ]
+    },
+
+    dinner: {
+        title: "🍝 Easy Veggie Pasta",
+        ingredients: [
+            "Pasta",
+            "Tomato",
+            "Bell pepper",
+            "Spinach",
+            "Olive oil",
+            "A little cheese"
+        ],
+        steps: [
+            "Cook the pasta according to the package instructions.",
+            "Chop the vegetables.",
+            "Cook the vegetables in a pan with a little oil.",
+            "Add the cooked pasta and mix.",
+            "Top with a little cheese and serve."
+        ]
+    },
+
+    snack: {
+        title: "🍓 Yogurt Fruit Bowl",
+        ingredients: [
+            "Plain yogurt",
+            "Banana",
+            "Strawberries",
+            "A small handful of oats",
+            "Nuts or seeds, if desired"
+        ],
+        steps: [
+            "Add yogurt to a bowl.",
+            "Slice the fruit.",
+            "Add the fruit and oats.",
+            "Add nuts or seeds if desired.",
+            "Mix and enjoy."
+        ]
+    }
+
+};
+
+
+function showRecipe(mealType) {
+
+    const recipe = recipes[mealType];
+
+    if (!recipe) {
+        return;
+    }
+
+    const result = document.getElementById("recipeResult");
+
+    let ingredientsHTML = "<ul>";
+
+    recipe.ingredients.forEach(function(item) {
+
+        ingredientsHTML += "<li>" + item + "</li>";
+
+    });
+
+    ingredientsHTML += "</ul>";
+
+
+    let stepsHTML = "<ol>";
+
+    recipe.steps.forEach(function(step) {
+
+        stepsHTML += "<li>" + step + "</li>";
+
+    });
+
+    stepsHTML += "</ol>";
+
+
+    result.innerHTML =
+
+        "<h3>" +
+        recipe.title +
+        "</h3>" +
+
+        "<h4>Ingredients</h4>" +
+
+        ingredientsHTML +
+
+        "<h4>How to make it</h4>" +
+
+        stepsHTML;
+
+}
