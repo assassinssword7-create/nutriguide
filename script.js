@@ -139,32 +139,156 @@ function askNutriGuide() {
         .toLowerCase()
         .trim();
 
-    const response = document.getElementById("aiResponse");
+    const response =
+        document.getElementById("aiResponse");
+
 
     if (input === "") {
 
         response.innerHTML =
-            "<p>Tell me what nutrition topic you want to learn about.</p>";
+            "<p>Ask me a nutrition question and I'll try to help.</p>";
 
         return;
     }
 
+
     let answer = "";
 
 
+    /* =========================
+       BREAKFAST
+    ========================= */
+
     if (
+        input.includes("breakfast") ||
+        input.includes("morning meal")
+    ) {
+
+        answer =
+            "<h3>Breakfast Ideas 🍳</h3>" +
+            "<p>A balanced breakfast can include a source of carbohydrates, protein and fruit or vegetables.</p>" +
+            "<p>Examples include eggs with toast and fruit, yogurt with oats and berries, or a banana oat bowl.</p>";
+
+    }
+
+
+    /* =========================
+       SNACKS
+    ========================= */
+
+    else if (
+        input.includes("snack") ||
+        input.includes("snacks")
+    ) {
+
+        answer =
+            "<h3>Healthy Snack Ideas 🍓</h3>" +
+            "<p>Simple snack options include fruit with yogurt, a cheese and tomato sandwich, hummus with vegetables, or a handful of nuts if appropriate for you.</p>";
+
+    }
+
+
+    /* =========================
+       FRUIT
+    ========================= */
+
+    else if (
+        input.includes("fruit") ||
+        input.includes("fruits")
+    ) {
+
+        answer =
+            "<h3>Fruits 🍎</h3>" +
+            "<p>Fruits provide nutrients such as vitamins, minerals, fiber and carbohydrates. Examples include apples, bananas, oranges, berries, kiwi and watermelon.</p>";
+
+    }
+
+
+    /* =========================
+       VEGETABLES
+    ========================= */
+
+    else if (
+        input.includes("vegetable") ||
+        input.includes("vegetables")
+    ) {
+
+        answer =
+            "<h3>Vegetables 🥦</h3>" +
+            "<p>Vegetables provide a variety of vitamins, minerals and fiber. Try including different colors such as broccoli, carrots, peppers, tomatoes and leafy greens.</p>";
+
+    }
+
+
+    /* =========================
+       CALCIUM
+    ========================= */
+
+    else if (
+        input.includes("calcium") ||
+        input.includes("milk")
+    ) {
+
+        answer =
+            "<h3>Calcium 🥛</h3>" +
+            "<p>Calcium is important for normal bones and teeth and also plays roles in muscle function. Food sources include milk, yogurt, cheese and some fortified foods.</p>";
+
+    }
+
+
+    /* =========================
+       FIBER
+    ========================= */
+
+    else if (
+        input.includes("fiber") ||
+        input.includes("fibre")
+    ) {
+
+        answer =
+            "<h3>Fiber 🌾</h3>" +
+            "<p>Fiber is found in plant foods and supports normal digestive health. Good sources include fruits, vegetables, oats, whole grains, beans and lentils.</p>";
+
+    }
+
+
+    /* =========================
+       WATER
+    ========================= */
+
+    else if (
+        input.includes("water") ||
+        input.includes("hydration") ||
+        input.includes("thirsty")
+    ) {
+
+        answer =
+            "<h3>Hydration 💧</h3>" +
+            "<p>Water is essential for normal body functions. Drinking regularly throughout the day and having water with meals can help maintain hydration.</p>";
+
+    }
+
+
+    /* =========================
+       ENERGY
+    ========================= */
+
+    else if (
         input.includes("tired") ||
         input.includes("energy") ||
         input.includes("fatigue")
     ) {
 
         answer =
-            "<h3>Energy & Nutrition</h3>" +
-            "<p>Energy levels can be influenced by many factors. " +
-            "A balanced diet provides carbohydrates, protein, fats, vitamins and minerals that support normal body functions. " +
-            "Foods such as whole grains, fruits, vegetables, eggs, dairy and beans can contribute to a balanced diet.</p>";
+            "<h3>Energy & Nutrition ⚡</h3>" +
+            "<p>Energy levels can be affected by food, hydration, sleep and activity. A varied diet provides carbohydrates, protein, fats, vitamins and minerals needed for normal body functions.</p>";
 
     }
+
+
+    /* =========================
+       IRON
+    ========================= */
 
     else if (
         input.includes("iron") ||
@@ -172,11 +296,15 @@ function askNutriGuide() {
     ) {
 
         answer =
-            "<h3>Iron</h3>" +
-            "<p>Iron is an important mineral involved in normal red blood cell formation and oxygen transport. " +
-            "Food sources include meat, beans, lentils, spinach and fortified cereals.</p>";
+            "<h3>Iron 🩸</h3>" +
+            "<p>Iron is an important mineral involved in normal red blood cell formation and oxygen transport. Food sources include meat, beans, lentils, spinach and fortified cereals.</p>";
 
     }
+
+
+    /* =========================
+       VITAMIN D
+    ========================= */
 
     else if (
         input.includes("vitamin d") ||
@@ -184,11 +312,15 @@ function askNutriGuide() {
     ) {
 
         answer =
-            "<h3>Vitamin D & Bones</h3>" +
-            "<p>Vitamin D helps the body absorb calcium and supports normal bones and muscles. " +
-            "Some sources include fortified foods, eggs and oily fish.</p>";
+            "<h3>Vitamin D ☀️</h3>" +
+            "<p>Vitamin D helps the body absorb calcium and supports normal bones and muscles. Sources include fortified foods, eggs and oily fish.</p>";
 
     }
+
+
+    /* =========================
+       VITAMIN C
+    ========================= */
 
     else if (
         input.includes("vitamin c") ||
@@ -196,11 +328,15 @@ function askNutriGuide() {
     ) {
 
         answer =
-            "<h3>Vitamin C</h3>" +
-            "<p>Vitamin C contributes to normal immune function and collagen formation. " +
-            "Fruits and vegetables such as oranges, strawberries, kiwi and peppers are common sources.</p>";
+            "<h3>Vitamin C 🍊</h3>" +
+            "<p>Vitamin C contributes to normal immune function and collagen formation. Sources include oranges, strawberries, kiwi, tomatoes and peppers.</p>";
 
     }
+
+
+    /* =========================
+       PROTEIN
+    ========================= */
 
     else if (
         input.includes("protein") ||
@@ -208,18 +344,40 @@ function askNutriGuide() {
     ) {
 
         answer =
-            "<h3>Protein</h3>" +
-            "<p>Protein is an important nutrient used by the body for growth and maintenance. " +
-            "Food sources include eggs, dairy, fish, meat, beans, lentils and nuts.</p>";
+            "<h3>Protein 💪</h3>" +
+            "<p>Protein is an important nutrient used by the body for growth and maintenance. Sources include eggs, dairy, fish, meat, beans, lentils and nuts.</p>";
 
     }
+
+
+    /* =========================
+       CARBOHYDRATES
+    ========================= */
+
+    else if (
+        input.includes("carb") ||
+        input.includes("carbohydrate") ||
+        input.includes("carbohydrates")
+    ) {
+
+        answer =
+            "<h3>Carbohydrates 🍚</h3>" +
+            "<p>Carbohydrates are an important source of energy. Foods such as rice, potatoes, oats, bread, pasta and fruit contain carbohydrates.</p>";
+
+    }
+
+
+    /* =========================
+       GENERAL
+    ========================= */
 
     else {
 
         answer =
-            "<h3>General Nutrition</h3>" +
-            "<p>A balanced diet usually includes a variety of fruits, vegetables, grains, protein foods and healthy fats. " +
-            "Different foods provide different nutrients, so variety is important.</p>";
+            "<h3>Let's explore nutrition 🌱</h3>" +
+            "<p>I can help explain topics such as vitamins, minerals, protein, carbohydrates, fiber, hydration, fruits, vegetables, breakfast ideas and snacks.</p>" +
+            "<p>Try asking something like: <strong>What foods contain vitamin C?</strong></p>";
+
     }
 
 
