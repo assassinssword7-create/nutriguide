@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NutriGuide | Understand Your Nutrition</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                NutriGuide
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#vitamins">Vitamins</a>
+                <a href="#foods">Foods</a>
+                <a href="#ai-guide">AI Guide</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    NUTRITION • EDUCATION • WELLNESS
+                </p>
+
+                <h1>
+                    Understand your
+                    <span>nutrition.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Explore vitamins, minerals, foods and healthy
+                    meal ideas — all in one simple place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#vitamins" class="button primary">
+                        Explore Nutrition
+                    </a>
+
+                    <a href="#ai-guide" class="button secondary">
+                        Try AI Guide
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK EXPLORER -->
+
+        <section class="explorer">
+
+            <div class="explorer-card">
+
+                <span>01</span>
+
+                <h2>Vitamins</h2>
+
+                <p>
+                    Learn about different vitamins, their general
+                    roles in the body and common food sources.
+                </p>
+
+                <a href="#vitamins">
+                    Explore →
+                </a>
+
+            </div>
+
+
+            <div class="explorer-card">
+
+                <span>02</span>
+
+                <h2>Foods</h2>
+
+                <p>
+                    Discover foods that naturally contain important
+                    vitamins and minerals.
+                </p>
+
+                <a href="#foods">
+                    Explore →
+                </a>
+
+            </div>
+
+
+            <div class="explorer-card">
+
+                <span>03</span>
+
+                <h2>AI Guide</h2>
+
+                <p>
+                    Describe a nutrition concern and get general
+                    educational information about possible nutrition
+                    connections.
+                </p>
+
+                <a href="#ai-guide">
+                    Try it →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- VITAMINS -->
+
+        <section id="vitamins" class="section">
+
+            <p class="section-label">
+                VITAMIN EXPLORER
+            </p>
+
+            <h2>
+                Learn what different vitamins do.
+            </h2>
+
+            <div class="vitamin-grid">
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">A</div>
+
+                    <h3>Vitamin A</h3>
+
+                    <p>
+                        Learn about its roles in normal vision,
+                        immune function and growth.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin A')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">B</div>
+
+                    <h3>Vitamin B12</h3>
+
+                    <p>
+                        Explore its role in normal blood cells
+                        and nervous-system function.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin B12')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">C</div>
+
+                    <h3>Vitamin C</h3>
+
+                    <p>
+                        Learn about vitamin C and its role in
+                        normal immune function and collagen formation.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin C')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">D</div>
+
+                    <h3>Vitamin D</h3>
+
+                    <p>
+                        Explore its role in calcium absorption
+                        and normal bone health.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin D')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">E</div>
+
+                    <h3>Vitamin E</h3>
+
+                    <p>
+                        Learn about vitamin E and its antioxidant
+                        role in protecting cells from oxidative stress.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin E')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="vitamin-card">
+                    <div class="vitamin-icon">K</div>
+
+                    <h3>Vitamin K</h3>
+
+                    <p>
+                        Explore its role in normal blood clotting
+                        and bone metabolism.
+                    </p>
+
+                    <button onclick="showVitamin('Vitamin K')">
+                        Learn More
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOODS -->
+
+        <section id="foods" class="section food-section">
+
+            <p class="section-label">
+                FOOD EXPLORER
+            </p>
+
+            <h2>
+                Find nutrients in everyday foods.
+            </h2>
+
+            <div class="food-search">
+
+                <input
+                    type="text"
+                    id="foodSearch"
+                    placeholder="Search for a food..."
+                >
+
+                <button onclick="searchFood()">
+                    Search
+                </button>
+
+            </div>
+
+            <div id="foodResult" class="food-result">
+
+                <p>
+                    Search for foods such as eggs, spinach,
+                    milk, oranges or almonds.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI GUIDE -->
+
+        <section id="ai-guide" class="ai-section">
+
+            <div class="ai-container">
+
+                <p class="section-label">
+                    NUTRIGUIDE AI
+                </p>
+
+                <h2>
+                    Have a nutrition question?
+                </h2>
+
+                <p class="ai-description">
+                    Describe what you want to learn about and
+                    NutriGuide will provide general educational
+                    nutrition information.
+                </p>
+
+                <div class="ai-box">
+
+                    <textarea
+                        id="aiInput"
+                        placeholder="Example: What foods contain nutrients involved in normal energy metabolism?"
+                    ></textarea>
+
+                    <button
+                        class="button primary"
+                        onclick="askNutriGuide()">
+                        Ask NutriGuide
+                    </button>
+
+                </div>
+
+                <div id="aiResponse" class="ai-response">
+
+                    <p>
+                        Your NutriGuide response will appear here.
+                    </p>
+
+                </div>
+
+                <p class="disclaimer">
+                    NutriGuide provides general educational
+                    information and does not diagnose medical
+                    conditions or replace professional medical advice.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 NutriGuide. Educational nutrition information.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
