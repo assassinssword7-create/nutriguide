@@ -287,54 +287,84 @@
 
       <!-- MEAL IDEAS -->
 
+<!-- RECIPE GALLERY -->
+
 <section id="meals" class="section meals-section">
 
     <p class="section-label">
-        MEAL IDEAS
+        RECIPE GALLERY
     </p>
 
     <h2>
-        What can you make today?
+        Discover something delicious.
     </h2>
 
     <p class="meal-intro">
-        Choose a meal and discover a simple recipe with
-        everyday ingredients.
+        Explore recipes by category or search for a meal.
+        Click any recipe to see its ingredients and how to make it.
     </p>
 
-    <div class="meal-buttons">
+    <!-- SEARCH -->
 
-        <button onclick="showRecipe('breakfast')">
+    <div class="recipe-search">
+
+        <input
+            type="text"
+            id="recipeSearch"
+            placeholder="Search recipes..."
+        >
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="recipe-filters">
+
+        <button onclick="filterRecipes('all')">
+            All
+        </button>
+
+        <button onclick="filterRecipes('breakfast')">
             🍳 Breakfast
         </button>
 
-        <button onclick="showRecipe('lunch')">
+        <button onclick="filterRecipes('lunch')">
             🥗 Lunch
         </button>
 
-        <button onclick="showRecipe('dinner')">
+        <button onclick="filterRecipes('dinner')">
             🍝 Dinner
         </button>
 
-        <button onclick="showRecipe('snack')">
-            🍓 Snack
+        <button onclick="filterRecipes('snacks')">
+            🍓 Snacks
+        </button>
+
+        <button onclick="filterRecipes('vegetarian')">
+            🌱 Vegetarian
         </button>
 
     </div>
 
-    <div id="recipeResult" class="recipe-result">
 
-        <h3>
-            Pick a meal to get a recipe
-        </h3>
+    <!-- RECIPE GALLERY -->
 
-        <p>
-            Your recipe will appear here.
-        </p>
-
+    <div
+        id="recipeGallery"
+        class="recipe-gallery">
     </div>
 
-</section> 
+
+    <!-- RECIPE DETAILS -->
+
+    <div
+        id="recipeDetails"
+        class="recipe-details"
+        style="display: none;">
+    </div>
+
+</section>
      <!-- AI GUIDE -->
 
         <section id="ai-guide" class="ai-section">
