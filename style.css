@@ -787,16 +787,16 @@ footer {
 .recipe-count-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
     margin: 12px 0 25px;
-    padding: 10px 16px;
+    padding: 11px 18px;
     border-radius: 999px;
     background: linear-gradient(135deg, #eafff8, #eef8ff);
     border: 1px solid #bceee3;
     color: #16a085;
     font-size: 14px;
     font-weight: 700;
-    box-shadow: 0 8px 20px rgba(22, 160, 133, 0.08);
+    box-shadow: 0 8px 22px rgba(22, 160, 133, 0.10);
 }
 
 .recipe-count-badge strong {
