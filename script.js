@@ -2051,9 +2051,14 @@ if (loadMoreContainer) {
 
 function backToRecipes() {
 
-    const gallery = document.getElementById("recipeGallery");
+    const gallery =
+        document.getElementById("recipeGallery");
 
-    const details = document.getElementById("recipeDetails");
+    const details =
+        document.getElementById("recipeDetails");
+
+    const loadMoreContainer =
+        document.querySelector(".load-more-container");
 
     if (!gallery || !details) {
         return;
@@ -2063,6 +2068,10 @@ function backToRecipes() {
 
     gallery.style.display = "grid";
 
+    if (loadMoreContainer) {
+        loadMoreContainer.style.display = "flex";
+    }
+
     document
         .getElementById("meals")
         .scrollIntoView({
@@ -2070,8 +2079,6 @@ function backToRecipes() {
         });
 
 }
-
-
 // =========================
 // FILTER RECIPES
 // =========================
