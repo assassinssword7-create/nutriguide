@@ -1971,10 +1971,16 @@ function openRecipe(id) {
         return;
     }
 
-    gallery.style.display = "none";
+   gallery.style.display = "none";
 
-    details.style.display = "block";
+details.style.display = "block";
 
+const loadMoreContainer =
+    document.querySelector(".load-more-container");
+
+if (loadMoreContainer) {
+    loadMoreContainer.style.display = "none";
+}
 
     let ingredientsHTML = "<ul>";
 
