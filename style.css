@@ -593,15 +593,16 @@ footer {
 .recipe-card {
     background: white;
     border: 1px solid #e3ebf3;
-    border-radius: 22px;
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 12px 35px rgba(44, 62, 80, 0.07);
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .recipe-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 18px 40px rgba(44, 62, 80, 0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(44, 62, 80, 0.14);
 }
 .recipe-card-image {
     height: 150px;
