@@ -1559,5 +1559,5 @@ const recipeData = [
         "Add beans and vegetables to a bowl.",
         "Mix gently and serve."
     ]
-},
+}
 ];
