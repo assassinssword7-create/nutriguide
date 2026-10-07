@@ -1380,6 +1380,7 @@ const recipeData = [
     ingredients: ["Carrot", "Cucumber", "Bell pepper", "Hummus"],
     steps: ["Cut the vegetables into sticks.", "Place hummus in a bowl.", "Serve vegetables with hummus."]
 },
+
 {
     id: 101,
     title: "Banana Berry Oat Bowl",
