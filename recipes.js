@@ -2371,4 +2371,913 @@ const recipeData = [
     ingredients: ["1 cup rice", "Carrot", "Broccoli", "Corn", "Tomato", "Cucumber"],
     steps: ["Cook the vegetables.", "Add rice to a bowl.", "Arrange the vegetables on top.", "Mix and serve."]
 }
+{
+    id: 201,
+    title: "🥞 Blueberry Oat Pancakes",
+    category: "breakfast",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup oats", "1 banana", "1 egg", "1/2 cup milk", "1/2 cup blueberries"],
+    steps: ["Blend oats, banana, egg and milk.", "Fold in blueberries.", "Cook small pancakes on a lightly heated pan.", "Serve warm."]
+},
+{
+    id: 202,
+    title: "🍳 Tomato Herb Omelet",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 eggs", "1 tomato", "1 tbsp chopped herbs", "1 tsp olive oil"],
+    steps: ["Whisk the eggs.", "Chop the tomato and herbs.", "Cook the mixture in a lightly oiled pan.", "Fold and serve."]
+},
+{
+    id: 203,
+    title: "🥣 Apple Cinnamon Oatmeal",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup oats", "1 apple", "1 cup milk", "1/2 tsp cinnamon"],
+    steps: ["Dice the apple.", "Cook oats with milk.", "Add apple and cinnamon.", "Cook until creamy."]
+},
+{
+    id: 204,
+    title: "🥑 Avocado Egg Toast",
+    category: "breakfast",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices whole-grain bread", "1 avocado", "2 eggs", "Lemon juice"],
+    steps: ["Toast the bread.", "Mash avocado with a little lemon juice.", "Cook the eggs.", "Spread avocado over toast and top with eggs."]
+},
+{
+    id: 205,
+    title: "🍓 Strawberry Yogurt Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "1/2 cup strawberries", "2 tbsp oats", "1 tbsp honey"],
+    steps: ["Slice strawberries.", "Add yogurt to a bowl.", "Top with strawberries and oats.", "Drizzle with honey."]
+},
+{
+    id: 206,
+    title: "🍌 Banana Peanut Butter Toast",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices bread", "1 banana", "2 tbsp peanut butter"],
+    steps: ["Toast the bread.", "Spread peanut butter.", "Slice banana.", "Arrange banana slices on top."]
+},
+{
+    id: 207,
+    title: "🥚 Spinach Scrambled Eggs",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 eggs", "1 handful spinach", "1 tsp olive oil"],
+    steps: ["Whisk the eggs.", "Cook spinach briefly.", "Add eggs.", "Stir gently until cooked."]
+},
+{
+    id: 208,
+    title: "🍯 Honey Granola Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "1/2 cup granola", "1 banana", "1 tsp honey"],
+    steps: ["Add yogurt to a bowl.", "Top with granola.", "Slice the banana.", "Add banana and honey."]
+},
+{
+    id: 209,
+    title: "🌽 Corn Breakfast Wrap",
+    category: "breakfast",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/2 cup corn", "1 egg", "1/4 cup cheese"],
+    steps: ["Cook the egg.", "Warm the tortilla.", "Add corn, egg and cheese.", "Roll the tortilla tightly."]
+},
+{
+    id: 210,
+    title: "🥭 Mango Yogurt Parfait",
+    category: "breakfast",
+    time: "7 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "1/2 mango", "1/4 cup oats", "1 tsp honey"],
+    steps: ["Dice the mango.", "Layer yogurt and oats.", "Add mango.", "Drizzle with honey."]
+},
+
+{
+    id: 211,
+    title: "🍚 Cinnamon Raisin Rice Bowl",
+    category: "breakfast",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "1/2 cup milk", "1 tbsp raisins", "1/2 tsp cinnamon"],
+    steps: ["Heat rice with milk.", "Add raisins.", "Sprinkle with cinnamon.", "Serve warm."]
+},
+{
+    id: 212,
+    title: "🥪 Egg Cheese Breakfast Sandwich",
+    category: "breakfast",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["2 bread rolls", "2 eggs", "2 cheese slices", "1 tomato"],
+    steps: ["Cook the eggs.", "Toast the rolls.", "Add cheese and egg.", "Top with tomato and serve."]
+},
+{
+    id: 213,
+    title: "🍐 Pear Walnut Oat Bowl",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup oats", "1 pear", "1 tbsp walnuts", "1 cup milk"],
+    steps: ["Cook oats with milk.", "Dice the pear.", "Add pear and walnuts.", "Serve warm."]
+},
+{
+    id: 214,
+    title: "🥝 Kiwi Yogurt Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "2 kiwis", "2 tbsp granola"],
+    steps: ["Peel and slice kiwis.", "Add yogurt to a bowl.", "Top with kiwi and granola."]
+},
+{
+    id: 215,
+    title: "🧇 Banana Oat Waffles",
+    category: "breakfast",
+    time: "20 min",
+    difficulty: "Medium",
+    ingredients: ["1 banana", "1 egg", "1 cup oats", "1/2 cup milk"],
+    steps: ["Blend ingredients into a batter.", "Preheat the waffle maker.", "Pour in batter.", "Cook until golden."]
+},
+{
+    id: 216,
+    title: "🍅 Tomato Cheese Toast",
+    category: "breakfast",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices bread", "1 tomato", "1/4 cup shredded cheese"],
+    steps: ["Toast the bread.", "Slice tomato.", "Add tomato and cheese.", "Toast until cheese melts."]
+},
+{
+    id: 217,
+    title: "🥜 Nutty Banana Oatmeal",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup oats", "1 banana", "1 cup milk", "1 tbsp mixed nuts"],
+    steps: ["Cook oats with milk.", "Slice the banana.", "Add banana and nuts.", "Serve warm."]
+},
+{
+    id: 218,
+    title: "🍑 Peach Yogurt Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "1 peach", "2 tbsp oats"],
+    steps: ["Slice the peach.", "Add yogurt to a bowl.", "Top with peach and oats."]
+},
+{
+    id: 219,
+    title: "🌱 Green Breakfast Wrap",
+    category: "breakfast",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1 egg", "1/2 cup spinach", "1/4 avocado"],
+    steps: ["Cook the egg and spinach.", "Warm the tortilla.", "Add avocado.", "Add egg mixture and roll."]
+},
+{
+    id: 220,
+    title: "🍇 Grape Yogurt Crunch",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup yogurt", "1/2 cup grapes", "1/4 cup granola"],
+    steps: ["Wash and halve grapes.", "Add yogurt to a bowl.", "Top with grapes and granola."]
+},
+
+{
+    id: 221,
+    title: "🍗 Lemon Herb Chicken Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 chicken breast", "1 cup cooked rice", "1/2 cucumber", "Lemon juice", "Mixed herbs"],
+    steps: ["Season chicken with lemon and herbs.", "Cook chicken thoroughly.", "Slice the chicken.", "Serve with rice and cucumber."]
+},
+{
+    id: 222,
+    title: "🥗 Crunchy Chickpea Salad",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup chickpeas", "1 cucumber", "1 tomato", "Lemon juice"],
+    steps: ["Drain chickpeas.", "Chop cucumber and tomato.", "Combine ingredients.", "Add lemon juice and mix."]
+},
+{
+    id: 223,
+    title: "🌯 Chicken Veggie Wrap",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/2 cup cooked chicken", "Lettuce", "Tomato", "Cucumber"],
+    steps: ["Slice chicken and vegetables.", "Place everything on tortilla.", "Roll tightly.", "Slice and serve."]
+},
+{
+    id: 224,
+    title: "🍚 Vegetable Rice Bowl",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "1/2 carrot", "1/2 bell pepper", "1/2 cup peas"],
+    steps: ["Chop vegetables.", "Cook vegetables until tender.", "Add cooked rice.", "Mix and serve."]
+},
+{
+    id: 225,
+    title: "🥔 Herb Potato Salad",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["3 potatoes", "1 tbsp olive oil", "Parsley", "Lemon juice"],
+    steps: ["Boil potatoes until tender.", "Cut into pieces.", "Add parsley and olive oil.", "Finish with lemon juice."]
+},
+{
+    id: 226,
+    title: "🍅 Mediterranean Tomato Bowl",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 tomatoes", "1 cucumber", "1/4 cup olives", "1/4 cup feta cheese"],
+    steps: ["Chop tomatoes and cucumber.", "Add olives.", "Crumble feta over the bowl.", "Mix gently."]
+},
+{
+    id: 227,
+    title: "🌽 Corn Bean Salad",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup beans", "1/2 cup corn", "1 tomato", "Lime juice"],
+    steps: ["Drain beans.", "Chop tomato.", "Combine beans, corn and tomato.", "Add lime juice."]
+},
+{
+    id: 228,
+    title: "🥬 Turkey Lettuce Wraps",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup cooked turkey", "Lettuce leaves", "1 tomato", "1/2 cucumber"],
+    steps: ["Slice turkey and vegetables.", "Place them inside lettuce leaves.", "Roll carefully.", "Serve fresh."]
+},
+{
+    id: 229,
+    title: "🍝 Tomato Basil Pasta",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "2 tomatoes", "Fresh basil", "1 tsp olive oil"],
+    steps: ["Cook pasta according to package directions.", "Chop tomatoes.", "Warm tomatoes with olive oil.", "Mix with pasta and basil."]
+},
+{
+    id: 230,
+    title: "🥦 Broccoli Rice Bowl",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "1 cup broccoli", "1 carrot", "1 tsp olive oil"],
+    steps: ["Steam broccoli and carrot.", "Add cooked rice.", "Drizzle with olive oil.", "Mix and serve."]
+},
+
+{
+    id: 231,
+    title: "🥕 Carrot Lentil Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 cup cooked lentils", "1 carrot", "1 tomato", "Parsley"],
+    steps: ["Chop carrot and tomato.", "Cook carrot until tender.", "Add lentils.", "Top with tomato and parsley."]
+},
+{
+    id: 232,
+    title: "🥙 Hummus Veggie Pita",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 pita", "1/3 cup hummus", "Cucumber", "Tomato", "Lettuce"],
+    steps: ["Cut pita open.", "Spread hummus inside.", "Add vegetables.", "Serve immediately."]
+},
+{
+    id: 233,
+    title: "🍳 Egg Vegetable Rice",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "2 eggs", "1/2 carrot", "1/2 cup peas"],
+    steps: ["Cook vegetables.", "Add rice.", "Push rice aside and cook eggs.", "Mix everything together."]
+},
+{
+    id: 234,
+    title: "🐟 Lemon Fish Rice Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 fish fillet", "1 cup cooked rice", "Lemon juice", "Cucumber"],
+    steps: ["Season fish with lemon.", "Cook fish thoroughly.", "Serve with rice.", "Add sliced cucumber."]
+},
+{
+    id: 235,
+    title: "🫘 Bean Tomato Wrap",
+    category: "lunch",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/2 cup beans", "1 tomato", "Lettuce"],
+    steps: ["Mash beans lightly.", "Chop tomato and lettuce.", "Place ingredients on tortilla.", "Roll and serve."]
+},
+{
+    id: 236,
+    title: "🥒 Cucumber Yogurt Bowl",
+    category: "lunch",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["1 cucumber", "1 cup yogurt", "Mint", "Lemon juice"],
+    steps: ["Dice cucumber.", "Mix with yogurt.", "Add mint.", "Finish with lemon juice."]
+},
+{
+    id: 237,
+    title: "🍠 Sweet Potato Chickpea Bowl",
+    category: "lunch",
+    time: "30 min",
+    difficulty: "Medium",
+    ingredients: ["1 sweet potato", "1 cup chickpeas", "Spinach", "Olive oil"],
+    steps: ["Bake or cook sweet potato until tender.", "Warm chickpeas.", "Add spinach.", "Combine and serve."]
+},
+{
+    id: 238,
+    title: "🥑 Avocado Bean Salad",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 avocado", "1 cup beans", "1 tomato", "Lime juice"],
+    steps: ["Dice avocado and tomato.", "Add beans.", "Drizzle with lime juice.", "Mix gently."]
+},
+{
+    id: 239,
+    title: "🌶️ Pepper Chicken Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 chicken breast", "1 bell pepper", "1 cup rice", "Mixed herbs"],
+    steps: ["Slice pepper and chicken.", "Cook chicken thoroughly.", "Add bell pepper.", "Serve with rice."]
+},
+{
+    id: 240,
+    title: "🥗 Apple Walnut Salad",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 apple", "1 cup lettuce", "1 tbsp walnuts", "1/4 cup cheese"],
+    steps: ["Slice apple.", "Add lettuce.", "Add walnuts and cheese.", "Mix gently."]
+},
+
+{
+    id: 241,
+    title: "🍝 Garlic Vegetable Pasta",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "1 zucchini", "1 bell pepper", "1 garlic clove", "Olive oil"],
+    steps: ["Cook pasta.", "Chop vegetables.", "Cook vegetables with garlic.", "Mix with pasta and serve."]
+},
+{
+    id: 242,
+    title: "🍗 Herb Chicken Potatoes",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Medium",
+    ingredients: ["1 chicken breast", "2 potatoes", "Mixed herbs", "Olive oil"],
+    steps: ["Cut potatoes.", "Season chicken and potatoes.", "Cook until chicken is fully cooked and potatoes are tender.", "Serve together."]
+},
+{
+    id: 243,
+    title: "🍚 Vegetable Curry Rice",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Medium",
+    ingredients: ["1 cup cooked rice", "1 carrot", "1 bell pepper", "1 cup peas", "Mild curry powder"],
+    steps: ["Cook vegetables.", "Add mild curry powder.", "Add cooked rice.", "Mix and heat through."]
+},
+{
+    id: 244,
+    title: "🐟 Herb Baked Fish",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 fish fillet", "Lemon", "Mixed herbs", "1 tsp olive oil"],
+    steps: ["Place fish in a baking dish.", "Add lemon and herbs.", "Bake until fully cooked.", "Serve warm."]
+},
+{
+    id: 245,
+    title: "🥘 Lentil Vegetable Stew",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Medium",
+    ingredients: ["1 cup lentils", "1 carrot", "1 tomato", "1/2 zucchini", "Water"],
+    steps: ["Chop vegetables.", "Add lentils and vegetables to a pot.", "Cover with water.", "Simmer until tender."]
+},
+{
+    id: 246,
+    title: "🍅 Tomato Chickpea Pasta",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "1 cup chickpeas", "2 tomatoes", "Basil"],
+    steps: ["Cook pasta.", "Chop tomatoes.", "Warm tomatoes and chickpeas.", "Mix with pasta and basil."]
+},
+{
+    id: 247,
+    title: "🥦 Broccoli Cheese Rice",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "1 cup broccoli", "1/4 cup shredded cheese"],
+    steps: ["Steam broccoli.", "Add rice.", "Sprinkle with cheese.", "Heat until cheese melts."]
+},
+{
+    id: 248,
+    title: "🌯 Chicken Avocado Burrito",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/2 cup cooked chicken", "1/2 avocado", "1/4 cup beans"],
+    steps: ["Slice avocado.", "Add chicken and beans to tortilla.", "Add avocado.", "Fold and serve."]
+},
+{
+    id: 249,
+    title: "🍲 Vegetable Noodle Soup",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup noodles", "1 carrot", "1/2 zucchini", "Vegetable broth"],
+    steps: ["Chop vegetables.", "Simmer vegetables in broth.", "Add noodles.", "Cook until noodles are tender."]
+},
+{
+    id: 250,
+    title: "🥔 Potato Chickpea Curry",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Medium",
+    ingredients: ["2 potatoes", "1 cup chickpeas", "1 tomato", "Mild curry powder"],
+    steps: ["Cut potatoes.", "Cook potatoes until tender.", "Add tomato and chickpeas.", "Add mild curry powder and simmer."]
+},
+
+{
+    id: 251,
+    title: "🍆 Eggplant Tomato Rice",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Medium",
+    ingredients: ["1 eggplant", "2 tomatoes", "1 cup cooked rice", "Olive oil"],
+    steps: ["Dice eggplant.", "Cook eggplant until tender.", "Add tomatoes.", "Serve with rice."]
+},
+{
+    id: 252,
+    title: "🥕 Carrot Pea Pasta",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "1 carrot", "1/2 cup peas", "Olive oil"],
+    steps: ["Cook pasta.", "Cook chopped carrot and peas.", "Add pasta.", "Mix and serve."]
+},
+{
+    id: 253,
+    title: "🍳 Vegetable Egg Fried Rice",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "2 eggs", "1 carrot", "1/2 cup peas"],
+    steps: ["Cook vegetables.", "Add rice.", "Cook eggs separately in the pan.", "Mix everything together."]
+},
+{
+    id: 254,
+    title: "🌱 Spinach Bean Pasta",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "1 cup beans", "1 cup spinach", "1 tomato"],
+    steps: ["Cook pasta.", "Cook tomato and spinach.", "Add beans.", "Mix with pasta."]
+},
+{
+    id: 255,
+    title: "🍗 Chicken Tomato Couscous",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1/2 cup couscous", "1 chicken breast", "1 tomato", "Parsley"],
+    steps: ["Prepare couscous according to package directions.", "Cook chicken thoroughly.", "Chop tomato.", "Serve chicken and tomato over couscous."]
+},
+{
+    id: 256,
+    title: "🥬 Vegetable Couscous Bowl",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup couscous", "1 carrot", "1 zucchini", "1/2 bell pepper"],
+    steps: ["Prepare couscous.", "Chop vegetables.", "Cook vegetables until tender.", "Combine with couscous."]
+},
+{
+    id: 257,
+    title: "🐟 Fish Vegetable Wrap",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Medium",
+    ingredients: ["1 tortilla", "1 cooked fish fillet", "Lettuce", "Tomato", "Cucumber"],
+    steps: ["Flake cooked fish.", "Chop vegetables.", "Place everything on tortilla.", "Roll and serve."]
+},
+{
+    id: 258,
+    title: "🍅 Tomato Lentil Rice",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked lentils", "2 tomatoes", "1 cup rice", "Parsley"],
+    steps: ["Chop tomatoes.", "Warm tomatoes and lentils.", "Add parsley.", "Serve with rice."]
+},
+{
+    id: 259,
+    title: "🥦 Broccoli Potato Bowl",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["2 potatoes", "1 cup broccoli", "1 tsp olive oil", "Herbs"],
+    steps: ["Cook potatoes until tender.", "Steam broccoli.", "Combine vegetables.", "Add olive oil and herbs."]
+},
+{
+    id: 260,
+    title: "🍚 Chickpea Vegetable Rice",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup rice", "1 cup chickpeas", "1 carrot", "1/2 bell pepper"],
+    steps: ["Cook vegetables.", "Add chickpeas.", "Mix with cooked rice.", "Heat and serve."]
+},
+
+{
+    id: 261,
+    title: "🍌 Frozen Banana Bites",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 banana", "2 tbsp yogurt"],
+    steps: ["Slice banana.", "Dip pieces in yogurt.", "Place on a plate.", "Freeze until firm."]
+},
+{
+    id: 262,
+    title: "🍎 Apple Cinnamon Bites",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 apple", "1/2 tsp cinnamon"],
+    steps: ["Slice apple.", "Arrange on a plate.", "Sprinkle with cinnamon.", "Serve."]
+},
+{
+    id: 263,
+    title: "🥕 Carrot Hummus Cups",
+    category: "snacks",
+    time: "7 min",
+    difficulty: "Easy",
+    ingredients: ["2 carrots", "1/3 cup hummus"],
+    steps: ["Cut carrots into sticks.", "Place hummus in a small bowl.", "Serve carrot sticks with hummus."]
+},
+{
+    id: 264,
+    title: "🍓 Strawberry Oat Cups",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup oats", "1/2 cup strawberries", "1/2 cup yogurt"],
+    steps: ["Slice strawberries.", "Layer oats and yogurt.", "Add strawberries.", "Serve chilled."]
+},
+{
+    id: 265,
+    title: "🥒 Cucumber Cheese Bites",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cucumber", "1/4 cup cheese"],
+    steps: ["Slice cucumber.", "Cut cheese into small pieces.", "Place cheese on cucumber slices.", "Serve."]
+},
+{
+    id: 266,
+    title: "🍐 Pear Yogurt Dip",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 pear", "1/2 cup yogurt", "1 tsp honey"],
+    steps: ["Slice pear.", "Mix yogurt with honey.", "Serve pear with yogurt dip."]
+},
+{
+    id: 267,
+    title: "🌽 Sweet Corn Cups",
+    category: "snacks",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup corn", "1 tsp lemon juice", "Parsley"],
+    steps: ["Warm corn.", "Add lemon juice.", "Top with parsley.", "Serve in small cups."]
+},
+{
+    id: 268,
+    title: "🍇 Grape Yogurt Skewers",
+    category: "snacks",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup grapes", "1/2 cup yogurt"],
+    steps: ["Wash grapes.", "Thread grapes carefully onto food-safe skewers.", "Serve with yogurt for dipping."]
+},
+{
+    id: 269,
+    title: "🥜 Nutty Apple Slices",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 apple", "1 tbsp peanut butter", "1 tbsp chopped nuts"],
+    steps: ["Slice apple.", "Spread a small amount of peanut butter.", "Sprinkle with chopped nuts."]
+},
+{
+    id: 270,
+    title: "🍊 Orange Yogurt Cup",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 orange", "1/2 cup yogurt"],
+    steps: ["Peel and separate orange segments.", "Add yogurt to a cup.", "Top with orange segments."]
+},
+
+{
+    id: 271,
+    title: "🍉 Watermelon Mint Cups",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups watermelon", "Fresh mint"],
+    steps: ["Cut watermelon into cubes.", "Add mint.", "Chill briefly and serve."]
+},
+{
+    id: 272,
+    title: "🥭 Mango Coconut Bowl",
+    category: "snacks",
+    time: "7 min",
+    difficulty: "Easy",
+    ingredients: ["1 mango", "2 tbsp shredded coconut"],
+    steps: ["Dice mango.", "Add coconut.", "Mix gently and serve."]
+},
+{
+    id: 273,
+    title: "🍌 Banana Oat Bites",
+    category: "snacks",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 banana", "1 cup oats", "1/2 tsp cinnamon"],
+    steps: ["Mash banana.", "Mix with oats and cinnamon.", "Form small bites.", "Bake until firm."]
+},
+{
+    id: 274,
+    title: "🥝 Kiwi Berry Cup",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 kiwi", "1/2 cup berries", "1/2 cup yogurt"],
+    steps: ["Peel and slice kiwi.", "Add yogurt to a cup.", "Top with kiwi and berries."]
+},
+{
+    id: 275,
+    title: "🍿 Herb Popcorn",
+    category: "snacks",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["3 cups plain popcorn", "1/2 tsp dried herbs"],
+    steps: ["Prepare plain popcorn.", "Sprinkle with dried herbs.", "Toss gently and serve."]
+},
+{
+    id: 276,
+    title: "🥣 Berry Oat Yogurt Cup",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup yogurt", "1/2 cup berries", "2 tbsp oats"],
+    steps: ["Add yogurt to a cup.", "Add oats.", "Top with berries."]
+},
+{
+    id: 277,
+    title: "🍅 Tomato Cucumber Cups",
+    category: "snacks",
+    time: "7 min",
+    difficulty: "Easy",
+    ingredients: ["1 tomato", "1 cucumber", "1 tbsp cheese"],
+    steps: ["Slice tomato and cucumber.", "Arrange together.", "Top with crumbled cheese."]
+},
+{
+    id: 278,
+    title: "🥥 Coconut Banana Bowl",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 banana", "2 tbsp shredded coconut", "1/2 cup yogurt"],
+    steps: ["Slice banana.", "Add yogurt.", "Top with banana and coconut."]
+},
+{
+    id: 279,
+    title: "🍑 Peach Oat Yogurt",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 peach", "1/2 cup yogurt", "2 tbsp oats"],
+    steps: ["Slice peach.", "Add yogurt to a bowl.", "Top with peach and oats."]
+},
+{
+    id: 280,
+    title: "🫐 Blueberry Banana Cup",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 banana", "1/2 cup blueberries", "1/2 cup yogurt"],
+    steps: ["Slice banana.", "Add yogurt.", "Top with banana and blueberries."]
+},
+
+{
+    id: 281,
+    title: "🌱 Spinach Feta Omelet",
+    category: "vegetarian",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["2 eggs", "1/2 cup spinach", "2 tbsp feta cheese"],
+    steps: ["Whisk eggs.", "Cook spinach briefly.", "Add eggs.", "Top with feta and fold."]
+},
+{
+    id: 282,
+    title: "🥦 Broccoli Cheese Bites",
+    category: "vegetarian",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked broccoli", "1 egg", "1/4 cup shredded cheese"],
+    steps: ["Chop broccoli.", "Mix with egg and cheese.", "Form small bites.", "Bake until firm."]
+},
+{
+    id: 283,
+    title: "🍅 Caprese Toast",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices bread", "1 tomato", "1/4 cup mozzarella", "Fresh basil"],
+    steps: ["Toast bread.", "Slice tomato and mozzarella.", "Place on toast.", "Add basil."]
+},
+{
+    id: 284,
+    title: "🥑 Avocado Tomato Salad",
+    category: "vegetarian",
+    time: "8 min",
+    difficulty: "Easy",
+    ingredients: ["1 avocado", "2 tomatoes", "Lemon juice"],
+    steps: ["Dice avocado and tomatoes.", "Add lemon juice.", "Mix gently."]
+},
+{
+    id: 285,
+    title: "🌽 Corn Cheese Quesadilla",
+    category: "vegetarian",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["2 tortillas", "1/2 cup corn", "1/2 cup shredded cheese"],
+    steps: ["Place corn and cheese on one tortilla.", "Cover with the second tortilla.", "Cook on a pan until cheese melts.", "Slice and serve."]
+},
+{
+    id: 286,
+    title: "🥕 Roasted Vegetable Wrap",
+    category: "vegetarian",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1 carrot", "1 zucchini", "1 bell pepper"],
+    steps: ["Chop vegetables.", "Cook until tender.", "Place vegetables on tortilla.", "Roll and serve."]
+},
+{
+    id: 287,
+    title: "🍆 Eggplant Hummus Bowl",
+    category: "vegetarian",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["1 eggplant", "1/3 cup hummus", "Tomato", "Parsley"],
+    steps: ["Cook eggplant until tender.", "Place hummus in a bowl.", "Add eggplant and tomato.", "Top with parsley."]
+},
+{
+    id: 288,
+    title: "🥔 Herbed Potato Wedges",
+    category: "vegetarian",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["3 potatoes", "Olive oil", "Mixed herbs"],
+    steps: ["Cut potatoes into wedges.", "Toss with olive oil and herbs.", "Bake until tender and lightly browned.", "Serve warm."]
+},
+{
+    id: 289,
+    title: "🍚 Vegetable Couscous Salad",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup couscous", "Cucumber", "Tomato", "Parsley"],
+    steps: ["Prepare couscous.", "Chop vegetables.", "Combine all ingredients.", "Add parsley and serve."]
+},
+{
+    id: 290,
+    title: "🥬 Spinach Chickpea Wrap",
+    category: "vegetarian",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/2 cup chickpeas", "1 cup spinach", "Tomato"],
+    steps: ["Mash chickpeas lightly.", "Add spinach and tomato.", "Place mixture on tortilla.", "Roll and serve."]
+},
+
+{
+    id: 291,
+    title: "🍠 Sweet Potato Bean Bowl",
+    category: "vegetarian",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 sweet potato", "1/2 cup beans", "1/2 avocado"],
+    steps: ["Cook sweet potato until tender.", "Warm beans.", "Slice avocado.", "Serve together in a bowl."]
+},
+{
+    id: 292,
+    title: "🥒 Cucumber Hummus Toast",
+    category: "vegetarian",
+    time: "7 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices bread", "1/3 cup hummus", "1/2 cucumber"],
+    steps: ["Toast bread.", "Spread hummus.", "Slice cucumber.", "Arrange cucumber on toast."]
+},
+{
+    id: 293,
+    title: "🍅 Tomato Lentil Salad",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked lentils", "2 tomatoes", "Parsley", "Lemon juice"],
+    steps: ["Chop tomatoes.", "Combine with lentils.", "Add parsley.", "Finish with lemon juice."]
+},
+{
+    id: 294,
+    title: "🥦 Broccoli Chickpea Salad",
+    category: "vegetarian",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup broccoli", "1 cup chickpeas", "1 tomato", "Lemon juice"],
+    steps: ["Steam broccoli until tender.", "Add chickpeas and tomato.", "Add lemon juice.", "Mix gently."]
+},
+{
+    id: 295,
+    title: "🌱 Green Pea Pasta",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150g pasta", "1 cup peas", "1/2 cup spinach", "Olive oil"],
+    steps: ["Cook pasta.", "Cook peas and spinach.", "Add pasta.", "Mix with olive oil."]
+},
+{
+    id: 296,
+    title: "🥕 Carrot Hummus Wrap",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 tortilla", "1/3 cup hummus", "1 carrot", "Lettuce"],
+    steps: ["Spread hummus on tortilla.", "Grate carrot.", "Add lettuce and carrot.", "Roll tightly."]
+},
+{
+    id: 297,
+    title: "🍄 Mushroom Rice Bowl",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "1 cup mushrooms", "1/2 bell pepper", "Olive oil"],
+    steps: ["Slice mushrooms and pepper.", "Cook until tender.", "Add cooked rice.", "Mix and serve."]
+},
+{
+    id: 298,
+    title: "🥗 Rainbow Bean Salad",
+    category: "vegetarian",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup mixed beans", "1/2 bell pepper", "1 tomato", "1/2 cucumber"],
+    steps: ["Chop vegetables.", "Add beans.", "Mix all ingredients.", "Serve chilled."]
+},
+{
+    id: 299,
+    title: "🍠 Sweet Potato Avocado Toast",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 slice whole-grain bread", "1/2 sweet potato", "1/2 avocado"],
+    steps: ["Cook sweet potato until tender.", "Toast bread.", "Mash avocado.", "Top toast with avocado and sweet potato."]
+},
+{
+    id: 300,
+    title: "🌈 Rainbow Vegetable Bowl",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 carrot", "1/2 cucumber", "1/2 bell pepper", "1/2 cup corn", "1 cup cooked rice"],
+    steps: ["Chop all vegetables.", "Arrange rice in a bowl.", "Add vegetables in sections.", "Serve fresh."]
+},
 ];
