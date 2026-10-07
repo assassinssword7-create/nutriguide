@@ -2370,7 +2370,7 @@ const recipeData = [
     difficulty: "Easy",
     ingredients: ["1 cup rice", "Carrot", "Broccoli", "Corn", "Tomato", "Cucumber"],
     steps: ["Cook the vegetables.", "Add rice to a bowl.", "Arrange the vegetables on top.", "Mix and serve."]
-}
+},
 {
     id: 201,
     title: "🥞 Blueberry Oat Pancakes",
