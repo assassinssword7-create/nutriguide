@@ -1379,7 +1379,186 @@ const recipeData = [
     difficulty: "Easy",
     ingredients: ["Carrot", "Cucumber", "Bell pepper", "Hummus"],
     steps: ["Cut the vegetables into sticks.", "Place hummus in a bowl.", "Serve vegetables with hummus."]
-}
+},
+
+{
+    id: 101,
+    title: "Banana Berry Oat Bowl",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 banana",
+        "1/2 cup oats",
+        "1/2 cup yogurt",
+        "1/2 cup mixed berries"
+    ],
+    steps: [
+        "Add oats and yogurt to a bowl.",
+        "Slice the banana and add the berries.",
+        "Mix gently and serve."
+    ]
+},
+{
+    id: 102,
+    title: "Cheese Egg Toast",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: [
+        "2 eggs",
+        "2 slices whole-grain bread",
+        "2 tablespoons grated cheese"
+    ],
+    steps: [
+        "Toast the bread.",
+        "Cook the eggs until set.",
+        "Place the eggs on the toast and add cheese."
+    ]
+},
+{
+    id: 103,
+    title: "Apple Oat Breakfast Bowl",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 apple",
+        "1/2 cup oats",
+        "1/2 cup yogurt",
+        "1 teaspoon cinnamon"
+    ],
+    steps: [
+        "Chop the apple into small pieces.",
+        "Combine oats and yogurt in a bowl.",
+        "Add the apple and cinnamon."
+    ]
+},
+{
+    id: 104,
+    title: "Spinach Cheese Omelet",
+    category: "breakfast",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: [
+        "2 eggs",
+        "1 handful spinach",
+        "2 tablespoons grated cheese"
+    ],
+    steps: [
+        "Whisk the eggs.",
+        "Cook the spinach briefly in a pan.",
+        "Add the eggs and cheese.",
+        "Fold the omelet and serve."
+    ]
+},
+{
+    id: 105,
+    title: "Peach Yogurt Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 peach",
+        "1 cup yogurt",
+        "2 tablespoons oats"
+    ],
+    steps: [
+        "Slice the peach.",
+        "Add yogurt to a bowl.",
+        "Top with peach slices and oats."
+    ]
+},
+{
+    id: 106,
+    title: "Chicken Corn Wrap",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 whole-grain wrap",
+        "1/2 cup cooked chicken",
+        "1/4 cup corn",
+        "1/4 cup lettuce"
+    ],
+    steps: [
+        "Place the chicken, corn and lettuce on the wrap.",
+        "Roll the wrap tightly.",
+        "Slice and serve."
+    ]
+},
+{
+    id: 107,
+    title: "Tuna Avocado Rice Bowl",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 cup cooked rice",
+        "1/2 cup tuna",
+        "1/2 avocado",
+        "1/4 cup cucumber"
+    ],
+    steps: [
+        "Add rice to a bowl.",
+        "Top with tuna, avocado and cucumber.",
+        "Mix gently and serve."
+    ]
+},
+{
+    id: 108,
+    title: "Chickpea Veggie Wrap",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1 whole-grain wrap",
+        "1/2 cup chickpeas",
+        "1/4 cup cucumber",
+        "1/4 cup tomato",
+        "Lettuce"
+    ],
+    steps: [
+        "Mash the chickpeas lightly.",
+        "Add the vegetables and lettuce to the wrap.",
+        "Add the chickpeas.",
+        "Roll and serve."
+    ]
+},
+{
+    id: 109,
+    title: "Chicken Vegetable Couscous",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Medium",
+    ingredients: [
+        "1 cup cooked couscous",
+        "1/2 cup cooked chicken",
+        "1/2 cup mixed vegetables"
+    ],
+    steps: [
+        "Prepare the couscous.",
+        "Add cooked chicken and vegetables.",
+        "Mix together and serve."
+    ]
+},
+{
+    id: 110,
+    title: "Bean Avocado Salad",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: [
+        "1/2 cup beans",
+        "1/2 avocado",
+        "1/2 tomato",
+        "1/4 cucumber",
+        "Lettuce"
+    ],
+    steps: [
+        "Chop the vegetables.",
+        "Add beans and vegetables to a bowl.",
+        "Mix gently and serve."
+    ]
+},
 ];
-
-
