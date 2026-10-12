@@ -5991,4 +5991,905 @@ const recipeData = [
     ingredients: ["4 cooked falafel", "1 cup cooked bulgur or quinoa", "1/2 cucumber", "1 tomato", "3 tbsp hummus"],
     steps: ["Warm falafel according to the package instructions.", "Prepare bulgur or quinoa as directed.", "Chop cucumber and tomato.", "Arrange grains, vegetables, and falafel in a bowl and serve with hummus."]
 },
+
+{
+    id: 601,
+    title: "🍳 Spinach and Cheese Breakfast Omelette",
+    category: "breakfast",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["2 eggs", "1/2 cup spinach", "2 tbsp grated cheese", "1 tsp olive oil", "Black pepper"],
+    steps: ["Wash and chop the spinach.", "Whisk the eggs with black pepper.", "Heat olive oil in a pan and cook the spinach for 2 minutes.", "Add the eggs and cheese.", "Cook until the eggs are fully set, then fold and serve."]
+},
+{
+    id: 602,
+    title: "🥣 Apple Cinnamon Overnight Oats",
+    category: "breakfast",
+    time: "5 min plus chilling",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup rolled oats", "1/2 cup milk", "1/2 apple, diced", "1/4 tsp cinnamon", "2 tbsp plain yogurt"],
+    steps: ["Combine the oats, milk, yogurt, and cinnamon in a container.", "Stir in half the apple.", "Cover and refrigerate overnight.", "Top with the remaining apple before eating."]
+},
+{
+    id: 603,
+    title: "🥪 Egg and Avocado Breakfast Sandwich",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices whole-wheat bread", "1 egg", "1/4 avocado", "2 tomato slices", "Black pepper"],
+    steps: ["Toast the bread.", "Cook the egg until fully set.", "Mash the avocado with black pepper.", "Spread avocado on the toast.", "Add the egg and tomato, then close the sandwich."]
+},
+{
+    id: 604,
+    title: "🥞 Banana Oat Pancakes",
+    category: "breakfast",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 ripe banana", "1 egg", "1/2 cup rolled oats", "1/4 tsp baking powder", "2 tbsp milk"],
+    steps: ["Blend the banana, egg, oats, baking powder, and milk.", "Rest the batter for 3 minutes.", "Heat a lightly oiled nonstick pan.", "Cook small pancakes for 2–3 minutes per side.", "Serve with fruit or yogurt."]
+},
+{
+    id: 605,
+    title: "🥛 Mango Yogurt Breakfast Bowl",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup plain yogurt", "1/2 cup diced mango", "1/4 cup oats", "1 tbsp chopped nuts", "1 tsp chia seeds"],
+    steps: ["Spoon the yogurt into a bowl.", "Arrange the mango and oats on top.", "Sprinkle with nuts and chia seeds.", "Serve immediately."]
+},
+{
+    id: 606,
+    title: "🌯 Breakfast Egg and Bean Wrap",
+    category: "breakfast",
+    time: "12 min",
+    difficulty: "Easy",
+    ingredients: ["1 whole-wheat tortilla", "2 eggs", "1/3 cup cooked black beans", "2 tbsp salsa", "2 tbsp grated cheese"],
+    steps: ["Scramble the eggs in a nonstick pan until cooked.", "Warm the beans and tortilla.", "Place the eggs and beans in the tortilla.", "Add salsa and cheese.", "Fold the sides inward, roll, and serve."]
+},
+{
+    id: 607,
+    title: "🍞 Peanut Butter Banana Toast",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices whole-wheat bread", "2 tbsp peanut butter", "1 banana", "A pinch of cinnamon"],
+    steps: ["Toast the bread.", "Spread peanut butter over each slice.", "Slice the banana and arrange it on top.", "Finish with cinnamon and serve."]
+},
+{
+    id: 608,
+    title: "🥔 Potato and Egg Breakfast Skillet",
+    category: "breakfast",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 medium potato, diced small", "2 eggs", "1/4 onion, chopped", "1 tsp olive oil", "Paprika and black pepper"],
+    steps: ["Boil the potato pieces for 6–8 minutes until nearly tender, then drain.", "Heat olive oil and cook the onion.", "Add the potato and paprika; cook until golden.", "Add the eggs and cook until fully set.", "Season with black pepper."]
+},
+{
+    id: 609,
+    title: "🫐 Blueberry Chia Yogurt Cup",
+    category: "breakfast",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["3/4 cup plain yogurt", "1/2 cup blueberries", "1 tbsp chia seeds", "2 tbsp rolled oats", "1 tsp honey, optional"],
+    steps: ["Spoon yogurt into a serving cup.", "Stir in the chia seeds and oats.", "Add the blueberries.", "Drizzle with honey if desired and serve."]
+},
+{
+    id: 610,
+    title: "🥕 Savory Carrot Egg Muffins",
+    category: "breakfast",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["4 eggs", "1 small carrot, grated", "1/4 cup grated cheese", "2 tbsp chopped spring onion", "Black pepper"],
+    steps: ["Preheat the oven to 180°C.", "Whisk the eggs with pepper.", "Mix in the carrot, cheese, and spring onion.", "Divide into lightly greased muffin cups.", "Bake for 15–18 minutes, until set."]
+},
+{
+    id: 611,
+    title: "🍚 Chicken and Vegetable Rice Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked rice", "150 g boneless chicken, diced", "1/2 cup mixed vegetables", "1 tsp olive oil", "1 tbsp low-sodium soy sauce"],
+    steps: ["Heat the olive oil in a pan.", "Cook the chicken until it reaches 74°C internally.", "Add the vegetables and cook until tender.", "Stir in the soy sauce.", "Serve over warm rice."]
+},
+{
+    id: 612,
+    title: "🐟 Lemon Herb Fish with Rice",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150 g fish fillet", "1 cup cooked rice", "1 tsp olive oil", "1 tbsp lemon juice", "Dried herbs and black pepper"],
+    steps: ["Season the fish with lemon, herbs, and pepper.", "Heat the olive oil in a pan.", "Cook the fish until opaque and it reaches 63°C internally.", "Serve with warm rice and extra lemon."]
+},
+{
+    id: 613,
+    title: "🥙 Chickpea Cucumber Pita Pockets",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 small whole-wheat pitas", "1 cup cooked chickpeas", "1/2 cucumber, diced", "1 tomato, diced", "3 tbsp plain yogurt", "Lemon juice"],
+    steps: ["Mash half the chickpeas lightly.", "Mix the chickpeas with cucumber, tomato, yogurt, and lemon juice.", "Warm the pitas slightly.", "Fill each pita with the chickpea mixture."]
+},
+{
+    id: 614,
+    title: "🍝 Chicken Tomato Pasta",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["150 g chicken breast, diced", "1 cup dry pasta", "1 cup chopped tomatoes", "1 garlic clove, minced", "1 tsp olive oil", "Dried oregano"],
+    steps: ["Cook the pasta according to the package instructions.", "Heat the oil and cook the garlic briefly.", "Add chicken and cook to 74°C internally.", "Add tomatoes and oregano; simmer for 5 minutes.", "Drain the pasta and toss it with the sauce."]
+},
+{
+    id: 615,
+    title: "🥗 Lentil and Roasted Vegetable Salad",
+    category: "lunch",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked lentils", "1 zucchini, diced", "1 bell pepper, chopped", "1 tbsp olive oil", "1 tbsp lemon juice", "Black pepper"],
+    steps: ["Preheat the oven to 200°C.", "Toss the zucchini and bell pepper with olive oil.", "Roast for 18–22 minutes until tender.", "Combine with the cooked lentils.", "Dress with lemon juice and black pepper."]
+},
+{
+    id: 616,
+    title: "🌮 Chicken and Black Bean Tacos",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150 g chicken breast, sliced", "1/2 cup black beans", "4 small corn tortillas", "1/2 cup shredded lettuce", "2 tbsp salsa", "Paprika"],
+    steps: ["Season the chicken with paprika.", "Cook in a pan until it reaches 74°C internally.", "Warm the black beans and tortillas.", "Fill the tortillas with chicken and beans.", "Top with lettuce and salsa."]
+},
+{
+    id: 617,
+    title: "🥣 Creamy Pumpkin and Lentil Soup",
+    category: "lunch",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups pumpkin cubes", "1/2 cup red lentils, rinsed", "1/2 onion, chopped", "3 cups low-sodium vegetable stock", "1 tsp olive oil", "Black pepper"],
+    steps: ["Heat olive oil in a pot and cook the onion.", "Add pumpkin, lentils, and stock.", "Bring to a boil, then simmer for 20–25 minutes.", "Blend until smooth, adding water if needed.", "Season with black pepper and serve."]
+},
+{
+    id: 618,
+    title: "🥪 Tuna and Sweetcorn Sandwich",
+    category: "lunch",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 small can tuna, drained", "1/4 cup sweetcorn", "2 tbsp plain yogurt", "4 slices whole-wheat bread", "Lettuce", "Black pepper"],
+    steps: ["Mix the tuna, sweetcorn, yogurt, and pepper.", "Lay lettuce on two slices of bread.", "Spread the tuna mixture over the lettuce.", "Cover with the remaining bread and cut in half."]
+},
+{
+    id: 619,
+    title: "🍛 Chickpea Spinach Curry",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 can chickpeas, drained", "2 cups spinach", "1 cup chopped tomatoes", "1/2 onion, chopped", "1 tsp curry powder", "1 tsp olive oil"],
+    steps: ["Heat the oil and cook the onion until soft.", "Add curry powder and stir for 30 seconds.", "Add tomatoes and simmer for 5 minutes.", "Stir in chickpeas and cook for 8 minutes.", "Add spinach and cook until wilted. Serve with rice or flatbread."]
+},
+{
+    id: 620,
+    title: "🍜 Sesame Vegetable Noodles",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150 g noodles", "1 carrot, cut into thin strips", "1 bell pepper, sliced", "1 cup shredded cabbage", "1 tsp sesame oil", "1 tbsp low-sodium soy sauce"],
+    steps: ["Cook the noodles according to the package instructions.", "Heat sesame oil in a pan.", "Stir-fry the carrot, pepper, and cabbage until tender-crisp.", "Add the drained noodles and soy sauce.", "Toss well and serve."]
+},
+{
+    id: 621,
+    title: "🍗 Oven-Baked Paprika Chicken",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Easy",
+    ingredients: ["2 chicken thighs", "1 tbsp olive oil", "1 tsp paprika", "1/2 tsp garlic powder", "Black pepper", "1 lemon wedge"],
+    steps: ["Preheat the oven to 200°C.", "Coat the chicken with olive oil, paprika, garlic powder, and pepper.", "Place in a baking dish.", "Bake until the thickest part reaches 74°C internally.", "Serve with vegetables and rice."]
+},
+{
+    id: 622,
+    title: "🐟 Garlic Lemon Baked Salmon",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["2 salmon fillets", "1 garlic clove, minced", "1 tbsp lemon juice", "1 tsp olive oil", "Dried dill", "Black pepper"],
+    steps: ["Preheat the oven to 190°C.", "Mix garlic, lemon juice, olive oil, dill, and pepper.", "Brush the mixture over the salmon.", "Bake until the fish reaches 63°C internally and flakes easily.", "Serve with potatoes or vegetables."]
+},
+{
+    id: 623,
+    title: "🍲 Turkey and Bean Chili",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Easy",
+    ingredients: ["250 g lean ground turkey", "1 cup kidney beans, drained", "1 can chopped tomatoes", "1/2 onion, chopped", "1 tsp cumin", "1 tsp paprika"],
+    steps: ["Cook the onion in a pot until soft.", "Add turkey and cook thoroughly to 74°C.", "Stir in cumin and paprika.", "Add tomatoes and kidney beans.", "Simmer for 15–20 minutes, stirring occasionally."]
+},
+{
+    id: 624,
+    title: "🍆 Stuffed Eggplant with Chickpeas",
+    category: "dinner",
+    time: "40 min",
+    difficulty: "Medium",
+    ingredients: ["1 large eggplant", "1 cup cooked chickpeas", "1 cup chopped tomatoes", "1/2 onion, chopped", "1 tsp olive oil", "1/2 tsp cumin"],
+    steps: ["Preheat the oven to 200°C.", "Halve the eggplant lengthwise and score the flesh.", "Bake cut-side up for 20 minutes.", "Cook the onion, tomatoes, chickpeas, and cumin in a pan for 8 minutes.", "Spoon the filling over the eggplant and bake for another 10 minutes."]
+},
+{
+    id: 625,
+    title: "🍝 Whole-Wheat Pasta with Broccoli",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150 g whole-wheat pasta", "2 cups broccoli florets", "2 garlic cloves, minced", "1 tbsp olive oil", "2 tbsp grated Parmesan", "Black pepper"],
+    steps: ["Cook the pasta according to the package instructions.", "Add broccoli during the last 4 minutes of cooking.", "Drain, reserving a little cooking water.", "Warm the olive oil and garlic in a pan.", "Toss with pasta, broccoli, Parmesan, and a splash of cooking water."]
+},
+{
+    id: 626,
+    title: "🍚 Beef and Vegetable Stir-Fry Rice",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["200 g lean beef strips", "2 cups cooked rice", "1 bell pepper, sliced", "1 carrot, thinly sliced", "1 tbsp low-sodium soy sauce", "1 tsp oil"],
+    steps: ["Heat the oil in a large pan.", "Cook the beef strips thoroughly, working in batches if necessary.", "Add carrot and bell pepper; stir-fry until tender.", "Add the cooked rice and soy sauce.", "Heat everything through and serve."]
+},
+{
+    id: 627,
+    title: "🥘 One-Pot Chicken and Barley",
+    category: "dinner",
+    time: "45 min",
+    difficulty: "Medium",
+    ingredients: ["200 g boneless chicken, diced", "3/4 cup pearl barley", "1 carrot, diced", "1/2 onion, chopped", "4 cups low-sodium chicken stock", "1 tsp dried thyme"],
+    steps: ["Cook the onion and carrot in a pot until slightly softened.", "Add chicken and cook the outside.", "Stir in barley, stock, and thyme.", "Simmer until the barley is tender and the chicken reaches 74°C internally.", "Add more water if needed and serve warm."]
+},
+{
+    id: 628,
+    title: "🫑 Stuffed Bell Peppers with Rice and Beans",
+    category: "dinner",
+    time: "45 min",
+    difficulty: "Medium",
+    ingredients: ["2 bell peppers", "1 cup cooked rice", "1 cup black beans, drained", "1/2 cup chopped tomatoes", "1/4 cup grated cheese", "1/2 tsp cumin"],
+    steps: ["Preheat the oven to 190°C.", "Cut the tops off the peppers and remove the seeds.", "Mix rice, beans, tomatoes, and cumin.", "Fill the peppers and top with cheese.", "Bake in a covered dish for 25–30 minutes until the peppers are tender."]
+},
+{
+    id: 629,
+    title: "🍲 Red Lentil Coconut Curry",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup red lentils, rinsed", "1/2 cup light coconut milk", "1 cup chopped tomatoes", "1/2 onion, chopped", "2 cups water", "1 tsp curry powder"],
+    steps: ["Cook the onion in a pot until soft.", "Add curry powder and stir briefly.", "Add lentils, tomatoes, and water.", "Simmer for 18–22 minutes until the lentils are soft.", "Stir in coconut milk and heat through. Serve with rice."]
+},
+{
+    id: 630,
+    title: "🌯 Grilled Chicken Hummus Wrap",
+    category: "dinner",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["2 whole-wheat wraps", "200 g chicken breast, sliced", "4 tbsp hummus", "1 cucumber, sliced", "1 tomato, sliced", "Shredded lettuce"],
+    steps: ["Cook the chicken in a pan until it reaches 74°C internally.", "Spread hummus over each wrap.", "Add chicken, cucumber, tomato, and lettuce.", "Fold in the sides and roll tightly.", "Slice in half and serve."]
+},
+{
+    id: 631,
+    title: "🍎 Apple and Peanut Butter Snack",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 apple", "2 tbsp peanut butter", "1 tbsp chopped walnuts"],
+    steps: ["Wash and slice the apple.", "Arrange the slices on a plate.", "Serve with peanut butter for dipping.", "Sprinkle walnuts over the apple if desired."]
+},
+{
+    id: 632,
+    title: "🥒 Cucumber Yogurt Dip",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup plain yogurt", "1/2 cucumber, grated", "1 small garlic clove, minced", "1 tbsp lemon juice", "1 tbsp chopped mint", "Black pepper"],
+    steps: ["Grate the cucumber and squeeze out excess liquid.", "Mix it with the yogurt, garlic, lemon juice, and mint.", "Season with black pepper.", "Chill briefly and serve with vegetable sticks or pita."]
+},
+{
+    id: 633,
+    title: "🍿 Homemade Paprika Popcorn",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/4 cup popcorn kernels", "1 tsp olive oil", "1/4 tsp paprika", "A small pinch of salt"],
+    steps: ["Heat the oil in a covered pot over medium heat.", "Add the kernels and cover.", "Shake the pot occasionally as the kernels pop.", "Remove from the heat when popping slows.", "Sprinkle with paprika and a little salt."]
+},
+{
+    id: 634,
+    title: "🍓 Strawberry Banana Yogurt Smoothie",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 banana", "1 cup strawberries", "3/4 cup plain yogurt", "1/4 cup milk", "2 tbsp oats"],
+    steps: ["Wash and hull the strawberries.", "Add all ingredients to a blender.", "Blend until smooth.", "Add a little more milk if needed and serve."]
+},
+{
+    id: 635,
+    title: "🧀 Whole-Grain Crackers with Cottage Cheese",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["6 whole-grain crackers", "1/2 cup cottage cheese", "1/2 cucumber, sliced", "Black pepper", "Fresh herbs, optional"],
+    steps: ["Arrange the crackers on a plate.", "Spoon cottage cheese onto each cracker.", "Top with cucumber slices.", "Season with pepper and herbs."]
+},
+{
+    id: 636,
+    title: "🥕 Roasted Carrot Fries",
+    category: "snacks",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["3 carrots", "1 tsp olive oil", "1/2 tsp paprika", "1/4 tsp garlic powder", "Black pepper"],
+    steps: ["Preheat the oven to 200°C.", "Cut carrots into evenly sized sticks.", "Toss with oil, paprika, garlic powder, and pepper.", "Arrange in a single layer on a baking tray.", "Roast for 20–25 minutes, turning halfway."]
+},
+{
+    id: 637,
+    title: "🥜 Trail Mix with Dried Fruit",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1/4 cup almonds", "1/4 cup cashews", "2 tbsp raisins", "2 tbsp dried apricots, chopped", "2 tbsp pumpkin seeds"],
+    steps: ["Check that the nuts and seeds are fresh.", "Combine all ingredients in a bowl.", "Mix well.", "Divide into snack containers for convenient portions."]
+},
+{
+    id: 638,
+    title: "🫛 Crunchy Roasted Edamame",
+    category: "snacks",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups shelled edamame, thawed", "1 tsp olive oil", "1/2 tsp garlic powder", "Black pepper"],
+    steps: ["Preheat the oven to 200°C.", "Pat the edamame dry.", "Toss with olive oil, garlic powder, and pepper.", "Spread on a baking tray.", "Roast for 20–25 minutes, stirring halfway, until lightly crisp."]
+},
+{
+    id: 639,
+    title: "🍌 Frozen Banana Yogurt Bites",
+    category: "snacks",
+    time: "10 min plus freezing",
+    difficulty: "Easy",
+    ingredients: ["2 bananas", "1/2 cup plain yogurt", "1 tbsp peanut butter", "1 tbsp chopped nuts, optional"],
+    steps: ["Slice the bananas into thick rounds.", "Mix the yogurt with the peanut butter.", "Dip or coat the banana pieces in the yogurt mixture.", "Place on a lined tray and sprinkle with nuts if using.", "Freeze until firm and store frozen."]
+},
+{
+    id: 640,
+    title: "🥚 Deviled Eggs with Yogurt",
+    category: "snacks",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["4 eggs", "2 tbsp plain yogurt", "1 tsp mustard", "1/4 tsp paprika", "Black pepper"],
+    steps: ["Boil the eggs until hard-cooked, about 10–12 minutes.", "Cool, peel, and cut them in half lengthwise.", "Remove the yolks and mash with yogurt, mustard, and pepper.", "Spoon the mixture into the egg whites.", "Sprinkle with paprika and refrigerate until serving."]
+},
+{
+    id: 641,
+    title: "🥦 Broccoli Cheddar Egg Muffins",
+    category: "breakfast",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["4 eggs", "1 cup finely chopped broccoli", "1/3 cup grated cheddar", "2 tbsp milk", "Black pepper"],
+    steps: ["Preheat the oven to 180°C.", "Whisk eggs and milk together.", "Stir in broccoli, cheddar, and pepper.", "Divide among lightly greased muffin cups.", "Bake for 15–18 minutes until the centers are set."]
+},
+{
+    id: 642,
+    title: "🍠 Sweet Potato Breakfast Hash",
+    category: "breakfast",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 medium sweet potato, diced", "1/2 bell pepper, diced", "1/4 onion, chopped", "1 tsp olive oil", "1/2 tsp paprika", "2 eggs"],
+    steps: ["Microwave the sweet potato with a splash of water for 3–4 minutes to soften.", "Heat olive oil in a skillet.", "Cook the onion and pepper for 3 minutes.", "Add sweet potato and paprika; cook until golden.", "Serve with eggs cooked to your preference."]
+},
+{
+    id: 643,
+    title: "🍓 Strawberry Chia Pudding",
+    category: "breakfast",
+    time: "5 min plus chilling",
+    difficulty: "Easy",
+    ingredients: ["3 tbsp chia seeds", "3/4 cup milk", "1/2 cup chopped strawberries", "1/2 tsp vanilla extract", "1 tbsp plain yogurt"],
+    steps: ["Mix chia seeds, milk, vanilla, and yogurt in a jar.", "Stir thoroughly and wait 5 minutes.", "Stir again to break up clumps.", "Refrigerate for at least 3 hours or overnight.", "Top with strawberries before serving."]
+},
+{
+    id: 644,
+    title: "🧀 Tomato Cheese Breakfast Quesadilla",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 whole-wheat tortilla", "1 egg", "1/4 cup grated cheese", "1 small tomato, diced", "Black pepper"],
+    steps: ["Scramble the egg until fully cooked.", "Place the tortilla in a dry skillet.", "Add cheese, egg, and tomato to one half.", "Fold the tortilla over and cook both sides until crisp and the cheese melts.", "Cut into wedges."]
+},
+{
+    id: 645,
+    title: "🥣 Pear Walnut Oatmeal",
+    category: "breakfast",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup rolled oats", "1 cup milk or water", "1 pear, diced", "1 tbsp chopped walnuts", "1/4 tsp cinnamon"],
+    steps: ["Combine oats and milk or water in a saucepan.", "Simmer for 5–7 minutes, stirring regularly.", "Stir in half the pear and cinnamon.", "Transfer to a bowl.", "Top with remaining pear and walnuts."]
+},
+{
+    id: 646,
+    title: "🥗 Quinoa Chickpea Lunch Bowl",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked quinoa", "3/4 cup cooked chickpeas", "1/2 cucumber, diced", "1 tomato, diced", "1 tbsp lemon juice", "1 tsp olive oil"],
+    steps: ["Place the cooked quinoa in a bowl.", "Add chickpeas, cucumber, and tomato.", "Mix lemon juice and olive oil in a small cup.", "Pour the dressing over the bowl.", "Toss gently and serve."]
+},
+{
+    id: 647,
+    title: "🍗 Chicken Fajita Rice Bowl",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["150 g chicken breast, sliced", "1 cup cooked rice", "1 bell pepper, sliced", "1/2 onion, sliced", "1 tsp olive oil", "1 tsp fajita seasoning"],
+    steps: ["Toss chicken with the fajita seasoning.", "Heat olive oil in a pan and cook the chicken to 74°C internally.", "Add pepper and onion; cook until tender.", "Serve over warm rice."]
+},
+{
+    id: 648,
+    title: "🥫 White Bean Tomato Soup",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 can white beans, drained", "1 can chopped tomatoes", "1/2 onion, chopped", "2 cups vegetable stock", "1 garlic clove, minced", "1 tsp olive oil"],
+    steps: ["Heat olive oil in a pot.", "Cook onion and garlic until fragrant.", "Add tomatoes, beans, and stock.", "Simmer for 15 minutes.", "Mash a few beans in the pot to thicken the soup, then serve."]
+},
+{
+    id: 649,
+    title: "🥪 Grilled Vegetable and Hummus Sandwich",
+    category: "lunch",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["4 slices whole-grain bread", "4 tbsp hummus", "1 zucchini, sliced", "1/2 bell pepper, sliced", "1 tsp olive oil", "Handful of spinach"],
+    steps: ["Brush the zucchini and pepper lightly with olive oil.", "Cook them in a grill pan until tender.", "Spread hummus over the bread.", "Add the grilled vegetables and spinach.", "Close the sandwiches and serve."]
+},
+{
+    id: 650,
+    title: "🍤 Garlic Shrimp Couscous Bowl",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["200 g peeled shrimp", "1 cup cooked couscous", "1 garlic clove, minced", "1 tsp olive oil", "1 tbsp lemon juice", "1 cup spinach"],
+    steps: ["Heat olive oil in a pan and cook the garlic briefly.", "Add shrimp and cook until opaque and fully cooked.", "Stir in spinach until wilted.", "Add lemon juice.", "Serve over warm couscous."]
+},
+{
+    id: 651,
+    title: "🍅 Baked Tomato and Mozzarella Pasta",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["150 g pasta", "1 cup cherry tomatoes", "100 g mozzarella, diced", "1 garlic clove, minced", "1 tsp olive oil", "Fresh basil"],
+    steps: ["Preheat the oven to 200°C.", "Cook pasta according to the package instructions.", "Place tomatoes and garlic in a baking dish with olive oil.", "Bake for 15 minutes until tomatoes soften.", "Mix with drained pasta and mozzarella, then add basil."]
+},
+{
+    id: 652,
+    title: "🍗 Honey Mustard Chicken Tray Bake",
+    category: "dinner",
+    time: "40 min",
+    difficulty: "Easy",
+    ingredients: ["2 boneless chicken thighs", "2 carrots, chopped", "2 potatoes, diced", "1 tbsp mustard", "1 tsp honey", "1 tbsp olive oil"],
+    steps: ["Preheat the oven to 200°C.", "Mix mustard, honey, and olive oil.", "Coat chicken, carrots, and potatoes with the mixture.", "Spread everything in a baking dish.", "Bake until vegetables are tender and chicken reaches 74°C internally."]
+},
+{
+    id: 653,
+    title: "🍄 Mushroom and Spinach Risotto",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Medium",
+    ingredients: ["1 cup arborio rice", "200 g mushrooms, sliced", "3 cups warm vegetable stock", "1 cup spinach", "1/2 onion, chopped", "2 tbsp grated Parmesan"],
+    steps: ["Cook the onion and mushrooms in a lightly oiled pan.", "Add the rice and stir for 1 minute.", "Add warm stock a little at a time, stirring frequently.", "Continue until the rice is creamy and tender, adding water if needed.", "Stir in spinach and Parmesan."]
+},
+{
+    id: 654,
+    title: "🌮 Black Bean Sweet Potato Tacos",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 medium sweet potato, diced", "1 cup black beans", "4 small tortillas", "1/2 tsp cumin", "1/2 tsp paprika", "1/2 avocado"],
+    steps: ["Preheat the oven to 200°C.", "Toss sweet potato with cumin and paprika.", "Roast for 20–25 minutes until tender.", "Warm the beans and tortillas.", "Fill tortillas with sweet potato, beans, and sliced avocado."]
+},
+{
+    id: 655,
+    title: "🍜 Chicken and Vegetable Noodle Soup",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["150 g chicken breast", "100 g noodles", "1 carrot, sliced", "1 celery stalk, sliced", "4 cups low-sodium chicken stock", "1/2 tsp dried thyme"],
+    steps: ["Bring the stock to a simmer with carrot, celery, and thyme.", "Add the chicken and simmer until it reaches 74°C internally.", "Remove chicken, shred it, and return it to the pot.", "Add noodles and cook according to the package instructions.", "Serve hot."]
+},
+{
+    id: 656,
+    title: "🥬 Tofu and Broccoli Stir-Fry",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["250 g firm tofu, cubed", "2 cups broccoli florets", "1 carrot, sliced", "1 tbsp low-sodium soy sauce", "1 tsp sesame oil", "1 tsp grated ginger"],
+    steps: ["Pat the tofu dry and cut it into cubes.", "Heat sesame oil in a pan and brown the tofu.", "Add broccoli, carrot, and ginger.", "Stir-fry until the vegetables are tender and the tofu is hot throughout.", "Add soy sauce and serve with rice."]
+},
+{
+    id: 657,
+    title: "🥔 Baked Potato with Tuna and Yogurt",
+    category: "dinner",
+    time: "50 min",
+    difficulty: "Easy",
+    ingredients: ["1 large potato", "1 small can tuna, drained", "3 tbsp plain yogurt", "2 tbsp sweetcorn", "1 spring onion, sliced", "Black pepper"],
+    steps: ["Preheat the oven to 200°C.", "Pierce the potato with a fork and bake for 40–50 minutes until tender.", "Mix tuna, yogurt, sweetcorn, spring onion, and pepper.", "Split the potato and fluff the inside with a fork.", "Add the tuna mixture and serve."]
+},
+{
+    id: 658,
+    title: "🍲 Chickpea Vegetable Tagine",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Easy",
+    ingredients: ["1 can chickpeas, drained", "1 carrot, chopped", "1 zucchini, chopped", "1 can chopped tomatoes", "1/2 onion, chopped", "1 tsp cumin"],
+    steps: ["Cook the onion in a pot until soft.", "Add cumin and stir briefly.", "Add carrot, zucchini, tomatoes, and chickpeas.", "Simmer for 20–25 minutes until the vegetables are tender.", "Serve with couscous or whole-wheat bread."]
+},
+{
+    id: 659,
+    title: "🍚 Egg and Vegetable Fried Rice",
+    category: "dinner",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups chilled cooked rice", "2 eggs", "1 cup mixed vegetables", "1 tbsp low-sodium soy sauce", "1 tsp sesame oil"],
+    steps: ["Heat sesame oil in a large pan.", "Scramble the eggs until fully cooked, then set aside.", "Stir-fry the vegetables until tender.", "Add rice and soy sauce; heat thoroughly.", "Return the eggs to the pan, mix, and serve."]
+},
+{
+    id: 660,
+    title: "🍕 Whole-Wheat Pita Vegetable Pizza",
+    category: "dinner",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["2 whole-wheat pitas", "4 tbsp tomato sauce", "1/2 cup grated mozzarella", "1/2 bell pepper, diced", "4 mushrooms, sliced", "Dried oregano"],
+    steps: ["Preheat the oven to 200°C.", "Spread tomato sauce over the pitas.", "Add mozzarella, bell pepper, mushrooms, and oregano.", "Bake for 8–10 minutes until the cheese melts and the edges crisp.", "Cool slightly before serving."]
+},
+{
+    id: 661,
+    title: "🍐 Pear and Cheese Snack Plate",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["1 pear", "40 g cheddar cheese", "4 whole-grain crackers", "A small handful of grapes"],
+    steps: ["Wash the pear and grapes.", "Slice the pear and cheese.", "Arrange fruit, cheese, and crackers on a plate.", "Serve as a simple snack."]
+},
+{
+    id: 662,
+    title: "🥑 Avocado Cucumber Rice Cakes",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["3 plain rice cakes", "1/2 avocado", "1/2 cucumber, thinly sliced", "1 tsp lemon juice", "Black pepper"],
+    steps: ["Mash the avocado with lemon juice and pepper.", "Spread the mixture over the rice cakes.", "Arrange cucumber slices on top.", "Serve immediately to keep the rice cakes crisp."]
+},
+{
+    id: 663,
+    title: "🍫 Cocoa Banana Oat Bites",
+    category: "snacks",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["2 ripe bananas", "1 cup rolled oats", "1 tbsp unsweetened cocoa powder", "2 tbsp chopped walnuts"],
+    steps: ["Preheat the oven to 180°C.", "Mash the bananas in a bowl.", "Stir in oats, cocoa, and walnuts.", "Spoon small mounds onto a lined baking tray.", "Bake for 12–15 minutes until set, then cool."]
+},
+{
+    id: 664,
+    title: "🫘 Lemon Garlic White Bean Dip",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 can white beans, drained", "1 tbsp olive oil", "1 tbsp lemon juice", "1 garlic clove", "2 tbsp water", "Black pepper"],
+    steps: ["Place the beans, olive oil, lemon juice, and garlic in a food processor.", "Blend until smooth.", "Add water gradually until the dip reaches the desired consistency.", "Season with pepper and serve with vegetables or pita."]
+},
+{
+    id: 665,
+    title: "🍉 Watermelon Feta Mint Salad",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups watermelon cubes", "40 g feta cheese, crumbled", "1 tbsp chopped mint", "1 tsp lime juice"],
+    steps: ["Place watermelon cubes in a bowl.", "Sprinkle with feta and mint.", "Add lime juice.", "Toss gently and serve chilled."]
+},
+{
+    id: 666,
+    title: "🥛 Date Almond Smoothie",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["2 pitted dates", "1 cup milk", "1/2 banana", "1 tbsp almond butter", "1/4 tsp cinnamon"],
+    steps: ["If the dates are firm, soak them in warm water for 5 minutes and drain.", "Add all ingredients to a blender.", "Blend until smooth.", "Add more milk if needed and serve."]
+},
+{
+    id: 667,
+    title: "🥒 Hummus Stuffed Cucumber Boats",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 large cucumber", "1/3 cup hummus", "2 tbsp diced tomato", "1 tbsp chopped parsley", "A squeeze of lemon"],
+    steps: ["Wash the cucumber and cut it lengthwise.", "Scoop out a shallow channel of seeds.", "Fill the channel with hummus.", "Top with tomato and parsley.", "Finish with lemon and cut into smaller pieces."]
+},
+{
+    id: 668,
+    title: "🍠 Cinnamon Roasted Sweet Potato Cubes",
+    category: "snacks",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 medium sweet potato", "1 tsp olive oil", "1/4 tsp cinnamon", "A pinch of paprika"],
+    steps: ["Preheat the oven to 200°C.", "Peel if desired and dice the sweet potato.", "Toss with olive oil, cinnamon, and paprika.", "Spread on a baking tray.", "Roast for 20–25 minutes until tender."]
+},
+{
+    id: 669,
+    title: "🥣 Savory Yogurt with Herbs and Pita",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["3/4 cup plain yogurt", "1 tbsp chopped mint", "1 tbsp chopped parsley", "1 tsp lemon juice", "1 small whole-wheat pita", "Black pepper"],
+    steps: ["Mix yogurt, herbs, lemon juice, and pepper.", "Warm the pita in a dry pan or toaster.", "Cut the pita into wedges.", "Serve the herb yogurt as a dip."]
+},
+{
+    id: 670,
+    title: "🍓 Strawberry Oat Yogurt Bark",
+    category: "snacks",
+    time: "10 min plus freezing",
+    difficulty: "Easy",
+    ingredients: ["1 cup plain Greek-style yogurt", "1/2 cup sliced strawberries", "2 tbsp rolled oats", "1 tbsp chopped pistachios", "1 tsp honey, optional"],
+    steps: ["Line a small tray with baking paper.", "Spread the yogurt into an even layer.", "Arrange strawberries, oats, and pistachios on top.", "Drizzle with honey if desired.", "Freeze until firm, break into pieces, and keep frozen."]
+},
+{
+    id: 671,
+    title: "🥗 Mediterranean Lentil Salad",
+    category: "vegetarian",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked lentils", "1/2 cucumber, diced", "1 tomato, diced", "1/4 red onion, finely chopped", "2 tbsp crumbled feta", "1 tbsp lemon juice", "1 tsp olive oil"],
+    steps: ["Combine lentils, cucumber, tomato, and onion.", "Whisk lemon juice with olive oil.", "Pour the dressing over the salad.", "Top with feta and toss gently."]
+},
+{
+    id: 672,
+    title: "🍄 Garlic Mushroom Whole-Wheat Toast",
+    category: "vegetarian",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices whole-wheat bread", "200 g mushrooms, sliced", "1 garlic clove, minced", "1 tsp olive oil", "2 tbsp ricotta or cottage cheese", "Black pepper"],
+    steps: ["Toast the bread.", "Heat olive oil in a pan and cook the mushrooms until browned.", "Add garlic and cook for another minute.", "Spread ricotta or cottage cheese over the toast.", "Top with mushrooms and black pepper."]
+},
+{
+    id: 673,
+    title: "🥦 Broccoli Chickpea Grain Bowl",
+    category: "vegetarian",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked brown rice", "1 cup chickpeas", "2 cups broccoli florets", "1 tsp olive oil", "1 tbsp tahini", "1 tbsp lemon juice"],
+    steps: ["Preheat the oven to 200°C.", "Toss broccoli and chickpeas with olive oil.", "Roast for 18–20 minutes until the broccoli is tender.", "Mix tahini with lemon juice and a little water.", "Serve over brown rice with the dressing."]
+},
+{
+    id: 674,
+    title: "🫘 Black Bean and Corn Salad",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup black beans, drained", "1/2 cup sweetcorn", "1 tomato, diced", "1/2 bell pepper, diced", "1 tbsp lime juice", "2 tbsp chopped coriander"],
+    steps: ["Combine beans, sweetcorn, tomato, and bell pepper.", "Add lime juice and coriander.", "Toss gently.", "Chill briefly or serve at room temperature."]
+},
+{
+    id: 675,
+    title: "🍆 Eggplant Tomato Whole-Wheat Pasta",
+    category: "vegetarian",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["150 g whole-wheat pasta", "1 small eggplant, diced", "1 cup chopped tomatoes", "2 garlic cloves, minced", "1 tsp olive oil", "Dried basil"],
+    steps: ["Cook pasta according to the package instructions.", "Heat olive oil in a pan and cook the eggplant until soft.", "Add garlic and cook briefly.", "Add tomatoes and basil; simmer for 10 minutes.", "Toss the sauce with drained pasta."]
+},
+{
+    id: 676,
+    title: "🧆 Baked Falafel with Yogurt Sauce",
+    category: "vegetarian",
+    time: "35 min",
+    difficulty: "Medium",
+    ingredients: ["1 can chickpeas, drained and dried", "1/2 onion, chopped", "2 tbsp chopped parsley", "1 garlic clove", "1/2 tsp cumin", "2 tbsp flour", "1/2 cup plain yogurt"],
+    steps: ["Preheat the oven to 200°C.", "Pulse chickpeas, onion, parsley, garlic, and cumin until crumbly.", "Mix in flour and shape into small patties.", "Place on a lined tray and bake for 20–25 minutes, turning once.", "Serve with plain yogurt mixed with lemon juice."]
+},
+{
+    id: 677,
+    title: "🥬 Cabbage Carrot Sesame Slaw",
+    category: "vegetarian",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 cups shredded cabbage", "1 carrot, grated", "1 tbsp sesame seeds", "1 tbsp lemon juice", "1 tsp sesame oil", "1 tsp low-sodium soy sauce"],
+    steps: ["Combine cabbage and carrot in a bowl.", "Mix lemon juice, sesame oil, and soy sauce.", "Pour the dressing over the vegetables.", "Toss well and sprinkle with sesame seeds."]
+},
+{
+    id: 678,
+    title: "🫓 Spinach and Chickpea Flatbread",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["2 whole-wheat flatbreads", "1 cup cooked chickpeas", "1 cup spinach", "1/2 cup chopped tomatoes", "1/2 tsp cumin", "2 tbsp plain yogurt"],
+    steps: ["Warm the chickpeas and tomatoes in a pan with cumin.", "Add spinach and cook until wilted.", "Warm the flatbreads.", "Spoon the filling over each flatbread.", "Add yogurt and fold to serve."]
+},
+{
+    id: 679,
+    title: "🥔 Crispy Oven Potato Wedges",
+    category: "vegetarian",
+    time: "35 min",
+    difficulty: "Easy",
+    ingredients: ["3 medium potatoes", "1 tbsp olive oil", "1/2 tsp paprika", "1/2 tsp garlic powder", "Black pepper"],
+    steps: ["Preheat the oven to 220°C.", "Cut potatoes into wedges and pat dry.", "Toss with olive oil, paprika, garlic powder, and pepper.", "Spread in a single layer on a tray.", "Bake for 25–30 minutes, turning halfway, until golden and tender."]
+},
+{
+    id: 680,
+    title: "🍅 White Bean Spinach Skillet",
+    category: "vegetarian",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["1 can white beans, drained", "2 cups spinach", "1 cup cherry tomatoes, halved", "2 garlic cloves, minced", "1 tsp olive oil", "1/2 tsp dried oregano"],
+    steps: ["Heat olive oil in a skillet.", "Cook the garlic for 30 seconds.", "Add tomatoes and oregano; cook until softened.", "Stir in the beans and heat through.", "Add spinach and cook until wilted."]
+},
+{
+    id: 681,
+    title: "🍲 Vegetable and Barley Soup",
+    category: "lunch",
+    time: "40 min",
+    difficulty: "Easy",
+    ingredients: ["1/2 cup pearl barley", "1 carrot, diced", "1 celery stalk, diced", "1/2 onion, chopped", "1 zucchini, diced", "5 cups vegetable stock"],
+    steps: ["Rinse the barley.", "Add stock, barley, carrot, celery, and onion to a pot.", "Bring to a boil and simmer for 20 minutes.", "Add zucchini and continue cooking until the barley and vegetables are tender.", "Add water if needed and serve."]
+},
+{
+    id: 682,
+    title: "🍗 Lemon Oregano Chicken Couscous",
+    category: "lunch",
+    time: "25 min",
+    difficulty: "Easy",
+    ingredients: ["150 g chicken breast, diced", "1 cup cooked couscous", "1/2 cucumber, diced", "1 tomato, diced", "1 tbsp lemon juice", "1/2 tsp dried oregano"],
+    steps: ["Season chicken with oregano and lemon juice.", "Cook the chicken until it reaches 74°C internally.", "Place couscous in a bowl.", "Add cucumber, tomato, and cooked chicken.", "Toss gently and serve."]
+},
+{
+    id: 683,
+    title: "🐟 Tuna Sweetcorn Pasta Salad",
+    category: "lunch",
+    time: "20 min",
+    difficulty: "Easy",
+    ingredients: ["150 g pasta", "1 small can tuna, drained", "1/2 cup sweetcorn", "1/2 cucumber, diced", "3 tbsp plain yogurt", "1 tsp lemon juice"],
+    steps: ["Cook pasta according to the package instructions, then cool.", "Mix tuna, sweetcorn, cucumber, yogurt, and lemon juice.", "Add the cooled pasta.", "Toss until evenly coated and refrigerate until serving."]
+},
+{
+    id: 684,
+    title: "🌯 Roasted Vegetable Burrito",
+    category: "lunch",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["2 whole-wheat tortillas", "1 cup cooked rice", "1 bell pepper, sliced", "1 zucchini, diced", "1 cup black beans", "1 tsp olive oil", "2 tbsp salsa"],
+    steps: ["Preheat the oven to 200°C.", "Toss pepper and zucchini with olive oil.", "Roast for 18–20 minutes until tender.", "Warm the tortillas, rice, and beans.", "Fill tortillas with vegetables, rice, beans, and salsa, then roll."]
+},
+{
+    id: 685,
+    title: "🍛 Vegetable Chickpea Biryani",
+    category: "dinner",
+    time: "35 min",
+    difficulty: "Medium",
+    ingredients: ["1 cup basmati rice", "1 cup cooked chickpeas", "1 carrot, diced", "1/2 cup peas", "1/2 onion, sliced", "1 tsp biryani spice mix", "1 tbsp oil"],
+    steps: ["Rinse the rice and cook until nearly tender, then drain.", "Heat oil and cook the onion until lightly golden.", "Add carrot, peas, chickpeas, and biryani spices.", "Fold in the rice with a small splash of water.", "Cover and cook on low heat for 8–10 minutes until the rice is tender."]
+},
+{
+    id: 686,
+    title: "🍗 Chicken and Sweet Potato Tray Bake",
+    category: "dinner",
+    time: "40 min",
+    difficulty: "Easy",
+    ingredients: ["2 boneless chicken thighs", "1 medium sweet potato, cubed", "1 red onion, cut into wedges", "1 tbsp olive oil", "1 tsp paprika", "Black pepper"],
+    steps: ["Preheat the oven to 200°C.", "Toss sweet potato and onion with half the oil and paprika.", "Coat the chicken with the remaining oil and seasoning.", "Arrange everything on a tray.", "Bake until the vegetables are tender and chicken reaches 74°C internally."]
+},
+{
+    id: 687,
+    title: "🍝 Salmon Pea Lemon Pasta",
+    category: "dinner",
+    time: "25 min",
+    difficulty: "Medium",
+    ingredients: ["150 g pasta", "150 g salmon fillet", "1/2 cup peas", "2 tbsp plain yogurt", "1 tbsp lemon juice", "Black pepper"],
+    steps: ["Cook the pasta according to the package instructions.", "Cook the salmon in a pan or oven until it reaches 63°C internally, then flake it.", "Add peas to the pasta water for the final 3 minutes.", "Drain, reserving a little cooking water.", "Stir in yogurt, lemon juice, salmon, and enough cooking water to coat the pasta."]
+},
+{
+    id: 688,
+    title: "🥘 Turkey Stuffed Zucchini Boats",
+    category: "dinner",
+    time: "40 min",
+    difficulty: "Medium",
+    ingredients: ["2 medium zucchini", "200 g lean ground turkey", "1/2 cup chopped tomatoes", "1/4 onion, chopped", "1/4 cup grated cheese", "1/2 tsp Italian herbs"],
+    steps: ["Preheat the oven to 190°C.", "Halve the zucchini lengthwise and scoop out the center.", "Cook onion and turkey in a pan until the turkey reaches 74°C internally.", "Stir in tomatoes and herbs.", "Fill the zucchini, top with cheese, and bake for 20–25 minutes until tender."]
+},
+{
+    id: 689,
+    title: "🍲 Tofu Coconut Vegetable Curry",
+    category: "dinner",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["250 g firm tofu, cubed", "1 bell pepper, sliced", "1 cup broccoli florets", "1/2 cup light coconut milk", "1 cup chopped tomatoes", "1 tsp curry powder"],
+    steps: ["Brown the tofu in a nonstick pan and set aside.", "Add pepper and broccoli to the pan and cook for 4 minutes.", "Stir in curry powder and tomatoes.", "Add coconut milk and simmer for 8 minutes.", "Return the tofu to the pan and heat through."]
+},
+{
+    id: 690,
+    title: "🍖 Beef and Lentil Tomato Stew",
+    category: "dinner",
+    time: "50 min",
+    difficulty: "Medium",
+    ingredients: ["200 g lean beef, diced", "1/2 cup brown lentils, rinsed", "1 carrot, diced", "1 can chopped tomatoes", "3 cups low-sodium beef stock", "1/2 tsp thyme"],
+    steps: ["Brown the beef in a pot.", "Add carrot and thyme and cook for 2 minutes.", "Add lentils, tomatoes, and stock.", "Bring to a boil, then cover and simmer until the beef and lentils are tender.", "Add water as needed and serve hot."]
+},
+{
+    id: 691,
+    title: "🍌 Banana Yogurt Breakfast Pops",
+    category: "snacks",
+    time: "10 min plus freezing",
+    difficulty: "Easy",
+    ingredients: ["2 bananas", "3/4 cup plain yogurt", "1 tbsp peanut butter", "1/4 tsp cinnamon"],
+    steps: ["Mash the bananas in a bowl.", "Mix with yogurt, peanut butter, and cinnamon.", "Spoon into small silicone molds or paper cups.", "Insert sticks if using suitable molds.", "Freeze until firm and remove from the molds before serving."]
+},
+{
+    id: 692,
+    title: "🥚 Egg and Avocado Mini Toasts",
+    category: "snacks",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["2 slices whole-grain bread", "2 eggs", "1/2 avocado", "1 tsp lemon juice", "Black pepper"],
+    steps: ["Boil the eggs until hard-cooked, then cool and peel.", "Toast the bread and cut each slice into smaller pieces.", "Mash avocado with lemon juice and pepper.", "Spread avocado over the toast pieces.", "Slice the eggs and arrange them on top."]
+},
+{
+    id: 693,
+    title: "🍑 Peach Cottage Cheese Bowl",
+    category: "snacks",
+    time: "5 min",
+    difficulty: "Easy",
+    ingredients: ["3/4 cup cottage cheese", "1 ripe peach, sliced", "1 tbsp chopped almonds", "1 tsp honey, optional"],
+    steps: ["Spoon cottage cheese into a bowl.", "Arrange peach slices on top.", "Sprinkle with chopped almonds.", "Add honey if desired and serve."]
+},
+{
+    id: 694,
+    title: "🧆 Crispy Baked Chickpea Patties",
+    category: "snacks",
+    time: "30 min",
+    difficulty: "Easy",
+    ingredients: ["1 can chickpeas, drained and dried", "1/4 onion, chopped", "2 tbsp chopped parsley", "1/2 tsp cumin", "2 tbsp breadcrumbs", "1 tsp olive oil"],
+    steps: ["Preheat the oven to 200°C.", "Mash the chickpeas with onion, parsley, and cumin.", "Mix in breadcrumbs until the mixture holds together.", "Shape into small patties and brush lightly with olive oil.", "Bake for 20–25 minutes, turning once, until golden."]
+},
+{
+    id: 695,
+    title: "🍇 Frozen Grape Yogurt Cups",
+    category: "snacks",
+    time: "10 min plus freezing",
+    difficulty: "Easy",
+    ingredients: ["1 cup seedless grapes, halved lengthwise", "1/2 cup plain yogurt", "1 tbsp chopped pistachios"],
+    steps: ["Line a small tray or plate with baking paper.", "Dip grape halves in yogurt.", "Arrange them in a single layer.", "Sprinkle with pistachios.", "Freeze until firm and serve frozen. Cut grapes lengthwise for younger children."]
+},
+{
+    id: 696,
+    title: "🥕 Carrot Hummus Pinwheels",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 whole-wheat tortillas", "4 tbsp hummus", "1 carrot, grated", "1/2 cucumber, cut into thin strips", "Handful of spinach"],
+    steps: ["Spread hummus evenly over each tortilla.", "Add grated carrot, cucumber, and spinach.", "Roll each tortilla tightly.", "Slice into bite-sized pinwheels and serve."]
+},
+{
+    id: 697,
+    title: "🍓 Strawberry Banana Nice Cream",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["2 frozen bananas, sliced", "1 cup frozen strawberries", "2 tbsp milk, as needed", "1/2 tsp vanilla extract"],
+    steps: ["Place the frozen banana and strawberries in a strong blender or food processor.", "Add vanilla.", "Blend, stopping to scrape down the sides as needed.", "Add a little milk if necessary to help blend.", "Serve immediately for a soft-serve texture."]
+},
+{
+    id: 698,
+    title: "🥙 Mini Chickpea Salad Cups",
+    category: "snacks",
+    time: "10 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked chickpeas", "1/2 cucumber, diced", "1 tomato, diced", "1 tbsp lemon juice", "1 tsp olive oil", "Small lettuce leaves"],
+    steps: ["Lightly mash some of the chickpeas.", "Mix chickpeas with cucumber and tomato.", "Dress with lemon juice and olive oil.", "Spoon the mixture into clean lettuce leaves.", "Serve immediately."]
+},
+{
+    id: 699,
+    title: "🍫 Chocolate Peanut Butter Oat Balls",
+    category: "snacks",
+    time: "15 min plus chilling",
+    difficulty: "Easy",
+    ingredients: ["1 cup rolled oats", "1/3 cup peanut butter", "2 tbsp unsweetened cocoa powder", "2 tbsp milk", "2 tbsp raisins"],
+    steps: ["Mix oats, peanut butter, cocoa, milk, and raisins in a bowl.", "Stir until the mixture holds together.", "Add a little more milk if it is too dry.", "Roll into small balls.", "Refrigerate until firm and store chilled."]
+},
+{
+    id: 700,
+    title: "🥗 Colorful Rainbow Grain Bowl",
+    category: "vegetarian",
+    time: "15 min",
+    difficulty: "Easy",
+    ingredients: ["1 cup cooked quinoa or brown rice", "1/2 cup cooked chickpeas", "1/2 cup shredded purple cabbage", "1/2 carrot, grated", "1/2 cucumber, diced", "1 tbsp lemon juice", "1 tsp olive oil", "1 tbsp plain yogurt"],
+    steps: ["Place the cooked quinoa or rice in a bowl.", "Arrange chickpeas, cabbage, carrot, and cucumber in separate sections.", "Mix lemon juice, olive oil, and yogurt to make a simple dressing.", "Drizzle the dressing over the bowl.", "Toss before eating and enjoy the variety of colors, textures, and food groups."]
+},
 ];
