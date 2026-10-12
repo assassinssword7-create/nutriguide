@@ -855,41 +855,4 @@ console.log(
     "NutriGuide loaded successfully with 30 recipes."
 );
 
-/* Vitamin information card */
-.vitamin-info-card {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 12px 0 20px;
-    padding: 20px;
-    background: #ffffff;
-    color: #173c35;
-    border: 1px solid #b8eee0;
-    border-left: 5px solid #16a085;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    animation: vitaminCardIn 0.22s ease-out;
-}
 
-.vitamin-info-card h3 {
-    margin: 0 0 10px;
-    color: #087f68;
-    font-size: 1.25rem;
-}
-
-.vitamin-info-card p {
-    margin: 0;
-    line-height: 1.7;
-    white-space: pre-line;
-}
-
-@keyframes vitaminCardIn {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
