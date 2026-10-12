@@ -3281,7 +3281,6 @@ const recipeData = [
     steps: ["Chop all vegetables.", "Arrange rice in a bowl.", "Add vegetables in sections.", "Serve fresh."]
 },
 {
-{
     id: 301,
     title: "🥣 Peach Cinnamon Oatmeal",
     category: "breakfast",
