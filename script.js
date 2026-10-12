@@ -42,21 +42,64 @@ const vitaminInfo = {
 };
 
 
+
 function showVitamin(vitamin) {
-
     const info = vitaminInfo[vitamin];
+    if (!info) return;
 
-    if (!info) {
+    // Find the vitamin button that was clicked
+    const buttons = document.querySelectorAll(
+        '[onclick*="showVitamin"]'
+    );
+
+    let clickedButton = null;
+
+    buttons.forEach(function(button) {
+        if (button.getAttribute("onclick").includes(
+            "'" + vitamin + "'"
+        ) || button.getAttribute("onclick").includes(
+            '"' + vitamin + '"'
+        )) {
+            clickedButton = button;
+        }
+    });
+
+    if (!clickedButton) return;
+
+    // Remove the previous information card
+    const oldCard = document.getElementById("vitaminInfoCard");
+    if (oldCard) oldCard.remove();
+
+    // Clicking the same vitamin again closes its card
+    if (clickedButton.dataset.open === "true") {
+        clickedButton.dataset.open = "false";
         return;
     }
 
-    alert(
-        info.title +
-        "\n\n" +
-        info.text
-    );
+    buttons.forEach(function(button) {
+        button.dataset.open = "false";
+    });
 
+    clickedButton.dataset.open = "true";
+
+    // Create the new information card
+    const card = document.createElement("div");
+    card.id = "vitaminInfoCard";
+    card.className = "vitamin-info-card";
+
+    const heading = document.createElement("h3");
+    heading.textContent = info.title;
+
+    const description = document.createElement("p");
+    description.textContent = info.text;
+
+    card.appendChild(heading);
+    card.appendChild(description);
+
+    // Put the card immediately after the clicked button
+    clickedButton.insertAdjacentElement("afterend", card);
 }
+
 
 
 // =========================
@@ -811,3 +854,42 @@ displayRecipes(recipeData);
 console.log(
     "NutriGuide loaded successfully with 30 recipes."
 );
+
+/* Vitamin information card */
+.vitamin-info-card {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 0 20px;
+    padding: 20px;
+    background: #ffffff;
+    color: #173c35;
+    border: 1px solid #b8eee0;
+    border-left: 5px solid #16a085;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    animation: vitaminCardIn 0.22s ease-out;
+}
+
+.vitamin-info-card h3 {
+    margin: 0 0 10px;
+    color: #087f68;
+    font-size: 1.25rem;
+}
+
+.vitamin-info-card p {
+    margin: 0;
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+@keyframes vitaminCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
