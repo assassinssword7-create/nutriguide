@@ -818,3 +818,25 @@ html {
     scroll-margin-top: 100px;
     padding-top: 40px;
 }
+
+/* Potential allergen information */
+.allergen-info {
+    margin: 24px 0;
+    padding: 18px;
+    background: #fff4e5;
+    border: 1px solid #f1c27d;
+    border-left: 5px solid #d97706;
+    border-radius: 14px;
+    color: #593b15;
+}
+
+.allergen-info h3 {
+    margin-top: 0;
+    color: #92400e;
+}
+
+.allergen-warning {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
