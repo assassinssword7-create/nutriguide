@@ -131,42 +131,30 @@ const foodInfo = {
 };
 
 
-function searchFood() {
 
-    const input = document
-        .getElementById("foodSearch")
-        .value
-        .toLowerCase()
-        .trim();
+function searchHealthyDrinks() {
+    const input = document.getElementById("healthyDrinkSearch");
 
-    const result = document.getElementById("foodResult");
+    if (!input || typeof healthyDrinkData === "undefined") return;
 
-    if (input === "") {
+    const query = input.value.trim().toLowerCase();
 
-        result.innerHTML =
-            "<p>Please enter a food to search.</p>";
+    const filtered = healthyDrinkData.filter(function(drink) {
+        const searchableText = [
+            drink.title,
+            drink.country || "",
+            drink.category || "",
+            ...(drink.keywords || []),
+            ...(drink.bodyBenefits || []),
+            ...(drink.benefitKeywords || []),
+            ...(drink.ingredients || []),
+            ...(drink.benefits || [])
+        ].join(" ").toLowerCase();
 
-        return;
-    }
+        return searchableText.includes(query);
+    });
 
-    if (foodInfo[input]) {
-
-        result.innerHTML =
-            "<h3>" +
-            input.charAt(0).toUpperCase() +
-            input.slice(1) +
-            "</h3>" +
-            "<p>" +
-            foodInfo[input] +
-            "</p>";
-
-        return;
-    }
-
-    result.innerHTML =
-        "<h3>Food not found</h3>" +
-        "<p>Try searching for eggs, spinach, milk, oranges, almonds, banana, broccoli, salmon or yogurt.</p>";
-
+    displayHealthyDrinks(filtered);
 }
 
 
