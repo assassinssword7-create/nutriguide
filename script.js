@@ -879,4 +879,148 @@ function detectPotentialAllergens(ingredients) {
     return found;
 }
 
+function displayHealthyDrinks(drinks) {
+    const gallery = document.getElementById("healthyDrinkGallery");
+    if (!gallery) return;
+
+    if (!drinks.length) {
+        gallery.innerHTML = "<p>No drinks found. Try another search.</p>";
+        return;
+    }
+
+    gallery.innerHTML = drinks.map(function(drink) {
+        return `
+            <article class="recipe-card">
+                <div class="recipe-card-content">
+                    <span class="recipe-category">HEALTHY DRINK</span>
+                    <h3>${drink.title}</h3>
+                    <p>⏱ ${drink.time} · ⭐ ${drink.difficulty}</p>
+                    <button type="button"
+                        onclick="openHealthyDrink(${drink.id})">
+                        View Recipe →
+                    </button>
+                </div>
+            </article>
+        `;
+    }).join("");
+}
+
+function searchHealthyDrinks() {
+    const input = document.getElementById("healthyDrinkSearch");
+    if (!input || typeof healthyDrinkData === "undefined") return;
+
+    const query = input.value.trim().toLowerCase();
+
+    const filtered = healthyDrinkData.filter(function(drink) {
+        return (
+            drink.title.toLowerCase().includes(query) ||
+            drink.ingredients.some(function(ingredient) {
+                return ingredient.toLowerCase().includes(query);
+            })
+        );
+    });
+
+    displayHealthyDrinks(filtered);
+}
+
+function openHealthyDrink(id) {
+    const drink = healthyDrinkData.find(function(item) {
+        return item.id === id;
+    });
+
+    const gallery = document.getElementById("healthyDrinkGallery");
+    const details = document.getElementById("healthyDrinkDetails");
+
+    if (!drink || !gallery || !details) return;
+
+    const ingredientsHTML = drink.ingredients
+        .map(function(item) {
+            return `<li>${item}</li>`;
+        }).join("");
+
+    const stepsHTML = drink.steps
+        .map(function(step) {
+            return `<li>${step}</li>`;
+        }).join("");
+
+    const benefitsHTML = drink.benefits
+        .map(function(benefit) {
+            return `<li>${benefit}</li>`;
+        }).join("");
+
+    const allergens = typeof detectPotentialAllergens === "function"
+        ? detectPotentialAllergens(drink.ingredients)
+        : [];
+
+    const allergenText = allergens.length
+        ? allergens.join(", ")
+        : "No common allergens detected in the listed ingredients.";
+
+    gallery.style.display = "none";
+    details.style.display = "block";
+
+    details.innerHTML = `
+        <button class="back-button" onclick="backToHealthyDrinks()">
+            ← Back to Healthy Drinks
+        </button>
+
+        <div class="recipe-detail-card">
+            <span class="recipe-category">HEALTHY DRINK</span>
+            <h2>${drink.title}</h2>
+
+            <div class="recipe-meta">
+                <span>⏱ ${drink.time}</span>
+                <span>⭐ ${drink.difficulty}</span>
+            </div>
+
+            <h3>Ingredients</h3>
+            <ul>${ingredientsHTML}</ul>
+
+            <div class="allergen-info">
+                <h3>⚠️ Potential Allergens</h3>
+                <p>${allergenText}</p>
+                <p class="allergen-warning">
+                    This automated check may miss allergens.
+                    Always check ingredient labels and cross-contact risks.
+                </p>
+            </div>
+
+            <h3>How to Make It</h3>
+            <ol>${stepsHTML}</ol>
+
+            <h3>✨ Potential Benefits</h3>
+            <ul>${benefitsHTML}</ul>
+            <p class="allergen-warning">
+                Benefits depend on the ingredients and serving size.
+                These drinks are not medical treatments.
+            </p>
+        </div>
+    `;
+
+    details.scrollIntoView({ behavior: "smooth" });
+}
+
+function backToHealthyDrinks() {
+    const gallery = document.getElementById("healthyDrinkGallery");
+    const details = document.getElementById("healthyDrinkDetails");
+
+    if (!gallery || !details) return;
+
+    details.style.display = "none";
+    gallery.style.display = "grid";
+    details.innerHTML = "";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const input = document.getElementById("healthyDrinkSearch");
+
+    if (input) {
+        input.addEventListener("input", searchHealthyDrinks);
+    }
+
+    if (typeof healthyDrinkData !== "undefined") {
+        displayHealthyDrinks(healthyDrinkData);
+    }
+});
+
 
