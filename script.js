@@ -855,4 +855,38 @@ console.log(
     "NutriGuide loaded successfully with 30 recipes."
 );
 
+function detectPotentialAllergens(ingredients) {
+    const allergenRules = [
+        { name: "Milk", words: ["milk", "cheese", "yogurt", "yoghurt", "butter", "cream", "whey", "feta", "mozzarella", "cheddar"] },
+        { name: "Eggs", words: ["egg", "eggs", "mayonnaise"] },
+        { name: "Wheat / Gluten", words: ["wheat", "flour", "bread", "pasta", "couscous", "seitan", "breadcrumbs"] },
+        { name: "Peanuts", words: ["peanut"] },
+        { name: "Tree nuts", words: ["almond", "walnut", "cashew", "pistachio", "hazelnut", "pecan", "macadamia", "brazil nut"] },
+        { name: "Soy", words: ["soy", "soya", "tofu", "edamame"] },
+        { name: "Sesame", words: ["sesame", "tahini"] },
+        { name: "Fish", words: ["salmon", "tuna", "cod", "anchovy", "sardine", "fish sauce"] },
+        { name: "Crustacean shellfish", words: ["shrimp", "prawn", "crab", "lobster", "crayfish"] }
+    ];
+
+    const text = ingredients.join(" ").toLowerCase();
+    const found = [];
+
+    allergenRules.forEach(function(rule) {
+        const matched = rule.words.some(function(word) {
+            const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            const pattern = new RegExp(
+                "(^|[^a-z])" + escaped + "([^a-z]|$)",
+                "i"
+            );
+            return pattern.test(text);
+        });
+
+        if (matched) {
+            found.push(rule.name);
+        }
+    });
+
+    return found;
+}
+
 
