@@ -610,76 +610,62 @@ function showLessRecipes() {
 // OPEN RECIPE
 // =========================
 
+
 function openRecipe(id) {
-
     const recipe = recipeData.find(function(item) {
-
         return item.id === id;
-
     });
 
-    if (!recipe) {
-        return;
-    }
+    if (!recipe) return;
 
     const gallery = document.getElementById("recipeGallery");
-
     const details = document.getElementById("recipeDetails");
 
-    if (!gallery || !details) {
-        return;
+    if (!gallery || !details) return;
+
+    gallery.style.display = "none";
+    details.style.display = "block";
+
+    const loadMoreContainer =
+        document.querySelector(".load-more-container");
+
+    if (loadMoreContainer) {
+        loadMoreContainer.style.display = "none";
     }
-
-   gallery.style.display = "none";
-
-details.style.display = "block";
-
-const loadMoreContainer =
-    document.querySelector(".load-more-container");
-
-if (loadMoreContainer) {
-    loadMoreContainer.style.display = "none";
-}
 
     let ingredientsHTML = "<ul>";
 
     recipe.ingredients.forEach(function(item) {
-
-        ingredientsHTML +=
-            "<li>" + item + "</li>";
-
+        ingredientsHTML += "<li>" + item + "</li>";
     });
 
     ingredientsHTML += "</ul>";
 
-
     let stepsHTML = "<ol>";
 
     recipe.steps.forEach(function(step) {
-
-        stepsHTML +=
-            "<li>" + step + "</li>";
-
+        stepsHTML += "<li>" + step + "</li>";
     });
 
     stepsHTML += "</ol>";
 
+    const allergens = detectPotentialAllergens(recipe.ingredients);
+
+    const allergenText = allergens.length
+        ? allergens.join(", ")
+        : "No common allergens detected in the listed ingredients.";
 
     details.innerHTML =
-
         "<button class='back-button' onclick='backToRecipes()'>" +
         "← Back to Recipes" +
         "</button>" +
 
         "<div class='recipe-detail-card'>" +
-
         "<span class='recipe-category'>" +
         recipe.category.toUpperCase() +
         "</span>" +
 
-        "<h2>" +
-        recipe.title +
-        "</h2>" +
+        "<h2>" + recipe.title + "</h2>" +
 
         "<div class='recipe-meta'>" +
         "<span>⏱ " + recipe.time + "</span>" +
@@ -687,20 +673,24 @@ if (loadMoreContainer) {
         "</div>" +
 
         "<h3>Ingredients</h3>" +
-
         ingredientsHTML +
 
+        "<div class='allergen-info'>" +
+        "<h3>⚠️ Potential Allergens</h3>" +
+        "<p>" + allergenText + "</p>" +
+        "<p class='allergen-warning'>" +
+        "This is an automated ingredient check and may miss allergens. " +
+        "Always check product labels and ask about cross-contact. " +
+        "Do not rely on this list to determine whether a recipe is safe " +
+        "for someone with a food allergy." +
+        "</p>" +
+        "</div>" +
+
         "<h3>How to Make It</h3>" +
-
         stepsHTML +
-
         "</div>";
 
-
-    details.scrollIntoView({
-        behavior: "smooth"
-    });
-
+    details.scrollIntoView({ behavior: "smooth" });
 }
 
 
