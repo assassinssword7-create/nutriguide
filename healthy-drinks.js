@@ -5,253 +5,139 @@ const healthyDrinkData = [
         title: "🍋 Lemon Mint Cooler",
         country: "International",
         category: "Hydration",
-        keywords: ["hydration", "lemon", "mint", "vitamin c"],
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup cold water",
-            "1 tbsp lemon juice",
-            "6 fresh mint leaves",
-            "Ice cubes",
-            "Optional: 1 tsp honey"
-        ],
-        steps: [
-            "Gently crush the mint leaves.",
-            "Mix lemon juice with cold water.",
-            "Add mint and ice, then stir.",
-            "Add honey if desired and serve."
-        ],
-        benefits: [
-            "Provides fluids to support hydration.",
-            "Lemon adds flavor and some vitamin C."
-        ]
+        keywords: ["lemon", "mint", "water", "hydration", "vitamin c"],
+        bodyBenefits: ["Hydration", "Immune function"],
+        benefitKeywords: ["hydration", "immune system", "fluids"],
+        ingredients: ["1 cup cold water", "1 tbsp lemon juice", "6 fresh mint leaves", "Ice cubes", "Optional: 1 tsp honey"],
+        steps: ["Gently crush the mint leaves.", "Mix lemon juice with cold water.", "Add mint and ice, then stir.", "Add honey if desired and serve."],
+        benefits: ["Water helps maintain hydration.", "Lemon provides flavor and some vitamin C, which supports normal collagen formation and immune function."]
     },
     {
         id: 1002,
         title: "🍓 Strawberry Yogurt Smoothie",
         country: "International",
-        category: "Skin Health",
-        keywords: ["face", "skin", "strawberry", "vitamin c", "smoothie"],
+        category: "Skin & Bones",
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup strawberries",
-            "3/4 cup plain yogurt",
-            "1/2 banana",
-            "1/4 cup milk or water"
-        ],
-        steps: [
-            "Wash the strawberries and remove their stems.",
-            "Add all ingredients to a blender.",
-            "Blend until smooth.",
-            "Serve immediately."
-        ],
-        benefits: [
-            "Strawberries provide vitamin C, which supports normal collagen formation.",
-            "Yogurt contributes protein and calcium."
-        ]
+        keywords: ["strawberry", "yogurt", "milk", "vitamin c", "calcium", "face", "skin", "bones"],
+        bodyBenefits: ["Skin", "Bones and teeth", "Muscles"],
+        benefitKeywords: ["face", "skin", "collagen", "bones", "teeth", "muscles", "protein"],
+        ingredients: ["1 cup strawberries", "3/4 cup plain yogurt", "1/2 banana", "1/4 cup milk or water"],
+        steps: ["Wash the strawberries and remove their stems.", "Add all ingredients to a blender.", "Blend until smooth.", "Serve immediately."],
+        benefits: ["Skin: vitamin C supports normal collagen formation.", "Bones and teeth: yogurt contributes calcium.", "Muscles: yogurt contributes protein."]
     },
     {
         id: 1003,
         title: "🥭 Homemade Mango Lassi",
-        country: "South Asia",
+        country: "India / South Asia",
         category: "Everyday Nutrition",
-        keywords: ["india", "mango", "yogurt", "calcium", "smoothie"],
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup ripe mango pieces",
-            "3/4 cup plain yogurt",
-            "1/4 cup cold water",
-            "Optional: a pinch of cardamom"
-        ],
-        steps: [
-            "Add mango, yogurt, and water to a blender.",
-            "Blend until creamy.",
-            "Add cardamom if desired.",
-            "Serve chilled."
-        ],
-        benefits: [
-            "Mango provides vitamin C and other nutrients.",
-            "Yogurt provides protein and calcium."
-        ]
+        keywords: ["mango", "lassi", "india", "yogurt", "vitamin c", "calcium", "bones"],
+        bodyBenefits: ["Bones and teeth", "Immune function"],
+        benefitKeywords: ["bones", "teeth", "immune system", "vitamin c", "protein"],
+        ingredients: ["1 cup ripe mango pieces", "3/4 cup plain yogurt", "1/4 cup cold water", "Optional: a pinch of cardamom"],
+        steps: ["Add mango, yogurt, and water to a blender.", "Blend until creamy and smooth.", "Add cardamom if desired.", "Serve chilled."],
+        benefits: ["Mango provides vitamin C and other nutrients.", "Yogurt contributes protein and calcium for normal bone maintenance."]
     },
     {
         id: 1004,
         title: "🥕 Orange Carrot Smoothie",
         country: "International",
-        category: "Skin Health",
-        keywords: ["face", "skin", "carrot", "orange", "vitamin a", "vitamin c"],
+        category: "Eyes & Skin",
         time: "7 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 small orange, peeled",
-            "1 small carrot, washed and chopped",
-            "1/2 banana",
-            "1/2 cup cold water"
-        ],
-        steps: [
-            "Wash and chop the carrot.",
-            "Peel the orange and remove any seeds.",
-            "Blend everything with water until smooth.",
-            "Add more water if needed and serve."
-        ],
-        benefits: [
-            "Carrots provide beta-carotene, which the body can convert into vitamin A.",
-            "Oranges provide vitamin C."
-        ]
+        keywords: ["carrot", "orange", "eyes", "vision", "skin", "face", "vitamin a", "vitamin c"],
+        bodyBenefits: ["Eyes and vision", "Skin", "Immune function"],
+        benefitKeywords: ["eyes", "vision", "face", "skin", "vitamin a", "vitamin c", "immune system"],
+        ingredients: ["1 small orange, peeled", "1 small carrot, washed and chopped", "1/2 banana", "1/2 cup cold water"],
+        steps: ["Wash and chop the carrot.", "Peel the orange and remove any seeds.", "Blend everything with water until smooth.", "Add more water if needed and serve."],
+        benefits: ["Eyes: beta-carotene from carrots can be converted into vitamin A, which supports normal vision.", "Skin: vitamins A and C support normal skin function.", "Immune function: vitamins A and C contribute to normal immune function."]
     },
     {
         id: 1005,
         title: "🍌 Banana Oat Smoothie",
         country: "International",
-        category: "Energy & Nutrition",
-        keywords: ["energy", "breakfast", "oats", "banana", "fiber"],
+        category: "Energy & Digestion",
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 ripe banana",
-            "1 cup milk or fortified soy milk",
-            "2 tbsp rolled oats",
-            "1/4 tsp cinnamon",
-            "Optional: 1 tsp peanut butter"
-        ],
-        steps: [
-            "Add banana, milk, oats, and cinnamon to a blender.",
-            "Blend until smooth.",
-            "Add more milk for a thinner texture.",
-            "Add peanut butter if desired and blend again."
-        ],
-        benefits: [
-            "Oats provide fiber.",
-            "Banana provides carbohydrates and potassium.",
-            "Milk or fortified soy milk can provide protein and calcium."
-        ]
+        keywords: ["banana", "oats", "energy", "digestion", "fiber", "breakfast", "muscles"],
+        bodyBenefits: ["Everyday energy", "Digestion", "Muscles"],
+        benefitKeywords: ["energy", "digestion", "gut", "fiber", "muscles", "potassium", "breakfast"],
+        ingredients: ["1 ripe banana", "1 cup milk or fortified soy milk", "2 tbsp rolled oats", "1/4 tsp cinnamon", "Optional: 1 tsp peanut butter"],
+        steps: ["Add banana, milk, oats, and cinnamon to a blender.", "Blend until smooth.", "Add more milk for a thinner texture.", "Add peanut butter if desired and blend again."],
+        benefits: ["Energy: carbohydrates provide fuel for everyday activities.", "Digestion: oats provide fiber that supports normal bowel function.", "Muscles: banana provides potassium, and milk or fortified soy milk may provide protein."]
     },
     {
         id: 1006,
         title: "🍉 Watermelon Lime Refresher",
         country: "International",
         category: "Hydration",
-        keywords: ["hydration", "watermelon", "lime", "summer"],
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "2 cups seedless watermelon",
-            "1 tbsp lime juice",
-            "4 mint leaves",
-            "Ice cubes"
-        ],
-        steps: [
-            "Cut the watermelon into small cubes.",
-            "Blend with lime juice and mint.",
-            "Strain if you prefer a smoother drink.",
-            "Pour over ice and serve."
-        ],
-        benefits: [
-            "Watermelon contributes fluids.",
-            "Lime adds refreshing flavor and some vitamin C."
-        ]
+        keywords: ["watermelon", "lime", "hydration", "summer", "fluids", "vitamin c"],
+        bodyBenefits: ["Hydration", "Everyday wellness"],
+        benefitKeywords: ["hydration", "fluids", "water", "refreshment", "vitamin c"],
+        ingredients: ["2 cups seedless watermelon", "1 tbsp lime juice", "4 mint leaves", "Ice cubes"],
+        steps: ["Cut the watermelon into small cubes.", "Blend with lime juice and mint.", "Strain if you prefer a smoother drink.", "Pour over ice and serve."],
+        benefits: ["Watermelon contributes fluids to help maintain hydration.", "Lime adds flavor and some vitamin C."]
     },
     {
         id: 1007,
         title: "🫐 Blueberry Banana Smoothie",
         country: "International",
         category: "Everyday Nutrition",
-        keywords: ["blueberry", "banana", "fiber", "smoothie"],
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "3/4 cup blueberries",
-            "1 banana",
-            "3/4 cup plain yogurt",
-            "1/4 cup water or milk"
-        ],
-        steps: [
-            "Rinse the blueberries.",
-            "Add all ingredients to a blender.",
-            "Blend until smooth.",
-            "Adjust the consistency with more water or milk."
-        ],
-        benefits: [
-            "Blueberries provide fiber and plant compounds.",
-            "Banana provides potassium.",
-            "Yogurt contributes protein and calcium."
-        ]
+        keywords: ["blueberry", "banana", "yogurt", "fiber", "digestion", "bones", "muscles"],
+        bodyBenefits: ["Digestion", "Bones and teeth", "Muscles"],
+        benefitKeywords: ["digestion", "fiber", "bones", "teeth", "muscles", "protein", "calcium"],
+        ingredients: ["3/4 cup blueberries", "1 banana", "3/4 cup plain yogurt", "1/4 cup water or milk"],
+        steps: ["Rinse the blueberries.", "Add all ingredients to a blender.", "Blend until smooth.", "Adjust the consistency with more water or milk and serve."],
+        benefits: ["Digestion: blueberries provide fiber.", "Bones and teeth: yogurt contributes calcium.", "Muscles: yogurt contributes protein, while banana provides potassium."]
     },
     {
         id: 1008,
         title: "🫚 Ginger Lemon Tea",
         country: "International",
         category: "Warm Drinks",
-        keywords: ["ginger", "lemon", "tea", "warm drink"],
         time: "10 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup water",
-            "3–4 thin slices fresh ginger",
-            "1 tbsp lemon juice",
-            "Optional: 1 tsp honey"
-        ],
-        steps: [
-            "Bring water to a gentle boil.",
-            "Add ginger and simmer for 5–7 minutes.",
-            "Strain into a cup and allow it to cool slightly.",
-            "Stir in lemon juice and honey if desired."
-        ],
-        benefits: [
-            "Provides fluid.",
-            "Ginger gives the tea a warming flavor."
-        ]
+        keywords: ["ginger", "lemon", "tea", "warm drink", "hydration"],
+        bodyBenefits: ["Hydration", "Everyday wellness"],
+        benefitKeywords: ["hydration", "fluids", "warm drink", "ginger", "refreshment"],
+        ingredients: ["1 cup water", "3–4 thin slices fresh ginger", "1 tbsp lemon juice", "Optional: 1 tsp honey"],
+        steps: ["Bring water to a gentle boil.", "Add ginger and simmer for 5–7 minutes.", "Strain into a cup and allow it to cool slightly.", "Stir in lemon juice and honey if desired."],
+        benefits: ["Water helps maintain hydration.", "Ginger adds a warming flavor. This tea is not a treatment for illness."]
     },
     {
         id: 1009,
         title: "🥒 Cucumber Mint Water",
         country: "International",
         category: "Hydration",
-        keywords: ["hydration", "cucumber", "mint", "water"],
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup cold water",
-            "6 cucumber slices",
-            "5 mint leaves",
-            "1 lemon slice"
-        ],
-        steps: [
-            "Wash the cucumber, mint, and lemon.",
-            "Place them in a glass or jug of water.",
-            "Chill for 5–10 minutes to let the flavors infuse.",
-            "Serve cold."
-        ],
-        benefits: [
-            "Makes water more flavorful.",
-            "Helps support everyday hydration."
-        ]
+        keywords: ["cucumber", "mint", "water", "hydration", "skin"],
+        bodyBenefits: ["Hydration", "Everyday wellness"],
+        benefitKeywords: ["hydration", "fluids", "water", "refreshment", "skin"],
+        ingredients: ["1 cup cold water", "6 cucumber slices", "5 mint leaves", "1 lemon slice"],
+        steps: ["Wash the cucumber, mint, and lemon.", "Place them in a glass or jug of water.", "Chill for 5–10 minutes to let the flavors infuse.", "Serve cold."],
+        benefits: ["Helps make water more flavorful and enjoyable.", "Drinking enough fluids supports normal body functions, including skin hydration."]
     },
     {
         id: 1010,
         title: "🍍 Pineapple Yogurt Smoothie",
         country: "International",
-        category: "Everyday Nutrition",
-        keywords: ["pineapple", "vitamin c", "yogurt", "smoothie"],
+        category: "Skin & Bones",
         time: "5 min",
         difficulty: "Easy",
-        ingredients: [
-            "1 cup pineapple chunks",
-            "1/2 cup plain yogurt",
-            "1/2 banana",
-            "1/4 cup cold water"
-        ],
-        steps: [
-            "Add pineapple, yogurt, banana, and water to a blender.",
-            "Blend until smooth.",
-            "Add extra water if needed.",
-            "Serve immediately."
-        ],
-        benefits: [
-            "Pineapple provides vitamin C.",
-            "Yogurt contributes protein and calcium."
-        ]
+        keywords: ["pineapple", "yogurt", "vitamin c", "calcium", "skin", "face", "bones", "muscles"],
+        bodyBenefits: ["Skin", "Bones and teeth", "Muscles"],
+        benefitKeywords: ["face", "skin", "collagen", "bones", "teeth", "muscles", "protein"],
+        ingredients: ["1 cup pineapple chunks", "1/2 cup plain yogurt", "1/2 banana", "1/4 cup cold water"],
+        steps: ["Add pineapple, yogurt, banana, and water to a blender.", "Blend until smooth.", "Add extra water if needed.", "Serve immediately."],
+        benefits: ["Skin: pineapple provides vitamin C, which supports normal collagen formation.", "Bones and teeth: yogurt contributes calcium.", "Muscles: yogurt contributes protein."]
     }
 ];
