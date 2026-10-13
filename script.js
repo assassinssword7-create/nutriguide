@@ -918,6 +918,7 @@ function openHealthyDrink(id) {
 
     const gallery = document.getElementById("healthyDrinkGallery");
     const details = document.getElementById("healthyDrinkDetails");
+    const search = document.getElementById("healthyDrinkSearch");
 
     if (!drink || !gallery || !details) return;
 
@@ -931,7 +932,7 @@ function openHealthyDrink(id) {
             return `<li>${step}</li>`;
         }).join("");
 
-    const benefitsHTML = drink.benefits
+    const benefitsHTML = (drink.benefits || [])
         .map(function(benefit) {
             return `<li>${benefit}</li>`;
         }).join("");
@@ -945,7 +946,9 @@ function openHealthyDrink(id) {
         : "No common allergens detected in the listed ingredients.";
 
     gallery.style.display = "none";
-    details.style.display = "block";
+    if (search) {
+        search.parentElement.style.display = "none";
+    }
 
     details.innerHTML = `
         <button class="back-button" onclick="backToHealthyDrinks()">
@@ -953,15 +956,17 @@ function openHealthyDrink(id) {
         </button>
 
         <div class="recipe-detail-card">
-            <span class="recipe-category">HEALTHY DRINK</span>
+            <span class="recipe-category">🥤 HEALTHY DRINK</span>
+
             <h2>${drink.title}</h2>
 
             <div class="recipe-meta">
+                ${drink.country ? `<span>🌍 ${drink.country}</span>` : ""}
                 <span>⏱ ${drink.time}</span>
                 <span>⭐ ${drink.difficulty}</span>
             </div>
 
-            <h3>Ingredients</h3>
+            <h3>🥣 Ingredients</h3>
             <ul>${ingredientsHTML}</ul>
 
             <div class="allergen-info">
@@ -973,11 +978,12 @@ function openHealthyDrink(id) {
                 </p>
             </div>
 
-            <h3>How to Make It</h3>
+            <h3>👨‍🍳 How to Make It</h3>
             <ol>${stepsHTML}</ol>
 
             <h3>✨ Potential Benefits</h3>
             <ul>${benefitsHTML}</ul>
+
             <p class="allergen-warning">
                 Benefits depend on the ingredients and serving size.
                 These drinks are not medical treatments.
@@ -985,30 +991,22 @@ function openHealthyDrink(id) {
         </div>
     `;
 
-    details.scrollIntoView({ behavior: "smooth" });
+    // Display the recipe as a clean, full-screen panel.
+    details.style.position = "fixed";
+    details.style.inset = "0";
+    details.style.zIndex = "9999";
+    details.style.width = "100%";
+    details.style.height = "100%";
+    details.style.maxHeight = "100vh";
+    details.style.overflowY = "auto";
+    details.style.boxSizing = "border-box";
+    details.style.backgroundColor = "#ffffff";
+    details.style.color = "#222222";
+    details.style.padding = "24px";
+    details.style.margin = "0";
+    details.style.borderRadius = "0";
+    details.style.display = "block";
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-function backToHealthyDrinks() {
-    const gallery = document.getElementById("healthyDrinkGallery");
-    const details = document.getElementById("healthyDrinkDetails");
-
-    if (!gallery || !details) return;
-
-    details.style.display = "none";
-    gallery.style.display = "grid";
-    details.innerHTML = "";
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    const input = document.getElementById("healthyDrinkSearch");
-
-    if (input) {
-        input.addEventListener("input", searchHealthyDrinks);
-    }
-
-    if (typeof healthyDrinkData !== "undefined") {
-        displayHealthyDrinks(healthyDrinkData);
-    }
-});
-
 
