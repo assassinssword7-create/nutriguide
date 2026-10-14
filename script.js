@@ -132,6 +132,7 @@ const foodInfo = {
 
 
 
+
 function searchHealthyDrinks() {
     const input = document.getElementById("healthyDrinkSearch");
 
