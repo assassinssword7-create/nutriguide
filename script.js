@@ -1011,3 +1011,20 @@ function openHealthyDrink(id) {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
+displayHealthyDrinks(healthyDrinkData);
+
+const healthyDrinkSearchInput =
+    document.getElementById("healthyDrinkSearch");
+
+if (
+    healthyDrinkSearchInput &&
+    !healthyDrinkSearchInput.dataset.drinkSearchReady
+) {
+    healthyDrinkSearchInput.addEventListener(
+        "input",
+        searchHealthyDrinks
+    );
+
+    healthyDrinkSearchInput.dataset.drinkSearchReady = "true";
+}
+
