@@ -1093,3 +1093,26 @@ if (
     healthyDrinkSearchInput.dataset.drinkSearchReady = "true";
 }
 
+function backToHealthyDrinks() {
+    const gallery = document.getElementById("healthyDrinkGallery");
+    const details = document.getElementById("healthyDrinkDetails");
+
+    if (gallery) {
+        gallery.style.display = "grid";
+    }
+
+    if (details) {
+        details.style.display = "none";
+        details.innerHTML = "";
+    }
+
+    const search = document.getElementById("healthyDrinkSearch");
+    if (search) {
+        search.value = "";
+    }
+
+    if (typeof displayHealthyDrinks === "function") {
+        displayHealthyDrinks();
+    }
+}
+
