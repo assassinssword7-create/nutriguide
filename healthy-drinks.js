@@ -139,9 +139,8 @@ const healthyDrinkData = [
         ingredients: ["1 cup pineapple chunks", "1/2 cup plain yogurt", "1/2 banana", "1/4 cup cold water"],
         steps: ["Add pineapple, yogurt, banana, and water to a blender.", "Blend until smooth.", "Add extra water if needed.", "Serve immediately."],
         benefits: ["Skin: pineapple provides vitamin C, which supports normal collagen formation.", "Bones and teeth: yogurt contributes calcium.", "Muscles: yogurt contributes protein."]
-    }
-
-{
+    },
+    {
     id: 1011,
     title: "🍓 Strawberry Lemon Infused Water",
     country: "International",
