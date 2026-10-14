@@ -894,19 +894,27 @@ function displayHealthyDrinks(drinks) {
     }).join("");
 }
 
+
 function searchHealthyDrinks() {
     const input = document.getElementById("healthyDrinkSearch");
+
     if (!input || typeof healthyDrinkData === "undefined") return;
 
     const query = input.value.trim().toLowerCase();
 
     const filtered = healthyDrinkData.filter(function(drink) {
-        return (
-            drink.title.toLowerCase().includes(query) ||
-            drink.ingredients.some(function(ingredient) {
-                return ingredient.toLowerCase().includes(query);
-            })
-        );
+        const searchableText = [
+            drink.title || "",
+            drink.country || "",
+            drink.category || "",
+            ...(drink.keywords || []),
+            ...(drink.bodyBenefits || []),
+            ...(drink.benefitKeywords || []),
+            ...(drink.ingredients || []),
+            ...(drink.benefits || [])
+        ].join(" ").toLowerCase();
+
+        return searchableText.includes(query);
     });
 
     displayHealthyDrinks(filtered);
