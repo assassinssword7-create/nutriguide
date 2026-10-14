@@ -868,30 +868,87 @@ function detectPotentialAllergens(ingredients) {
     return found;
 }
 
+
+let visibleHealthyDrinkCount = 10;
+
 function displayHealthyDrinks(drinks) {
     const gallery = document.getElementById("healthyDrinkGallery");
     if (!gallery) return;
 
-    if (!drinks.length) {
+    const visibleDrinks = drinks.slice(0, visibleHealthyDrinkCount);
+
+    if (drinks.length === 0) {
         gallery.innerHTML = "<p>No drinks found. Try another search.</p>";
+        updateHealthyDrinkButtons(0);
         return;
     }
 
-    gallery.innerHTML = drinks.map(function(drink) {
+    gallery.innerHTML = visibleDrinks.map(function(drink) {
         return `
             <article class="recipe-card">
                 <div class="recipe-card-content">
-                    <span class="recipe-category">HEALTHY DRINK</span>
+                    <span class="recipe-category">🥤 HEALTHY DRINK</span>
                     <h3>${drink.title}</h3>
                     <p>⏱ ${drink.time} · ⭐ ${drink.difficulty}</p>
-                    <button type="button"
-                        onclick="openHealthyDrink(${drink.id})">
+                    <button type="button" onclick="openHealthyDrink(${drink.id})">
                         View Recipe →
                     </button>
                 </div>
             </article>
         `;
     }).join("");
+
+    updateHealthyDrinkButtons(drinks.length);
+}
+
+function updateHealthyDrinkButtons(totalDrinks) {
+    const gallery = document.getElementById("healthyDrinkGallery");
+    if (!gallery) return;
+
+    let container = document.getElementById("healthyDrinkLoadControls");
+
+    if (!container) {
+        container = document.createElement("div");
+        container.id = "healthyDrinkLoadControls";
+        container.className = "load-more-container";
+        gallery.insertAdjacentElement("afterend", container);
+    }
+
+    if (totalDrinks <= 10) {
+        container.innerHTML = "";
+        return;
+    }
+
+    container.innerHTML = `
+        ${visibleHealthyDrinkCount < totalDrinks
+            ? '<button class="load-more-button" id="loadMoreHealthyDrinks">Load More Drinks ↓</button>'
+            : ""}
+        ${visibleHealthyDrinkCount > 10
+            ? '<button class="show-less-button" id="showLessHealthyDrinks">Show Less ↑</button>'
+            : ""}
+    `;
+
+    const loadButton = document.getElementById("loadMoreHealthyDrinks");
+    const lessButton = document.getElementById("showLessHealthyDrinks");
+
+    if (loadButton) {
+        loadButton.onclick = function() {
+            visibleHealthyDrinkCount = Math.min(
+                visibleHealthyDrinkCount + 10,
+                totalDrinks
+            );
+            searchHealthyDrinks();
+        };
+    }
+
+    if (lessButton) {
+        lessButton.onclick = function() {
+            visibleHealthyDrinkCount = 10;
+            searchHealthyDrinks();
+
+            gallery.scrollIntoView({ behavior: "smooth" });
+        };
+    }
 }
 
 
@@ -899,7 +956,7 @@ function searchHealthyDrinks() {
     const input = document.getElementById("healthyDrinkSearch");
 
     if (!input || typeof healthyDrinkData === "undefined") return;
-
+visibleHealthyDrinkCount = 10;
     const query = input.value.trim().toLowerCase();
 
     const filtered = healthyDrinkData.filter(function(drink) {
