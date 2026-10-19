@@ -1073,7 +1073,7 @@ function openHealthyDrink(id) {
     details.style.borderRadius = "0";
     details.style.display = "block";
 
-    window.scrollTo({ top: 0, behavior: "smooth" });
+   details.scrollTop = 0;
 }
 
 displayHealthyDrinks(healthyDrinkData);
