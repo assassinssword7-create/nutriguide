@@ -1057,23 +1057,26 @@ function openHealthyDrink(id) {
         </div>
     `;
 
-    // Display the recipe as a clean, full-screen panel.
-    details.style.position = "fixed";
-    details.style.inset = "0";
-    details.style.zIndex = "9999";
-    details.style.width = "100%";
-    details.style.height = "100%";
-    details.style.maxHeight = "100vh";
-    details.style.overflowY = "auto";
-    details.style.boxSizing = "border-box";
-    details.style.backgroundColor = "#ffffff";
-    details.style.color = "#222222";
-    details.style.padding = "24px";
-    details.style.margin = "0";
-    details.style.borderRadius = "0";
-    details.style.display = "block";
+Object.assign(details.style, {
+    position: "fixed",
+    inset: "0",
+    zIndex: "99999",
+    width: "100vw",
+    height: "100vh",
+    maxWidth: "none",
+    maxHeight: "none",
+    overflowY: "auto",
+    boxSizing: "border-box",
+    backgroundColor: "#ffffff",
+    color: "#222222",
+    padding: "24px",
+    margin: "0",
+    borderRadius: "0",
+    display: "block"
+});
 
-   details.scrollTop = 0;
+details.scrollTop = 0;
+
 }
 
 displayHealthyDrinks(healthyDrinkData);
