@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriGuide Premium</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f6faf6;color:#20372b}
+header{background:#fff;border-bottom:1px solid #e2ece3}
+nav{max-width:1150px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:800;color:#16845b;text-decoration:none}
+.links{display:flex;gap:15px;flex-wrap:wrap}
+.links a{color:#43564b;text-decoration:none;font-size:14px;font-weight:600}
+main{max-width:1050px;margin:auto;padding:55px 20px}
+.hero{text-align:center;margin-bottom:35px}
+.hero h1{font-size:clamp(34px,5vw,50px);margin:12px 0}
+.hero p{color:#68796c;line-height:1.7}
+.tag{color:#16845b;font-weight:bold;font-size:13px}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:850px;margin:auto}
+.card{background:#fff;border:1px solid #e0ebe1;border-radius:22px;padding:30px;box-shadow:0 10px 30px #204d2c0a}
+.card.featured{border:2px solid #16845b;position:relative}
+.card h2{margin:8px 0}
+.description{color:#718075;line-height:1.6}
+.price{font-size:39px;font-weight:800;margin:22px 0 5px;color:#16845b}
+.price small{font-size:15px;font-weight:500;color:#718075}
+ul{padding-left:21px;line-height:2.1;color:#43564b;min-height:155px}
+button,.btn{display:block;width:100%;padding:14px;border:0;border-radius:12px;background:#16845b;color:#fff;text-align:center;text-decoration:none;font-weight:700;font-size:15px;cursor:pointer}
+button:hover,.btn:hover{background:#0c6845}
+.secondary{background:#edf7ef;color:#16845b}
+.secondary:hover{background:#dcefe0}
+.notice{max-width:850px;margin:25px auto 0;color:#778579;font-size:13px;text-align:center;line-height:1.7}
+.faq{max-width:850px;margin:40px auto 0;background:#fff;border-radius:18px;padding:25px}
+.faq p{color:#68796c;line-height:1.7}
+footer{text-align:center;padding:25px;color:#718075}
+@media(max-width:650px){.plans{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}main{padding:35px 16px}.card{padding:24px}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a class="logo" href="index.html">NutriGuide</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="community.html">Community</a>
+<a href="login.html">Log In</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="tag">🌿 YOUR HEALTH, YOUR WAY</div>
+<h1>Make healthy living easier.</h1>
+<p>Explore nutrition resources for free, or discover the extra tools planned for NutriGuide Premium.</p>
+</section>
+
+<section class="plans">
+<article class="card">
+<div class="tag">GET STARTED</div>
+<h2>Free</h2>
+<p class="description">Explore healthy ideas at your own pace.</p>
+<div class="price">SAR 0 <small>/ forever</small></div>
+<ul>
+<li>Browse recipes and nutrition guides</li>
+<li>Explore 500 healthy drinks</li>
+<li>View ingredients and preparation steps</li>
+<li>Access the Community preview</li>
+</ul>
+<a class="btn secondary" href="index.html">Explore for free</a>
+</article>
+
+<article class="card featured">
+<div class="tag">✨ PREMIUM PLAN CONCEPT</div>
+<h2>NutriGuide Plus</h2>
+<p class="description">More tools for planning your healthy routine.</p>
+<div class="price">SAR 14.99 <small>/ month*</small></div>
+<ul>
+<li>Save favourite recipes and drinks</li>
+<li>Personalized weekly meal plans</li>
+<li>Expanded AI Guide allowance</li>
+<li>Personal nutrition preferences</li>
+<li>Premium dashboard</li>
+</ul>
+<a class="btn" href="login.html">Create an account</a>
+</article>
+</section>
+
+<p class="notice">*SAR 14.99 is a proposed price, not an active offer. Premium checkout, recurring billing, account features and subscription access have not been connected yet. No payment will be taken through this page.</p>
+
+<section class="faq">
+<h2>Frequently asked questions</h2>
+<h3>Can I use NutriGuide for free?</h3>
+<p>Yes. The goal is to keep recipe and healthy-drink browsing available without a subscription.</p>
+<h3>Can I cancel Premium?</h3>
+<p>Once subscriptions are implemented, the live plan will need clear cancellation instructions and a secure subscription-management option.</p>
+<h3>Is NutriGuide medical advice?</h3>
+<p>No. Nutrition content is educational and cannot replace advice from a qualified healthcare professional.</p>
+</section>
+</main>
+<footer>© 2026 NutriGuide · Healthy choices, made simpler.</footer>
+</body>
+</html>
