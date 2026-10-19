@@ -1679,8 +1679,7 @@ const healthyDrinkData = [
         ingredients: ["1 cup strawberries", "2 tablespoons shredded coconut", "3/4 cup plain yogurt", "1/4 cup water"],
         steps: ["Wash and hull the strawberries.", "Add strawberries, coconut, yogurt, and water to a blender.", "Blend until smooth.", "Serve immediately."],
         benefits: ["Strawberries provide vitamin C, which supports normal collagen formation.", "Yogurt contributes protein and calcium."]
-    }
-   
+    },
     {
         id: 1121,
         title: "Watermelon Mint Cooler",
