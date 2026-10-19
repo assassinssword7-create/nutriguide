@@ -928,7 +928,7 @@ function updateHealthyDrinkButtons(totalDrinks) {
             : ""}
     `;
 
-    const loadButton = document.getElementById("loadMoreHealthyDrinks");
+      const loadButton = document.getElementById("loadMoreHealthyDrinks");
     const lessButton = document.getElementById("showLessHealthyDrinks");
 
     if (loadButton) {
@@ -941,21 +941,17 @@ function updateHealthyDrinkButtons(totalDrinks) {
         };
     }
 
-   
-if (lessButton) {
-    lessButton.onclick = function() {
-        visibleHealthyDrinkCount = Math.max(
-            10,
-            visibleHealthyDrinkCount - 10
-        );
-
-        searchHealthyDrinks();
-
-        gallery.scrollIntoView({ behavior: "smooth" });
-    };
+    if (lessButton) {
+        lessButton.onclick = function() {
+            visibleHealthyDrinkCount = Math.max(
+                10,
+                visibleHealthyDrinkCount - 10
+            );
+            searchHealthyDrinks();
+            gallery.scrollIntoView({ behavior: "smooth" });
+        };
+    }
 }
-
-
 function searchHealthyDrinks() {
     const input = document.getElementById("healthyDrinkSearch");
 
