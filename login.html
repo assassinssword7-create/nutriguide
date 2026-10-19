@@ -5,67 +5,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login | NutriGuide</title>
-
 <style>
 *{box-sizing:border-box}
-body{
-  margin:0;min-height:100vh;font-family:Arial,sans-serif;
-  background:linear-gradient(135deg,#e5f8e9,#f5f9ff);
-  color:#20372b;display:flex;flex-direction:column
-}
+body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:linear-gradient(135deg,#e5f8e9,#f5f9ff);color:#20372b;display:flex;flex-direction:column}
 header{background:#fff;border-bottom:1px solid #e2ece3}
-nav{
-  max-width:1150px;margin:auto;padding:18px 22px;
-  display:flex;justify-content:space-between;align-items:center;
-  gap:15px;flex-wrap:wrap
-}
+nav{max-width:1150px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
 .logo{font-size:25px;font-weight:800;color:#16845b;text-decoration:none}
 nav div{display:flex;gap:16px;flex-wrap:wrap}
 nav div a{color:#43564b;text-decoration:none;font-size:14px}
-nav div a:hover,.bottom a:hover{text-decoration:underline}
 main{flex:1;display:flex;justify-content:center;align-items:center;padding:35px 18px}
-.panel{
-  width:100%;max-width:440px;background:#fff;padding:35px;
-  border:1px solid #e0ebe1;border-radius:23px;
-  box-shadow:0 15px 45px #204d2c10
-}
+.panel{width:100%;max-width:440px;background:#fff;padding:35px;border:1px solid #e0ebe1;border-radius:23px;box-shadow:0 15px 45px #204d2c10}
 .emoji{text-align:center;font-size:38px}
 h1{text-align:center;font-size:30px;margin:12px 0}
 .intro{text-align:center;color:#718075;line-height:1.6;margin-bottom:25px}
 label{display:block;font-weight:700;font-size:14px;margin:17px 0 8px}
-input{
-  width:100%;padding:14px;border:1px solid #d7e4d9;
-  border-radius:11px;font:inherit
-}
-input:focus{outline:2px solid #16845b;outline-offset:2px}
-button{
-  width:100%;padding:14px;border:0;border-radius:11px;
-  background:#16845b;color:#fff;font-size:15px;font-weight:700;
-  cursor:pointer;margin-top:16px
-}
+input{width:100%;padding:14px;border:1px solid #d7e4d9;border-radius:11px;font:inherit}
+button{width:100%;padding:14px;border:0;border-radius:11px;background:#16845b;color:#fff;font-size:15px;font-weight:700;cursor:pointer;margin-top:16px}
 button:hover{background:#0c6845}
 button:disabled{opacity:.6;cursor:wait}
 .secondary{background:#fff;color:#16845b;border:1px solid #d7e4d9}
 .secondary:hover{background:#f5faf5}
 .divider{text-align:center;color:#89968b;margin:18px 0}
 .bottom{text-align:center;color:#718075;font-size:14px;line-height:2;margin-top:20px}
-.bottom a{color:#16845b;font-weight:700;text-decoration:none}
-.notice{
-  font-size:13px;line-height:1.6;color:#536958;
-  background:#f4f8f4;padding:12px;border-radius:10px;margin-top:18px;
-  overflow-wrap:anywhere
-}
+.bottom a,.small-link{color:#16845b;font-weight:700;text-decoration:none}
+.small-link{display:block;text-align:right;margin-top:12px;font-size:13px}
+.notice{font-size:13px;line-height:1.6;color:#536958;background:#f4f8f4;padding:12px;border-radius:10px;margin-top:18px;overflow-wrap:anywhere}
 .notice.error{background:#fff0ef;color:#a02c27}
 .notice.success{background:#eaf8ed;color:#176b3c}
-.small-link{
-  display:block;text-align:right;margin-top:12px;
-  color:#16845b;font-size:13px;text-decoration:none
-}
 footer{text-align:center;padding:20px;color:#718075;font-size:13px}
 @media(max-width:480px){.panel{padding:25px 20px}h1{font-size:26px}}
 </style>
 </head>
-
 <body>
 <header>
 <nav>
@@ -82,42 +52,29 @@ footer{text-align:center;padding:20px;color:#718075;font-size:13px}
 <section class="panel">
 <div class="emoji">🥑</div>
 <h1 id="heading">Welcome to NutriGuide</h1>
-<p class="intro" id="intro">
-Your journey towards healthier everyday choices starts here.
-</p>
+<p class="intro" id="intro">Your journey towards healthier everyday choices starts here.</p>
 
 <form id="authForm">
 <div id="nameField" hidden>
 <label for="name">Your name</label>
-<input id="name" type="text" placeholder="Your name"
-autocomplete="name" maxlength="80">
+<input id="name" type="text" placeholder="Your name" autocomplete="name" maxlength="80">
 </div>
 
 <label for="email">Email address</label>
-<input id="email" type="email" placeholder="you@example.com"
-autocomplete="email" required>
+<input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
 
 <label for="password">Password</label>
-<input id="password" type="password" placeholder="At least 8 characters"
-autocomplete="current-password" minlength="8" required>
+<input id="password" type="password" placeholder="At least 8 characters" autocomplete="current-password" minlength="8" required>
 
 <a href="#" id="forgotPassword" class="small-link">Forgot password?</a>
-
 <button id="submitButton" type="submit">Log in</button>
 </form>
 
-<button id="switchMode" class="secondary" type="button">
-Create a new account
-</button>
-
+<button id="switchMode" class="secondary" type="button">Create a new account</button>
 <div class="divider">or</div>
-<button id="googleButton" class="secondary" type="button">
-Continue with Google
-</button>
+<button id="googleButton" class="secondary" type="button">Continue with Google</button>
 
-<div id="message" class="notice" role="status" aria-live="polite">
-Connect your Supabase project settings in this file to enable authentication.
-</div>
+<div id="message" class="notice" role="status" aria-live="polite">Connecting to NutriGuide authentication...</div>
 
 <div class="bottom">
 Want to explore first?<br>
@@ -126,19 +83,17 @@ Want to explore first?<br>
 </div>
 </section>
 </main>
-
 <footer>© 2026 NutriGuide</footer>
 
-<!-- Supabase JavaScript client -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
 <script>
 /*
-  STEP: Replace both placeholders with your own Supabase
-  Project URL and PUBLIC publishable/anon key.
-  Never use a secret or service_role key here.
+  IMPORTANT:
+  Replace the URL below with your actual Supabase Project URL.
+  The publishable key below is the one you supplied.
+  Never put a secret or service_role key in this file.
 */
-const SUPABASE_URL = "https://assassinssword7-create.github.io";
+const SUPABASE_URL = "https://rkcrynlqzdviaoabclso.supabase.co/rest/v1/";
 const SUPABASE_PUBLIC_KEY = "sb_publishable_mYarbKUPh9DlpWIuMdTtFQ_GtZ_e-l0";
 
 const message = document.getElementById("message");
@@ -166,12 +121,10 @@ function setBusy(busy) {
   submitButton.disabled = busy;
   switchMode.disabled = busy;
   googleButton.disabled = busy;
-  forgotPassword.style.pointerEvents = busy ? "none" : "auto";
 }
 
 function updateMode() {
   const signingUp = mode === "signup";
-
   heading.textContent = signingUp ? "Create your account" : "Welcome to NutriGuide";
   intro.textContent = signingUp
     ? "Join NutriGuide and start building healthier everyday habits."
@@ -185,95 +138,74 @@ function updateMode() {
     ? "Already have an account? Log in"
     : "Create a new account";
   forgotPassword.style.display = signingUp ? "none" : "block";
-
-  showMessage(signingUp
-    ? "Create an account with your email and a password."
-    : "Log in with your registered email and password.");
 }
 
 function isConfigured() {
-  return supabase !== null;
+  return supabaseClient !== null;
 }
 
-if (
-  window.supabase &&
-  SUPABASE_URL.startsWith("https://") &&
-  !SUPABASE_URL.includes("PASTE_") &&
-  SUPABASE_PUBLIC_KEY.length > 20 &&
-  !SUPABASE_PUBLIC_KEY.includes("PASTE_")
+if (!window.supabase) {
+  showMessage("The Supabase library could not load. Check your internet connection and refresh.", "error");
+} else if (
+  !SUPABASE_URL.startsWith("https://") ||
+  SUPABASE_URL.includes("PASTE_") ||
+  !SUPABASE_PUBLIC_KEY.startsWith("sb_publishable_")
 ) {
-  supabase = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_PUBLIC_KEY
-  );
+  showMessage("Setup needed: enter your actual Supabase Project URL and verify your public key.", "error");
 } else {
-  showMessage(
-    "Setup needed: add your Supabase Project URL and public publishable/anon key in this file. Do not add a secret key.",
-    "error"
-  );
+  try {
+    supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLIC_KEY);
+    showMessage("Ready. Log in or create a NutriGuide account.");
+  } catch (error) {
+    showMessage("Could not initialize Supabase: " + error.message, "error");
+  }
 }
 
 switchMode.addEventListener("click", () => {
   mode = mode === "login" ? "signup" : "login";
   updateMode();
+  showMessage(mode === "signup" ? "Enter your details to create an account." : "Enter your registered email and password.");
 });
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   if (!isConfigured()) {
-    showMessage(
-      "Supabase is not configured yet. Add your Project URL and public key first.",
-      "error"
-    );
+    showMessage("Supabase is not configured. Check the Project URL and public key in this file.", "error");
     return;
   }
 
   const email = emailInput.value.trim();
   const password = passwordInput.value;
   setBusy(true);
+  showMessage(mode === "signup" ? "Creating your account..." : "Signing you in...");
 
   try {
     if (mode === "signup") {
-      const displayName = nameInput.value.trim();
-
-      const { data, error } = await supabase.auth.signUp({
+      const { data, error } = await supabaseClient.auth.signUp({
         email,
         password,
         options: {
-          data: { display_name: displayName },
-          emailRedirectTo: window.location.href.split("?")[0]
+          data: { display_name: nameInput.value.trim() },
+          emailRedirectTo: window.location.origin + window.location.pathname
         }
       });
 
       if (error) throw error;
 
       if (data.session) {
-        showMessage(
-          "Account created and signed in! Your authentication is working.",
-          "success"
-        );
+        showMessage("Account created and signed in successfully!", "success");
       } else {
-        showMessage(
-          "Sign-up submitted. Check your email for a verification link if email confirmation is enabled in Supabase."
-        );
+        showMessage("Sign-up submitted. Check your email for a verification link if email confirmation is enabled.", "success");
       }
     } else {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password
-      });
-
+      const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
       if (error) throw error;
 
       if (data.session) {
-        showMessage(
-          "You're signed in successfully! Your NutriGuide account is connected.",
-          "success"
-        );
-
-        // Keep the user on this page for now.
-        // We'll add a real account dashboard next.
+        showMessage("You're signed in successfully! Your NutriGuide account is connected.", "success");
+      } else {
+        showMessage("Sign-in did not return a session. Check your email verification settings.", "error");
       }
     }
   } catch (error) {
@@ -287,30 +219,24 @@ forgotPassword.addEventListener("click", async (event) => {
   event.preventDefault();
 
   if (!isConfigured()) {
-    showMessage("Add your Supabase project settings first.", "error");
+    showMessage("Add your actual Supabase Project URL first.", "error");
     return;
   }
 
   const email = emailInput.value.trim();
-
   if (!email) {
-    showMessage("Enter your email address first, then click Forgot password.");
+    showMessage("Enter your email address first.");
     emailInput.focus();
     return;
   }
 
   setBusy(true);
-
   try {
-    const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: window.location.href.split("?")[0]
+    const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin + window.location.pathname
     });
-
     if (error) throw error;
-
-    showMessage(
-      "If the address is registered, Supabase will send a password-reset email. Follow its instructions."
-    );
+    showMessage("If the email is registered, a password-reset email will be sent.", "success");
   } catch (error) {
     showMessage(error.message || "Could not request a password reset.", "error");
   } finally {
@@ -320,13 +246,24 @@ forgotPassword.addEventListener("click", async (event) => {
 
 googleButton.addEventListener("click", async () => {
   if (!isConfigured()) {
-    showMessage("Add your Supabase project settings first.", "error");
+    showMessage("Add your actual Supabase Project URL first.", "error");
     return;
   }
 
-  showMessage(
-    "Google sign-in still needs to be enabled in Supabase Authentication settings. We'll configure it next."
-  );
+  setBusy(true);
+  try {
+    const { error } = await supabaseClient.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: window.location.origin + window.location.pathname
+      }
+    });
+    if (error) throw error;
+  } catch (error) {
+    showMessage("Google sign-in setup issue: " + error.message + ". Enable Google under Supabase Authentication providers and add its OAuth credentials first.", "error");
+  } finally {
+    setBusy(false);
+  }
 });
 
 updateMode();
