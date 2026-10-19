@@ -15,46 +15,145 @@ body {
     line-height: 1.6;
 }
 
-/* NAVBAR */
+
+/* ==========================
+   NUTRIGUIDE PREMIUM NAVBAR
+========================== */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(7, 19, 19, 0.92);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(94, 255, 210, 0.1);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid #e7eee9;
+    box-shadow: 0 4px 20px rgba(24, 70, 48, 0.05);
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 1320px;
+    min-height: 76px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 800;
-    color: #5effd2;
+    flex-shrink: 0;
+    font-size: 27px;
+    font-weight: 850;
+    letter-spacing: -1px;
+    color: #16845b;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #0c6845;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .nav-links a {
-    color: #b8cccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 13px;
+    border-radius: 12px;
+    color: #43564b;
+    font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
-    transition: 0.3s;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #5effd2;
+    background: #eaf8ef;
+    color: #117548;
+    transform: translateY(-1px);
 }
+
+/* Premium link */
+.nav-links a[href="pricing.html"] {
+    background: #16845b;
+    color: #ffffff;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.nav-links a[href="pricing.html"]:hover {
+    background: #0c6845;
+    color: #ffffff;
+}
+
+/* Login link */
+.nav-links a[href="login.html"] {
+    border: 1px solid #cfe5d6;
+    color: #16845b;
+}
+
+.nav-links a[href="login.html"]:hover {
+    background: #eaf8ef;
+}
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 14px 18px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 7px;
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+}
+
 
 /* HERO */
 
