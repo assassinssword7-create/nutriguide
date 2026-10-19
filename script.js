@@ -956,7 +956,7 @@ function searchHealthyDrinks() {
     const input = document.getElementById("healthyDrinkSearch");
 
     if (!input || typeof healthyDrinkData === "undefined") return;
-visibleHealthyDrinkCount = 10;
+
     const query = input.value.trim().toLowerCase();
 
     const filtered = healthyDrinkData.filter(function(drink) {
@@ -1085,10 +1085,13 @@ if (
     healthyDrinkSearchInput &&
     !healthyDrinkSearchInput.dataset.drinkSearchReady
 ) {
-    healthyDrinkSearchInput.addEventListener(
-        "input",
-        searchHealthyDrinks
-    );
+   healthyDrinkSearchInput.addEventListener(
+    "input",
+    function () {
+        visibleHealthyDrinkCount = 10;
+        searchHealthyDrinks();
+    }
+);
 
     healthyDrinkSearchInput.dataset.drinkSearchReady = "true";
 }
