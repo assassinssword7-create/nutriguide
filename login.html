@@ -155,7 +155,7 @@ const forgotPassword = document.getElementById("forgotPassword");
 const googleButton = document.getElementById("googleButton");
 
 let mode = "login";
-let supabase = null;
+let supabaseClient = null;
 
 function showMessage(text, type = "") {
   message.textContent = text;
