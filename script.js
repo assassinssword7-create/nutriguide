@@ -871,7 +871,7 @@ function detectPotentialAllergens(ingredients) {
 
 let visibleHealthyDrinkCount = 10;
 
-function displayHealthyDrinks(drinks) {
+function displayHealthyDrinks(drinks = healthyDrinkData) {
     const gallery = document.getElementById("healthyDrinkGallery");
     if (!gallery) return;
 
