@@ -941,14 +941,18 @@ function updateHealthyDrinkButtons(totalDrinks) {
         };
     }
 
-    if (lessButton) {
-        lessButton.onclick = function() {
-            visibleHealthyDrinkCount = 10;
-            searchHealthyDrinks();
+   
+if (lessButton) {
+    lessButton.onclick = function() {
+        visibleHealthyDrinkCount = Math.max(
+            10,
+            visibleHealthyDrinkCount - 10
+        );
 
-            gallery.scrollIntoView({ behavior: "smooth" });
-        };
-    }
+        searchHealthyDrinks();
+
+        gallery.scrollIntoView({ behavior: "smooth" });
+    };
 }
 
 
