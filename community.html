@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | NutriGuide</title>
+    <meta name="description" content="Share healthy food ideas and discover what the NutriGuide community wants next.">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #20372b;
+            background: #f6faf6;
+        }
+        header {
+            background: rgba(255,255,255,.96);
+            border-bottom: 1px solid #e2ece3;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 18px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            color: #16845b;
+            font-size: 25px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        .links { display: flex; flex-wrap: wrap; gap: 15px; }
+        .links a {
+            color: #43564b;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .links a:hover { color: #16845b; }
+        main { max-width: 1050px; margin: auto; padding: 35px 20px 60px; }
+        .hero {
+            padding: 48px 30px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #dff8e8, #e5f2ff);
+            text-align: center;
+        }
+        .tag {
+            display: inline-block;
+            background: white;
+            color: #16845b;
+            padding: 8px 13px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        h1 { font-size: clamp(32px, 5vw, 48px); margin: 18px 0 12px; }
+        .hero p { max-width: 600px; margin: auto; line-height: 1.7; color: #52675a; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 28px;
+        }
+        .card {
+            background: white;
+            padding: 26px;
+            border: 1px solid #e5eee6;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(26,70,43,.04);
+        }
+        .card h2 { margin-top: 0; font-size: 22px; }
+        .card p { color: #66766b; line-height: 1.6; }
+        label { display: block; font-weight: 700; margin: 16px 0 8px; }
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d7e4d9;
+            border-radius: 11px;
+            font: inherit;
+            background: #fff;
+            color: #20372b;
+        }
+        textarea { min-height: 115px; resize: vertical; }
+        button {
+            border: 0;
+            background: #16845b;
+            color: white;
+            font-weight: 700;
+            padding: 13px 18px;
+            border-radius: 11px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover { background: #0c6845; }
+        .note { font-size: 12px; color: #77877b; }
+        .idea {
+            margin-top: 13px;
+            padding: 15px;
+            border-radius: 12px;
+            background: #f2f8f2;
+            overflow-wrap: anywhere;
+        }
+        footer { text-align: center; padding: 25px; color: #718075; }
+        @media (max-width: 700px) {
+            .grid { grid-template-columns: 1fr; }
+            nav { align-items: flex-start; flex-direction: column; }
+            .links { gap: 12px; }
+            .hero { padding: 35px 20px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="logo" href="index.html">NutriGuide</a>
+        <div class="links">
+            <a href="index.html#vitamins">Nutrients</a>
+            <a href="index.html#meals">Recipes</a>
+            <a href="index.html#healthy-drinks">Drinks</a>
+            <a href="index.html#ai-guide">AI Guide</a>
+            <a href="community.html">Community</a>
+            <a href="pricing.html">Premium</a>
+            <a href="login.html">Log In</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <span class="tag">🥑 YOUR HEALTHY LIVING COMMUNITY</span>
+        <h1>Better habits, together.</h1>
+        <p>Share food inspiration, suggest new features, and help shape what NutriGuide creates next.</p>
+    </section>
+
+    <div class="grid">
+        <section class="card">
+            <h2>💬 Share an idea</h2>
+            <p>Have a healthy recipe tip or a suggestion for the community? Add it below.</p>
+            <form id="ideaForm">
+                <label for="ideaName">Display name</label>
+                <input id="ideaName" maxlength="40" placeholder="Your display name" required>
+
+                <label for="ideaType">Post category</label>
+                <select id="ideaType">
+                    <option>Healthy food idea</option>
+                    <option>Recipe suggestion</option>
+                    <option>Healthy habit</option>
+                    <option>General feedback</option>
+                </select>
+
+                <label for="ideaText">Your post</label>
+                <textarea id="ideaText" maxlength="500" placeholder="Share your idea..." required></textarea>
+
+                <button type="submit">Preview my post</button>
+                <p class="note">Demo mode: posts appear on this page temporarily and are not shared with other visitors.</p>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>💡 What should we build next?</h2>
+            <p>Tell us which feature you would most like to see added to NutriGuide.</p>
+            <form id="voteForm">
+                <label for="feature">Choose a feature</label>
+                <select id="feature">
+                    <option>Personalized weekly meal plans</option>
+                    <option>More healthy drinks from around the world</option>
+                    <option>Save favourite recipes</option>
+                    <option>Nutrition and vitamin guides</option>
+                    <option>More AI Guide features</option>
+                    <option>Community recipe sharing</option>
+                </select>
+                <button type="submit">Submit my choice</button>
+            </form>
+            <div id="voteResult" class="idea" hidden></div>
+            <p class="note">Demo mode: your choice is only displayed in this browser; no public voting is stored yet.</p>
+        </section>
+    </div>
+
+    <section class="card" style="margin-top:22px">
+        <h2>🌱 Community preview</h2>
+        <p>Posts you preview during this session will appear here.</p>
+        <div id="posts">
+            <div class="idea">🥗 Welcome! Share an idea to start the community preview.</div>
+        </div>
+    </section>
+</main>
+
+<footer>© 2026 NutriGuide · Healthy choices, made simpler.</footer>
+
+<script>
+    const ideaForm = document.getElementById("ideaForm");
+    const posts = document.getElementById("posts");
+
+    ideaForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("ideaName").value.trim();
+        const category = document.getElementById("ideaType").value;
+        const message = document.getElementById("ideaText").value.trim();
+
+        if (!name || !message) return;
+
+        const post = document.createElement("div");
+        post.className = "idea";
+
+        const heading = document.createElement("strong");
+        heading.textContent = name + " · " + category;
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = message;
+        paragraph.style.whiteSpace = "pre-wrap";
+
+        post.replaceChildren(heading, paragraph);
+        posts.prepend(post);
+        ideaForm.reset();
+    });
+
+    document.getElementById("voteForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const result = document.getElementById("voteResult");
+        result.textContent = "Your demo choice: " +
+            document.getElementById("feature").value;
+        result.hidden = false;
+    });
+</script>
+</body>
+</html>
