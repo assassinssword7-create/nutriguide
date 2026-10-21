@@ -264,7 +264,8 @@ updateMode();
 (async function checkSavedSession() {
   if (!supabaseClient) return;
 
-  const { data, error } = await supabaseClient.auth.getSession();
+  const { data, error } =
+    await supabaseClient.auth.getSession();
 
   if (error) {
     showMessage("Session check failed: " + error.message, "error");
@@ -272,15 +273,9 @@ updateMode();
   }
 
   if (data.session) {
-    showMessage(
-      "You're still signed in as " +
-      (data.session.user.email || "your account") + ".",
-      "success"
-    );
+    window.location.replace("index.html");
   } else {
-    showMessage(
-      "No saved session found. Please log in."
-    );
+    showMessage("Please log in to continue.");
   }
 })();
 </script>
