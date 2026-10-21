@@ -261,6 +261,28 @@ googleButton.addEventListener("click", async () => {
 });
 
 updateMode();
+(async function checkSavedSession() {
+  if (!supabaseClient) return;
+
+  const { data, error } = await supabaseClient.auth.getSession();
+
+  if (error) {
+    showMessage("Session check failed: " + error.message, "error");
+    return;
+  }
+
+  if (data.session) {
+    showMessage(
+      "You're still signed in as " +
+      (data.session.user.email || "your account") + ".",
+      "success"
+    );
+  } else {
+    showMessage(
+      "No saved session found. Please log in."
+    );
+  }
+})();
 </script>
 </body>
 </html>
