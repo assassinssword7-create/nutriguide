@@ -197,8 +197,9 @@ form.addEventListener("submit", async (event) => {
       if (error) throw error;
 
       if (data.session) {
-        showMessage("You're signed in successfully! Your NutriGuide account is connected.", "success");
-      } else {
+  showMessage("You're signed in successfully! Your NutriGuide account is connected.", "success");
+  window.location.replace("index.html");
+} else {
         showMessage("Sign-in did not return a session. Check your email verification settings.", "error");
       }
     }
